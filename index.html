@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>资源导航 | 精选网站与工具收录</title>
+<meta name="description" content="精选优质网站、在线工具与网盘资源，分类清晰，搜索快速，持续更新。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3Cpath d='M9 20l4-9 4 6 3-4 3 7z' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside id="sidebar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <span class="brand-text">资源导航</span>
+  </div>
+  <nav id="catList" class="cat-list"></nav>
+  <div class="side-foot">
+    <button id="favBtn" class="side-btn" type="button"><span class="ico">★</span><span>我的收藏</span><i class="cnt" id="favCount">0</i></button>
+    <button id="themeBtn" class="side-btn" type="button"><span class="ico">◐</span><span>切换主题</span></button>
+  </div>
+</aside>
+<div id="scrim"></div>
+
+<div id="main">
+  <header id="topbar">
+    <button id="menuBtn" class="icon-btn" type="button" aria-label="打开分类">☰</button>
+    <h1 class="page-title">资源导航</h1>
+    <div class="search-wrap">
+      <span class="search-ico">⌕</span>
+      <input id="q" type="search" placeholder="搜网站 / 工具 / 网盘资源" autocomplete="off" spellcheck="false">
+      <button id="clearBtn" class="clear-btn" type="button" hidden>✕</button>
+    </div>
+    <button id="themeBtn2" class="icon-btn mobile-only" type="button" aria-label="切换主题">◐</button>
+  </header>
+
+  <div id="crumb" class="crumb"></div>
+  <div id="subTabs" class="sub-tabs"></div>
+  <div id="stat" class="stat"></div>
+  <main id="grid" class="grid" aria-live="polite"></main>
+  <div id="sentinel" class="sentinel"></div>
+  <footer class="foot">
+    <p>本站仅收录网站链接与简介，内容版权归各站点所有。</p>
+    <p>数据更新：<span id="upd">—</span></p>
+  </footer>
+</div>
+
+<nav id="mnav" class="mnav">
+  <button data-nav="all" class="on" type="button"><span class="i">⌂</span>首页</button>
+  <button data-nav="cats" type="button"><span class="i">☰</span>分类</button>
+  <button data-nav="search" type="button"><span class="i">⌕</span>搜索</button>
+  <button data-nav="fav" type="button"><span class="i">★</span>收藏</button>
+</nav>
+
+<noscript><p style="padding:24px;text-align:center">本站需要开启 JavaScript 才能浏览。</p></noscript>
+<script src="assets/app.js"></script>
+</body>
+</html>

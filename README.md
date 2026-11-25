@@ -1,0 +1,102 @@
+# 资源导航
+
+精选网站、在线工具与网盘资源的导航站。纯静态，无后端，零成本部署。
+
+在线地址（部署后）：
+
+- Cloudflare Pages：`https://<项目名>.pages.dev`
+- GitHub Pages：`https://3208259164.github.io/XuetongNavigator/`
+
+## 特点
+
+- 970 个站点，13 个大类，带子分类
+- 搜索支持中文、拼音全拼、首字母、网址匹配
+- 图标全部本地化，图标缺失时用首字母色块兜底
+- 浅色 / 深色双主题，跟随系统或手动切换
+- 收藏存在浏览器本地，不需要账号
+- 移动端优先，桌面端左侧分类栏 + 多列卡片
+- 零第三方依赖，加载即用
+
+## 目录结构
+
+```
+index.html            首页
+404.html              404 页
+assets/style.css      样式
+assets/app.js         前端逻辑
+data/links.json       全部站点数据
+data/cats.json        分类树与计数
+icons/                站点图标（64x64 PNG）
+```
+
+## 本地预览
+
+必须通过 HTTP 访问（数据用 fetch 加载，file:// 打不开）：
+
+```bash
+python3 -m http.server 8099
+# 浏览器打开 http://127.0.0.1:8099
+```
+
+## 部署
+
+### Cloudflare Pages（推荐）
+
+1. 登录 Cloudflare Dashboard → Workers & Pages → Create → Pages
+2. 连接 Git 仓库，选择本仓库
+3. 构建命令留空，输出目录填 `/`
+4. Deploy
+
+之后每次 push 自动重新部署。
+
+### GitHub Pages
+
+仓库 Settings → Pages → Source 选 `Deploy from a branch`，分支 `main`，目录 `/`。
+
+## 数据格式
+
+`data/links.json`：
+
+```json
+{
+  "count": 970,
+  "updated": "2026-11-25",
+  "cats": ["在线工具", "..."],
+  "links": [
+    {
+      "id": "l0020",
+      "name": "123apps",
+      "url": "https://123apps.com/cn",
+      "desc": "在线格式转换工具",
+      "cat": "在线工具",
+      "sub": "格式转换",
+      "icon": "icons/l0020.png",
+      "py": "123apps",
+      "pyi": "123apps",
+      "src": ["xzjs"],
+      "risk": [],
+      "status": "ok"
+    }
+  ]
+}
+```
+
+字段说明：
+
+| 字段 | 含义 |
+|---|---|
+| id | 唯一编号，图标文件名与之对应 |
+| py / pyi | 拼音全拼 / 首字母，供搜索用 |
+| src | 数据来源标记 |
+| risk | 风险标记（影视资源 / 网盘资源 / 盗版破解），仅作提示 |
+| status | ok / dead，死链巡检后更新 |
+
+## 数据来源与说明
+
+初始数据合并自三个公开导航站的分类整理（硬核指南、全网资源大合集、小众技术工具库），按域名去重后人工归类。
+
+本站只收录网站名称、简介与链接，不存储、不代理、不镜像任何内容，内容版权归各站点所有。如认为某条收录不妥，可在 Issues 提出，会及时处理。
+
+## 更新记录
+
+- 2026-11-25 首次发布，970 条站点数据，13 个大类
