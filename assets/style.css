@@ -244,3 +244,12 @@ html[data-theme="dark"] .chip.on{color:#0e1116}
   .foot{padding-bottom:80px}
   .search-wrap{height:36px}
 }
+
+/* 搜索结果的分类分组标题 */
+.grp{
+  grid-column:1/-1;display:flex;align-items:center;gap:8px;
+  padding:10px 2px 2px;margin-top:4px;
+}
+.grp .grp-t{font-size:12.5px;font-weight:600;color:var(--text)}
+.grp .grp-n{font-size:11px;color:var(--faint);background:var(--panel-2);padding:1px 6px;border-radius:999px}
+.grp:first-child{margin-top:0;padding-top:0}

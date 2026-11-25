@@ -153,6 +153,12 @@
       if (io) io.disconnect();
       return;
     }
+    // 搜索结果跨分类时按分类分组展示
+    if (state.q.trim() && list.length <= 150) {
+      renderGrouped();
+      if (io) io.disconnect();
+      return;
+    }
     appendChunk();
     observeMore();
   }
@@ -169,6 +175,21 @@
         esc(s.name) + ' ' + s.count + '</button>';
     });
     bar.innerHTML = html;
+  }
+
+  function renderGrouped() {
+    var grid = $('#grid');
+    var order = [], map = {};
+    list.forEach(function (it) {
+      if (!map[it.cat]) { map[it.cat] = []; order.push(it.cat); }
+      map[it.cat].push(it);
+    });
+    var html = '';
+    order.forEach(function (c) {
+      html += '<div class="grp"><span class="grp-t">' + esc(c) + '</span><span class="grp-n">' + map[c].length + '</span></div>';
+      map[c].forEach(function (it, i) { html += cardHTML(it, i); });
+    });
+    grid.innerHTML = html;
   }
 
   function appendChunk() {
