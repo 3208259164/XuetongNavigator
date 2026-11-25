@@ -76,6 +76,61 @@
     });
   }
 
+  /* ---------- 详情浮层 ---------- */
+  function byId(id) {
+    for (var i = 0; i < DATA.length; i++) if (DATA[i].id === id) return DATA[i];
+    return null;
+  }
+
+  function openSheet(id) {
+    var it = byId(id);
+    if (!it) return;
+    var initial = (it.name || '?').trim().charAt(0).toUpperCase();
+    var hue = 0;
+    for (var k = 0; k < it.name.length; k++) hue = (hue * 31 + it.name.charCodeAt(k)) % 360;
+    var ico = it.icon
+      ? '<img src="' + esc(it.icon) + '" alt="" onerror="this.parentNode.textContent=\'' + esc(initial) + '\'">'
+      : '<span style="color:hsl(' + hue + ',62%,52%)">' + esc(initial) + '</span>';
+    var rel = DATA.filter(function (x) { return x.cat === it.cat && x.id !== it.id; }).slice(0, 4);
+    var relHTML = rel.map(function (x) {
+      return '<a class="rel-item" href="s/' + x.id + '.html" data-id="' + x.id + '">' +
+        '<span class="rel-n">' + esc(x.name) + '</span></a>';
+    }).join('');
+
+    var el = $('#sheet');
+    el.innerHTML =
+      '<div class="sheet-in">' +
+      '<div class="sheet-head">' +
+      '<span class="ico-box lg">' + ico + '</span>' +
+      '<div class="sheet-title"><h3>' + esc(it.name) + '</h3>' +
+      '<div class="sheet-sub">' + esc(it.cat) + (it.sub ? ' · ' + esc(it.sub) : '') + '</div></div>' +
+      '<button class="sheet-x" type="button" aria-label="关闭">&#10005;</button>' +
+      '</div>' +
+      '<p class="sheet-desc">' + esc(it.desc || '暂无描述') + '</p>' +
+      '<div class="sheet-tags">' +
+      '<span class="pill">' + esc(it.cat) + '</span>' +
+      (it.sub ? '<span class="pill">' + esc(it.sub) + '</span>' : '') +
+      (it.risk || []).map(function (r) { return '<span class="pill warn">' + esc(r) + '</span>'; }).join('') +
+      '</div>' +
+      '<a class="sheet-cta" href="' + esc(it.url) + '" target="_blank" rel="noopener nofollow">访问网站 &#8599;</a>' +
+      '<div class="sheet-actions">' +
+      '<button class="sheet-fav' + (favs.has(it.id) ? ' on' : '') + '" data-fav="' + it.id + '" type="button">' +
+      (favs.has(it.id) ? '★ 已收藏' : '☆ 收藏') + '</button>' +
+      '<a class="sheet-detail" href="s/' + it.id + '.html">完整页面</a>' +
+      '</div>' +
+      (relHTML ? '<div class="sheet-rel"><div class="sheet-rel-t">同类站点</div><div class="rel-list">' + relHTML + '</div></div>' : '') +
+      '</div>';
+    el.classList.add('on');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSheet() {
+    var el = $('#sheet');
+    el.classList.remove('on');
+    el.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
   /* ---------- 取数 ---------- */
   function match(it, q) {
     if (!q) return true;
@@ -117,7 +172,7 @@
     var ds = it.desc
       ? '<div class="ds">' + esc(it.desc) + '</div>'
       : '<div class="ds none">' + esc(it.cat + (it.sub ? ' · ' + it.sub : '')) + '</div>';
-    return '<a class="card" href="' + esc(it.url) + '" target="_blank" rel="noopener nofollow" ' +
+    return '<a class="card" href="s/' + it.id + '.html" data-id="' + it.id + '" ' +
       'style="animation-delay:' + Math.min(i * 8, 160) + 'ms" title="' + esc(it.name) + '">' +
       '<span class="ico-box">' + ico + '</span>' +
       '<span class="meta"><span class="nm">' + esc(it.name) + '</span>' + ds + '</span>' +
@@ -294,6 +349,12 @@
         toggleFav(star.getAttribute('data-fav'), star);
         return;
       }
+      var card = t.closest ? t.closest('.card') : null;
+      if (card) {
+        e.preventDefault();
+        openSheet(card.getAttribute('data-id'));
+        return;
+      }
       var ci = t.closest ? t.closest('.cat-item') : null;
       if (ci) { go(ci.getAttribute('data-cat')); return; }
       var chip = t.closest ? t.closest('.chip') : null;
@@ -307,6 +368,18 @@
       if (t.id === 'scrim') { closeDrawer(); return; }
       if (t.closest && t.closest('#themeBtn, #themeBtn2')) { toggleTheme(); return; }
       if (t.closest && t.closest('#favBtn')) { goFav(); return; }
+      if (t.closest && t.closest('.sheet-x')) { closeSheet(); return; }
+      if (t.id === 'sheet') { closeSheet(); return; }
+      var relItem = t.closest ? t.closest('.rel-item') : null;
+      if (relItem) { e.preventDefault(); openSheet(relItem.getAttribute('data-id')); return; }
+      var sfav = t.closest ? t.closest('.sheet-fav') : null;
+      if (sfav) {
+        toggleFav(sfav.getAttribute('data-fav'), sfav);
+        var isOn = favs.has(sfav.getAttribute('data-fav'));
+        sfav.classList.toggle('on', isOn);
+        sfav.textContent = isOn ? '★ 已收藏' : '☆ 收藏';
+        return;
+      }
       if (t.id === 'clearBtn') { $('#q').value = ''; state.q = ''; $('#clearBtn').hidden = true; render(true); return; }
       var nav = t.closest ? t.closest('#mnav button') : null;
       if (nav) {
