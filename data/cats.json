@@ -119,16 +119,12 @@
   },
   {
    "name": "安全与开源",
-   "count": 6,
+   "count": 5,
    "weight": 85,
    "subs": [
     {
      "name": "安全传输",
      "count": 2
-    },
-    {
-     "name": "开源平台",
-     "count": 1
     },
     {
      "name": "加密通讯",
@@ -145,9 +141,118 @@
    ]
   },
   {
+   "name": "AI 工具",
+   "count": 36,
+   "weight": 84,
+   "subs": [
+    {
+     "name": "AI 对话",
+     "count": 12
+    },
+    {
+     "name": "AI 绘画",
+     "count": 7
+    },
+    {
+     "name": "AI 编程",
+     "count": 4
+    },
+    {
+     "name": "AI 视频",
+     "count": 4
+    },
+    {
+     "name": "AI 平台",
+     "count": 3
+    },
+    {
+     "name": "AI 搜索",
+     "count": 3
+    },
+    {
+     "name": "AI 音频",
+     "count": 2
+    },
+    {
+     "name": "AI 写作",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "学术科研",
+   "count": 18,
+   "weight": 83,
+   "subs": [
+    {
+     "name": "论文库",
+     "count": 10
+    },
+    {
+     "name": "学术工具",
+     "count": 6
+    },
+    {
+     "name": "学术社区",
+     "count": 1
+    },
+    {
+     "name": "图书馆",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "编程开发",
+   "count": 20,
+   "weight": 82,
+   "subs": [
+    {
+     "name": "开发文档",
+     "count": 3
+    },
+    {
+     "name": "在线开发",
+     "count": 3
+    },
+    {
+     "name": "包管理",
+     "count": 3
+    },
+    {
+     "name": "技术社区",
+     "count": 3
+    },
+    {
+     "name": "代码托管",
+     "count": 2
+    },
+    {
+     "name": "教程",
+     "count": 2
+    },
+    {
+     "name": "资讯",
+     "count": 1
+    },
+    {
+     "name": "刷题",
+     "count": 1
+    },
+    {
+     "name": "学习路线",
+     "count": 1
+    },
+    {
+     "name": "博客",
+     "count": 1
+    }
+   ]
+  },
+  {
    "name": "资源搜索",
    "count": 36,
-   "weight": 82,
+   "weight": 80,
    "subs": [
     {
      "name": "资源搜索",
@@ -194,7 +299,7 @@
   {
    "name": "网盘资源",
    "count": 73,
-   "weight": 80,
+   "weight": 78,
    "subs": [
     {
      "name": "热门网盘资源",
@@ -228,7 +333,7 @@
   },
   {
    "name": "在线工具",
-   "count": 209,
+   "count": 207,
    "weight": 75,
    "subs": [
     {
@@ -300,10 +405,6 @@
      "count": 4
     },
     {
-     "name": "国产GPT模型",
-     "count": 4
-    },
-    {
      "name": "文件传输工具",
      "count": 3
     },
@@ -317,6 +418,10 @@
     },
     {
      "name": "免费GPT",
+     "count": 2
+    },
+    {
+     "name": "国产GPT模型",
      "count": 2
     },
     {
@@ -575,6 +680,56 @@
    ]
   },
   {
+   "name": "浏览器扩展",
+   "count": 8,
+   "weight": 64,
+   "subs": [
+    {
+     "name": "扩展商店",
+     "count": 3
+    },
+    {
+     "name": "脚本",
+     "count": 3
+    },
+    {
+     "name": "隐私",
+     "count": 1
+    },
+    {
+     "name": "翻译",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "系统与镜像",
+   "count": 12,
+   "weight": 63,
+   "subs": [
+    {
+     "name": "Linux",
+     "count": 4
+    },
+    {
+     "name": "镜像站",
+     "count": 3
+    },
+    {
+     "name": "系统镜像",
+     "count": 2
+    },
+    {
+     "name": "系统工具",
+     "count": 2
+    },
+    {
+     "name": "包管理",
+     "count": 1
+    }
+   ]
+  },
+  {
    "name": "影视",
    "count": 105,
    "weight": 62,
@@ -672,6 +827,25 @@
     },
     {
      "name": "资源库",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "古籍文史",
+   "count": 8,
+   "weight": 59,
+   "subs": [
+    {
+     "name": "古籍",
+     "count": 5
+    },
+    {
+     "name": "史料",
+     "count": 2
+    },
+    {
+     "name": "字典",
      "count": 1
     }
    ]

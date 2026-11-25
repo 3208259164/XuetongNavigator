@@ -322,3 +322,18 @@ html[data-theme="dark"] .pill.warn{background:#3a2a12;color:#e0a23c}
   font-size:10px;color:var(--faint);padding:4px 0;text-decoration:none;
 }
 .mnav .mnav-a .i{font-size:17px;line-height:1}
+
+/* 属性标签筛选 */
+.tag-bar{display:flex;gap:7px;overflow-x:auto;padding:9px 20px 0;scrollbar-width:none}
+.tag-bar::-webkit-scrollbar{display:none}
+.tag{
+  flex:none;padding:5px 11px;border-radius:8px;font-size:12px;
+  background:transparent;border:1px dashed var(--line);color:var(--sub);
+  transition:all .15s;white-space:nowrap;
+}
+.tag:hover{border-color:var(--brand);color:var(--brand)}
+.tag i{font-style:normal;font-size:10px;opacity:.6;margin-left:5px}
+.tag.on{background:var(--brand-soft);border-style:solid;border-color:var(--brand);color:var(--brand);font-weight:500}
+@media(max-width:900px){
+  .tag-bar{padding:8px 14px 0}
+}

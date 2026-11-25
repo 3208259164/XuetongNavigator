@@ -7,7 +7,7 @@
   var THEME_KEY = 'nav_theme_v1';
   var BATCH = 60;
 
-  var state = { cat: 'all', sub: '', q: '', view: 'all', shown: 0 };
+  var state = { cat: 'all', sub: '', q: '', view: 'all', shown: 0, tags: [] };
   var DATA = [];
   var CATS = [];
   var favs = new Set();
@@ -145,19 +145,45 @@
     });
   }
 
+  function matchTags(it) {
+    if (!state.tags.length) return true;
+    var t = it.tags || [];
+    return state.tags.every(function (x) { return t.indexOf(x) > -1; });
+  }
+
+  function scoreOf(it, q) {
+    var s = 0;
+    if ((it.name || '').toLowerCase().indexOf(q) > -1) s += 30;
+    if ((it.tags || []).join(' ').toLowerCase().indexOf(q) > -1) s += 20;
+    if ((it.py || '').indexOf(q) > -1 || (it.pyi || '').indexOf(q) > -1) s += 15;
+    if ((it.desc || '').toLowerCase().indexOf(q) > -1) s += 10;
+    if ((it.cat || '').toLowerCase().indexOf(q) > -1) s += 6;
+    if ((it.sub || '').toLowerCase().indexOf(q) > -1) s += 4;
+    return s;
+  }
+
   function filtered() {
     var q = state.q.trim().toLowerCase();
-    // 有搜索词时全站搜索，不受当前分类限制
-    if (q) {
-      var base = state.view === 'fav' ? DATA.filter(function (it) { return favs.has(it.id); }) : DATA;
-      return base.filter(function (it) { return it._s.indexOf(q) > -1; });
-    }
     var out = DATA.filter(function (it) {
-      if (state.view === 'fav') return favs.has(it.id);
-      if (state.cat !== 'all' && it.cat !== state.cat) return false;
-      if (state.sub && it.sub !== state.sub) return false;
+      if (state.view === 'fav') {
+        if (!favs.has(it.id)) return false;
+      } else if (q) {
+        // 全站搜索时不受分类限制，但标签筛选仍然生效
+      } else {
+        if (state.cat !== 'all' && it.cat !== state.cat) return false;
+        if (state.sub && it.sub !== state.sub) return false;
+      }
+      if (!matchTags(it)) return false;
+      if (q && scoreOf(it, q) === 0) return false;
       return true;
     });
+    if (q) {
+      out.sort(function (a, b) {
+        var d = scoreOf(b, q) - scoreOf(a, q);
+        if (d) return d;
+        return (b.weight || 0) - (a.weight || 0);
+      });
+    }
     return out;
   }
 
@@ -190,6 +216,7 @@
     if (state.view === 'fav') {
       crumb.innerHTML = '<h2>我的收藏</h2><span class="cnt">' + list.length + ' 个</span>';
       $('#subTabs').innerHTML = '';
+      renderTagBar();
       $('#stat').textContent = '';
     } else if (state.q.trim()) {
       crumb.innerHTML = '<h2>搜索结果</h2><span class="cnt">' + list.length + ' 个</span>';
@@ -200,6 +227,7 @@
       document.title = state.cat === 'all' ? '资源导航 | 精选网站与工具收录' : cname + ' | 资源导航';
       crumb.innerHTML = '<h2>' + esc(cname) + '</h2><span class="cnt">' + list.length + ' 个站点</span>';
       renderSubs();
+      renderTagBar();
       $('#stat').textContent = '收录 ' + DATA.length + ' 个站点，按分类整理';
     }
 
@@ -216,6 +244,27 @@
     }
     appendChunk();
     observeMore();
+  }
+
+  var COMMON_TAGS = ['免费', '中文', '开源', '需代理', '需登录', '需付费'];
+
+  function renderTagBar() {
+    var bar = $('#tagBar');
+    if (!bar) return;
+    if (state.view === 'fav' || state.q.trim()) { bar.innerHTML = ''; return; }
+    var pool = DATA.filter(function (it) {
+      if (state.cat !== 'all' && it.cat !== state.cat) return false;
+      return true;
+    });
+    var cnt = {};
+    pool.forEach(function (it) { (it.tags || []).forEach(function (t) { cnt[t] = (cnt[t] || 0) + 1; }); });
+    var tags = COMMON_TAGS.filter(function (t) { return cnt[t] >= 3; });
+    if (!tags.length) { bar.innerHTML = ''; return; }
+    bar.innerHTML = tags.map(function (t) {
+      var on = state.tags.indexOf(t) > -1;
+      return '<button class="tag' + (on ? ' on' : '') + '" data-tag="' + t + '" type="button">' +
+        t + '<i>' + cnt[t] + '</i></button>';
+    }).join('');
   }
 
   function renderSubs() {
@@ -288,6 +337,7 @@
     opts = opts || {};
     state.cat = cat;
     state.sub = '';
+    state.tags = [];
     state.view = 'all';
     state.q = opts.keepQ ? state.q : '';
     $('#q').value = state.q;
@@ -331,6 +381,7 @@
     clearTimeout(timer);
     timer = setTimeout(function () {
       state.q = $('#q').value;
+      if (state.q) state.tags = [];
       $('#clearBtn').hidden = !state.q;
       state.view = state.view === 'fav' ? 'all' : state.view;
       render(true);
@@ -351,6 +402,14 @@
       }
       var ci = t.closest ? t.closest('.cat-item') : null;
       if (ci) { go(ci.getAttribute('data-cat')); return; }
+      var tg = t.closest ? t.closest('.tag') : null;
+      if (tg) {
+        var tv = tg.getAttribute('data-tag');
+        var i = state.tags.indexOf(tv);
+        if (i > -1) state.tags.splice(i, 1); else state.tags.push(tv);
+        render(true);
+        return;
+      }
       var chip = t.closest ? t.closest('.chip') : null;
       if (chip) {
         state.sub = chip.getAttribute('data-sub');
