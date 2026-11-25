@@ -1,0 +1,903 @@
+{
+ "count": 98,
+ "source": "https://marxism.forum",
+ "source_name": "马列毛主义研习社",
+ "groups": [
+  {
+   "name": "马克思恩格斯",
+   "count": 26
+  },
+  {
+   "name": "列宁",
+   "count": 19
+  },
+  {
+   "name": "毛泽东",
+   "count": 53
+  }
+ ],
+ "books": [
+  {
+   "id": "b001",
+   "title": "共产党宣言",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "经典原著",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《共产党宣言》.pdf"
+  },
+  {
+   "id": "b002",
+   "title": "神圣家族",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《神圣家族》.pdf"
+  },
+  {
+   "id": "b003",
+   "title": "黑格尔法哲学批判导言",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《黑格尔法哲学批判导言》.pdf"
+  },
+  {
+   "id": "b004",
+   "title": "政治经济学批判序言",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《政治经济学批判序言》.pdf"
+  },
+  {
+   "id": "b005",
+   "title": "资本论第一卷",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《资本论第一卷》.pdf"
+  },
+  {
+   "id": "b006",
+   "title": "资本论第二卷",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《资本论第二卷》.pdf"
+  },
+  {
+   "id": "b007",
+   "title": "资本论第三卷",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《资本论第三卷》.pdf"
+  },
+  {
+   "id": "b008",
+   "title": "1844年经济学哲学手稿",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《1844年经济学哲学手稿》.html"
+  },
+  {
+   "id": "b009",
+   "title": "青年在选择职业时的考虑",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《青年在选择职业时的考虑》.html"
+  },
+  {
+   "id": "b010",
+   "title": "哲学的贫困",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《哲学的贫困》.pdf"
+  },
+  {
+   "id": "b011",
+   "title": "工资、价格和利润",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《工资、价格和利润》.html"
+  },
+  {
+   "id": "b012",
+   "title": "德意志意识形态",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《德意志意识形态》.html"
+  },
+  {
+   "id": "b013",
+   "title": "法兰西内战",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "历史",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《法兰西内战》.html"
+  },
+  {
+   "id": "b014",
+   "title": "雇佣劳动与资本",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《雇佣劳动与资本》.pdf"
+  },
+  {
+   "id": "b015",
+   "title": "法兰西阶级斗争",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "历史",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《法兰西阶级斗争》.pdf"
+  },
+  {
+   "id": "b016",
+   "title": "路易·波拿巴的雾月十八日",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "历史",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《路易·波拿巴的雾月十八日》.html"
+  },
+  {
+   "id": "b017",
+   "title": "社会主义从空想到科学的发展",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "科学社会主义",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《社会主义从空想到科学的发展》.pdf"
+  },
+  {
+   "id": "b018",
+   "title": "路德维希·费尔巴哈和德国古典哲学的终结",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《路德维希·费尔巴哈和德国古典哲学的终结》.pdf"
+  },
+  {
+   "id": "b019",
+   "title": "家庭、私有制和国家的起源",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "历史",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《家庭、私有制和国家的起源》.pdf"
+  },
+  {
+   "id": "b020",
+   "title": "国民经济学批判大纲",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《国民经济学批判大纲》.pdf"
+  },
+  {
+   "id": "b021",
+   "title": "共产主义原理",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "经典原著",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《共产主义原理》.html"
+  },
+  {
+   "id": "b022",
+   "title": "反杜林论",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《反杜林论》.pdf"
+  },
+  {
+   "id": "b023",
+   "title": "自然辩证法",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《自然辩证法》.pdf"
+  },
+  {
+   "id": "b024",
+   "title": "法德农民问题",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "专题",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《法德农民问题》.html"
+  },
+  {
+   "id": "b025",
+   "title": "英国工人阶级状况",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "历史",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《英国工人阶级状况》.pdf"
+  },
+  {
+   "id": "b026",
+   "title": "马克思恩格斯论中国",
+   "author": "马克思、恩格斯",
+   "group": "马克思恩格斯",
+   "tag": "专题",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《马克思恩格斯论中国》.pdf"
+  },
+  {
+   "id": "b027",
+   "title": "国家与革命",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "科学社会主义",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《国家与革命》.pdf"
+  },
+  {
+   "id": "b028",
+   "title": "共产主义运动中的“左派”幼稚病",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "策略",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《共产主义运动中的“左派”幼稚病》.pdf"
+  },
+  {
+   "id": "b029",
+   "title": "怎么办？",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "建党",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《怎么办？》.pdf"
+  },
+  {
+   "id": "b030",
+   "title": "哲学笔记",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《哲学笔记》.pdf"
+  },
+  {
+   "id": "b031",
+   "title": "社会民主党在民主革命中的两种策略",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "策略",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《社会民主党在民主革命中的两种策略》.pdf"
+  },
+  {
+   "id": "b032",
+   "title": "论民族自决权",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "民族问题",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《论民族自决权》.html"
+  },
+  {
+   "id": "b033",
+   "title": "卡尔·马克思",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "理论",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《卡尔·马克思》.html"
+  },
+  {
+   "id": "b034",
+   "title": "马克思主义和修正主义",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "理论",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《马克思主义和修正主义》.html"
+  },
+  {
+   "id": "b035",
+   "title": "俄国资本主义的发展",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "政治经济学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《俄国资本主义的发展》.pdf"
+  },
+  {
+   "id": "b036",
+   "title": "进一步，退两步",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "建党",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《进一步，退两步》.html"
+  },
+  {
+   "id": "b037",
+   "title": "四月提纲",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "策略",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《四月提纲》.html"
+  },
+  {
+   "id": "b038",
+   "title": "无产阶级革命的军事纲领",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "军事",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《无产阶级革命的军事纲领》.html"
+  },
+  {
+   "id": "b039",
+   "title": "大难临头，出路何在？",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "策略",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《大难临头，出路何在？》.html"
+  },
+  {
+   "id": "b040",
+   "title": "第二国际的破产",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "理论",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《第二国际的破产》.html"
+  },
+  {
+   "id": "b041",
+   "title": "宁肯少些，但要好些",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "社会主义建设",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《宁肯少些，但要好些》.html"
+  },
+  {
+   "id": "b042",
+   "title": "论粮食税",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "社会主义建设",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《论粮食税》.html"
+  },
+  {
+   "id": "b043",
+   "title": "唯物主义和经验批判主义",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《唯物主义和经验批判主义》.pdf"
+  },
+  {
+   "id": "b044",
+   "title": "无产阶级革命和叛徒考茨基",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "理论",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《无产阶级革命和叛徒考茨基》.html"
+  },
+  {
+   "id": "b045",
+   "title": "帝国主义是资本主义的最高阶段",
+   "author": "列宁",
+   "group": "列宁",
+   "tag": "政治经济学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《帝国主义是资本主义的最高阶段》.html"
+  },
+  {
+   "id": "b046",
+   "title": "实践论",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《实践论》.html"
+  },
+  {
+   "id": "b047",
+   "title": "关于哲学问题的讲话",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《关于哲学问题的讲话》.html"
+  },
+  {
+   "id": "b048",
+   "title": "毛泽东选集第一卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东选集第一卷》.pdf"
+  },
+  {
+   "id": "b049",
+   "title": "毛泽东选集第二卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东选集第二卷》.pdf"
+  },
+  {
+   "id": "b050",
+   "title": "毛泽东选集第三卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东选集第三卷》.pdf"
+  },
+  {
+   "id": "b051",
+   "title": "毛泽东选集第四卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东选集第四卷》.pdf"
+  },
+  {
+   "id": "b052",
+   "title": "毛泽东选集第五卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东选集第五卷.pdf"
+  },
+  {
+   "id": "b053",
+   "title": "毛泽东著作选读甲",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东著作选读甲.pdf"
+  },
+  {
+   "id": "b054",
+   "title": "毛泽东著作选读乙",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东著作选读乙.pdf"
+  },
+  {
+   "id": "b055",
+   "title": "反对本本主义",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《反对本本主义》.pdf"
+  },
+  {
+   "id": "b056",
+   "title": "关于正确处理人民内部矛盾的问题",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "政治",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《关于正确处理人民内部矛盾的问题》.html"
+  },
+  {
+   "id": "b057",
+   "title": "论十大关系",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "政治",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《论十大关系》.html"
+  },
+  {
+   "id": "b058",
+   "title": "矛盾论",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《矛盾论》.html"
+  },
+  {
+   "id": "b059",
+   "title": "论持久战",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "军事",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《论持久战》.html"
+  },
+  {
+   "id": "b060",
+   "title": "新民主主义论",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "政治",
+   "fmt": "html",
+   "url": "https://marxism.forum/books/《新民主主义论》.html"
+  },
+  {
+   "id": "b061",
+   "title": "读社会主义政治经济学批注和谈话上",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《读社会主义政治经济学批注和谈话上》.pdf"
+  },
+  {
+   "id": "b062",
+   "title": "读社会主义政治经济学批注和谈话下",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《读社会主义政治经济学批注和谈话下》.pdf"
+  },
+  {
+   "id": "b063",
+   "title": "毛泽东书信选集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东书信选集》.pdf"
+  },
+  {
+   "id": "b064",
+   "title": "毛泽东诗词集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东诗词集》.pdf"
+  },
+  {
+   "id": "b065",
+   "title": "毛泽东论文艺",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东论文艺》.pdf"
+  },
+  {
+   "id": "b066",
+   "title": "毛泽东外交文选",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东外交文选》.pdf"
+  },
+  {
+   "id": "b067",
+   "title": "毛泽东农村调查文集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东农村调查文集》.pdf"
+  },
+  {
+   "id": "b068",
+   "title": "毛泽东新闻工作文选",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东新闻工作文选.pdf"
+  },
+  {
+   "id": "b069",
+   "title": "毛主席论教育革命",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题论述",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席论教育革命》.pdf"
+  },
+  {
+   "id": "b070",
+   "title": "毛主席论群众路线",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题论述",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席论群众路线》.pdf"
+  },
+  {
+   "id": "b071",
+   "title": "毛主席论人民战争",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "军事",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席论人民战争》.pdf"
+  },
+  {
+   "id": "b072",
+   "title": "毛泽东同志论政治工作",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题论述",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东同志论政治工作》.pdf"
+  },
+  {
+   "id": "b073",
+   "title": "毛泽东在七大的报告和讲话集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "政治",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东在七大的报告和讲话集》.pdf"
+  },
+  {
+   "id": "b074",
+   "title": "毛主席手书选集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席手书选集》.pdf"
+  },
+  {
+   "id": "b075",
+   "title": "毛泽东哲学批注集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东哲学批注集》.pdf"
+  },
+  {
+   "id": "b076",
+   "title": "毛泽东读文史古籍批语集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东读文史古籍批语集》.pdf"
+  },
+  {
+   "id": "b077",
+   "title": "毛主席哲学思想",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席哲学思想》.pdf"
+  },
+  {
+   "id": "b078",
+   "title": "毛泽东文艺论集",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东文艺论集》.pdf"
+  },
+  {
+   "id": "b079",
+   "title": "毛主席的五篇哲学著作",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "哲学",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席的五篇哲学著作》.pdf"
+  },
+  {
+   "id": "b080",
+   "title": "毛主席论报刊宣传",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题论述",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛主席论报刊宣传》.pdf"
+  },
+  {
+   "id": "b081",
+   "title": "毛泽东箴言",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "专题文献",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/《毛泽东箴言》.pdf"
+  },
+  {
+   "id": "b082",
+   "title": "毛泽东年谱 1893-1949(上)",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1893-1949(上).pdf"
+  },
+  {
+   "id": "b083",
+   "title": "毛泽东年谱 1893-1949(中)",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1893-1949(中).pdf"
+  },
+  {
+   "id": "b084",
+   "title": "毛泽东年谱 1893-1949(下)",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1893-1949(下).pdf"
+  },
+  {
+   "id": "b085",
+   "title": "毛泽东年谱 1949-1976第1卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1949-1976第1卷.pdf"
+  },
+  {
+   "id": "b086",
+   "title": "毛泽东年谱 1949-1976第2卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1949-1976第2卷.pdf"
+  },
+  {
+   "id": "b087",
+   "title": "毛泽东年谱 1949-1976第3卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1949-1976第3卷.pdf"
+  },
+  {
+   "id": "b088",
+   "title": "毛泽东年谱 1949-1976第4卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1949-1976第4卷.pdf"
+  },
+  {
+   "id": "b089",
+   "title": "毛泽东年谱 1949-1976第5卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1949-1976第5卷.pdf"
+  },
+  {
+   "id": "b090",
+   "title": "毛泽东年谱 1949-1976第6卷",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "年谱",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东年谱 1949-1976第6卷.pdf"
+  },
+  {
+   "id": "b091",
+   "title": "毛泽东文集1",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集1.pdf"
+  },
+  {
+   "id": "b092",
+   "title": "毛泽东文集2",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集2.pdf"
+  },
+  {
+   "id": "b093",
+   "title": "毛泽东文集3",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集3.pdf"
+  },
+  {
+   "id": "b094",
+   "title": "毛泽东文集4",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集4.pdf"
+  },
+  {
+   "id": "b095",
+   "title": "毛泽东文集5",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集5.pdf"
+  },
+  {
+   "id": "b096",
+   "title": "毛泽东文集6",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集6.pdf"
+  },
+  {
+   "id": "b097",
+   "title": "毛泽东文集7",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集7.pdf"
+  },
+  {
+   "id": "b098",
+   "title": "毛泽东文集8",
+   "author": "毛泽东",
+   "group": "毛泽东",
+   "tag": "选集文集",
+   "fmt": "pdf",
+   "url": "https://marxism.forum/books/毛泽东文集8.pdf"
+  }
+ ]
+}
