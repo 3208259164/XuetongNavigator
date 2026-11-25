@@ -349,12 +349,6 @@
         toggleFav(star.getAttribute('data-fav'), star);
         return;
       }
-      var card = t.closest ? t.closest('.card') : null;
-      if (card) {
-        e.preventDefault();
-        openSheet(card.getAttribute('data-id'));
-        return;
-      }
       var ci = t.closest ? t.closest('.cat-item') : null;
       if (ci) { go(ci.getAttribute('data-cat')); return; }
       var chip = t.closest ? t.closest('.chip') : null;
