@@ -142,6 +142,7 @@
       $('#stat').textContent = '关键词：' + state.q.trim();
     } else {
       var cname = state.cat === 'all' ? '全部收录' : state.cat;
+      document.title = state.cat === 'all' ? '资源导航 | 精选网站与工具收录' : cname + ' | 资源导航';
       crumb.innerHTML = '<h2>' + esc(cname) + '</h2><span class="cnt">' + list.length + ' 个站点</span>';
       renderSubs();
       $('#stat').textContent = '收录 ' + DATA.length + ' 个站点，按分类整理';
@@ -194,6 +195,18 @@
     io.observe(sentinel);
   }
 
+  /* ---------- 地址栏 ---------- */
+  function setHash(h) {
+    try { history.replaceState(null, '', h ? '#/' + h : location.pathname + location.search); } catch (e) {}
+  }
+  function readHash() {
+    var h = (location.hash || '').replace(/^#\/?/, '');
+    if (!h) return null;
+    if (h.indexOf('cat/') === 0) return { cat: decodeURIComponent(h.slice(4)) };
+    if (h === 'fav') return { fav: true };
+    return null;
+  }
+
   /* ---------- 导航 ---------- */
   function go(cat, opts) {
     opts = opts || {};
@@ -204,6 +217,7 @@
     $('#q').value = state.q;
     $('#clearBtn').hidden = !state.q;
     setMnav(cat === 'all' ? 'all' : 'cats');
+    setHash(cat === 'all' ? '' : 'cat/' + encodeURIComponent(cat));
     renderCats();
     render(true);
     closeDrawer();
@@ -218,6 +232,7 @@
     $('#q').value = '';
     $('#clearBtn').hidden = true;
     setMnav('fav');
+    setHash('fav');
     renderCats();
     render(true);
     closeDrawer();
@@ -287,7 +302,12 @@
     document.addEventListener('keydown', function (e) {
       if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); q.focus(); }
     });
-    window.addEventListener('popstate', function () { /* 预留 */ });
+    window.addEventListener('hashchange', function () {
+      var h = readHash();
+      if (h && h.fav) { goFav(); }
+      else if (h && h.cat) { go(h.cat); }
+      else { go('all'); }
+    });
   }
 
   /* ---------- 启动 ---------- */
@@ -308,6 +328,11 @@
       CATS = res[1].cats || [];
       $('#upd').textContent = res[0].updated || '—';
       buildIndex();
+      var init = readHash();
+      if (init && init.fav) { state.view = 'fav'; }
+      else if (init && init.cat && CATS.some(function (c) { return c.name === init.cat; })) {
+        state.cat = init.cat; state.view = 'all';
+      }
       renderCats();
       render(true);
     }).catch(function (err) {

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /icons/
+
+Sitemap: https://3208259164.github.io/XuetongNavigator/sitemap.xml
