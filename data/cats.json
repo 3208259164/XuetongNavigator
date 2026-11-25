@@ -1,8 +1,207 @@
 {
  "cats": [
   {
+   "name": "推荐",
+   "count": 4,
+   "weight": 100,
+   "subs": [
+    {
+     "name": "综合导航",
+     "count": 3
+    },
+    {
+     "name": "自建站点",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "马列经典",
+   "count": 15,
+   "weight": 95,
+   "subs": [
+    {
+     "name": "文库",
+     "count": 5
+    },
+    {
+     "name": "理论",
+     "count": 2
+    },
+    {
+     "name": "档案",
+     "count": 2
+    },
+    {
+     "name": "站点导航",
+     "count": 1
+    },
+    {
+     "name": "新闻",
+     "count": 1
+    },
+    {
+     "name": "组织",
+     "count": 1
+    },
+    {
+     "name": "开源仓库",
+     "count": 1
+    },
+    {
+     "name": "电子书库",
+     "count": 1
+    },
+    {
+     "name": "电子书",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "图书馆与文献",
+   "count": 71,
+   "weight": 90,
+   "subs": [
+    {
+     "name": "阅读",
+     "count": 18
+    },
+    {
+     "name": "电子书下载",
+     "count": 16
+    },
+    {
+     "name": "首页",
+     "count": 14
+    },
+    {
+     "name": "电子书",
+     "count": 7
+    },
+    {
+     "name": "免费看书",
+     "count": 6
+    },
+    {
+     "name": "网络小说下载",
+     "count": 4
+    },
+    {
+     "name": "电子书库",
+     "count": 2
+    },
+    {
+     "name": "百科",
+     "count": 1
+    },
+    {
+     "name": "听书",
+     "count": 1
+    },
+    {
+     "name": "人文历史",
+     "count": 1
+    },
+    {
+     "name": "杂志",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "安全与开源",
+   "count": 4,
+   "weight": 85,
+   "subs": [
+    {
+     "name": "安全传输",
+     "count": 2
+    },
+    {
+     "name": "开源平台",
+     "count": 1
+    },
+    {
+     "name": "加密通讯",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "资源搜索",
+   "count": 28,
+   "weight": 82,
+   "subs": [
+    {
+     "name": "资源搜索",
+     "count": 9
+    },
+    {
+     "name": "影视搜索",
+     "count": 5
+    },
+    {
+     "name": "搜索引擎",
+     "count": 4
+    },
+    {
+     "name": "资讯聚合",
+     "count": 3
+    },
+    {
+     "name": "网盘搜索",
+     "count": 3
+    },
+    {
+     "name": "视频",
+     "count": 2
+    },
+    {
+     "name": "地图",
+     "count": 1
+    },
+    {
+     "name": "谷歌镜像",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "网盘资源",
+   "count": 68,
+   "weight": 80,
+   "subs": [
+    {
+     "name": "热门网盘资源",
+     "count": 27
+    },
+    {
+     "name": "视频",
+     "count": 19
+    },
+    {
+     "name": "网盘资源搜索",
+     "count": 10
+    },
+    {
+     "name": "夸克网盘-短剧",
+     "count": 10
+    },
+    {
+     "name": "顶部",
+     "count": 1
+    },
+    {
+     "name": "归墟之地",
+     "count": 1
+    }
+   ]
+  },
+  {
    "name": "在线工具",
    "count": 207,
+   "weight": 75,
    "subs": [
     {
      "name": "AI助手",
@@ -33,11 +232,11 @@
      "count": 11
     },
     {
-     "name": "文件传输",
-     "count": 10
+     "name": "其他图片工具",
+     "count": 9
     },
     {
-     "name": "其他图片工具",
+     "name": "文件传输",
      "count": 9
     },
     {
@@ -135,105 +334,9 @@
     {
      "name": "顶部",
      "count": 1
-    }
-   ]
-  },
-  {
-   "name": "素材设计",
-   "count": 126,
-   "subs": [
-    {
-     "name": "免费素材",
-     "count": 45
     },
     {
-     "name": "壁纸",
-     "count": 27
-    },
-    {
-     "name": "高清壁纸",
-     "count": 12
-    },
-    {
-     "name": "PPT模板下载",
-     "count": 12
-    },
-    {
-     "name": "免费无版权字体下载",
-     "count": 6
-    },
-    {
-     "name": "PSD矢量图",
-     "count": 6
-    },
-    {
-     "name": "表情包下载",
-     "count": 6
-    },
-    {
-     "name": "免费音频素材",
-     "count": 4
-    },
-    {
-     "name": "网址导航",
-     "count": 4
-    },
-    {
-     "name": "免扣PNG图",
-     "count": 2
-    },
-    {
-     "name": "Gif动态图",
-     "count": 1
-    },
-    {
-     "name": "地图",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "name": "影视",
-   "count": 110,
-   "subs": [
-    {
-     "name": "免费影视",
-     "count": 33
-    },
-    {
-     "name": "在线影视",
-     "count": 31
-    },
-    {
-     "name": "电影下载",
-     "count": 15
-    },
-    {
-     "name": "视频",
-     "count": 10
-    },
-    {
-     "name": "影视",
-     "count": 9
-    },
-    {
-     "name": "影视在线观看",
-     "count": 6
-    },
-    {
-     "name": "归墟之地",
-     "count": 3
-    },
-    {
-     "name": "演讲讲座视频",
-     "count": 1
-    },
-    {
-     "name": "追剧神器",
-     "count": 1
-    },
-    {
-     "name": "影视字幕",
+     "name": "笔记协作",
      "count": 1
     }
    ]
@@ -241,6 +344,7 @@
   {
    "name": "学习资料",
    "count": 77,
+   "weight": 72,
    "subs": [
     {
      "name": "外语学习",
@@ -333,148 +437,64 @@
    ]
   },
   {
-   "name": "电子书",
-   "count": 71,
+   "name": "素材设计",
+   "count": 126,
+   "weight": 68,
    "subs": [
     {
-     "name": "阅读",
-     "count": 18
+     "name": "免费素材",
+     "count": 45
     },
     {
-     "name": "电子书下载",
-     "count": 16
-    },
-    {
-     "name": "首页",
-     "count": 14
-    },
-    {
-     "name": "电子书",
-     "count": 8
-    },
-    {
-     "name": "免费看书",
-     "count": 6
-    },
-    {
-     "name": "网络小说下载",
-     "count": 4
-    },
-    {
-     "name": "杂志",
-     "count": 2
-    },
-    {
-     "name": "人文历史",
-     "count": 2
-    },
-    {
-     "name": "听书",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "name": "音乐音频",
-   "count": 69,
-   "subs": [
-    {
-     "name": "无损音乐下载",
-     "count": 22
-    },
-    {
-     "name": "音乐",
-     "count": 14
-    },
-    {
-     "name": "免费在线听歌",
-     "count": 10
-    },
-    {
-     "name": "免费音乐",
-     "count": 8
-    },
-    {
-     "name": "归墟之地",
-     "count": 7
-    },
-    {
-     "name": "在线听歌",
-     "count": 4
-    },
-    {
-     "name": "音频处理工具",
-     "count": 3
-    },
-    {
-     "name": "曲艺",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "name": "网盘资源",
-   "count": 69,
-   "subs": [
-    {
-     "name": "热门网盘资源",
+     "name": "壁纸",
      "count": 27
     },
     {
-     "name": "视频",
-     "count": 20
+     "name": "高清壁纸",
+     "count": 12
     },
     {
-     "name": "网盘资源搜索",
-     "count": 10
+     "name": "PPT模板下载",
+     "count": 12
     },
     {
-     "name": "夸克网盘-短剧",
-     "count": 10
+     "name": "免费无版权字体下载",
+     "count": 6
     },
     {
-     "name": "顶部",
-     "count": 1
+     "name": "PSD矢量图",
+     "count": 6
     },
     {
-     "name": "归墟之地",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "name": "游戏",
-   "count": 64,
-   "subs": [
-    {
-     "name": "游戏下载",
-     "count": 31
+     "name": "表情包下载",
+     "count": 6
     },
     {
-     "name": "在线游戏网站大全：汇集了全网",
-     "count": 11
+     "name": "免费音频素材",
+     "count": 4
     },
     {
-     "name": "在线小游戏",
-     "count": 10
+     "name": "网址导航",
+     "count": 4
     },
     {
-     "name": "游戏",
-     "count": 8
-    },
-    {
-     "name": "归墟之地",
+     "name": "免扣PNG图",
      "count": 2
     },
     {
-     "name": "单机游戏下载网站大全：汇集全",
-     "count": 2
+     "name": "Gif动态图",
+     "count": 1
+    },
+    {
+     "name": "地图",
+     "count": 1
     }
    ]
   },
   {
    "name": "软件应用",
-   "count": 55,
+   "count": 54,
+   "weight": 65,
    "subs": [
     {
      "name": "Windows软件下载",
@@ -486,10 +506,6 @@
     },
     {
      "name": "Mac软件下载站",
-     "count": 5
-    },
-    {
-     "name": "影视APP客户端",
      "count": 5
     },
     {
@@ -505,6 +521,10 @@
      "count": 4
     },
     {
+     "name": "影视APP客户端",
+     "count": 4
+    },
+    {
      "name": "系统镜像下载",
      "count": 3
     },
@@ -515,8 +535,56 @@
    ]
   },
   {
+   "name": "影视",
+   "count": 110,
+   "weight": 62,
+   "subs": [
+    {
+     "name": "免费影视",
+     "count": 33
+    },
+    {
+     "name": "在线影视",
+     "count": 31
+    },
+    {
+     "name": "电影下载",
+     "count": 15
+    },
+    {
+     "name": "视频",
+     "count": 10
+    },
+    {
+     "name": "影视",
+     "count": 9
+    },
+    {
+     "name": "影视在线观看",
+     "count": 6
+    },
+    {
+     "name": "归墟之地",
+     "count": 3
+    },
+    {
+     "name": "演讲讲座视频",
+     "count": 1
+    },
+    {
+     "name": "追剧神器",
+     "count": 1
+    },
+    {
+     "name": "影视字幕",
+     "count": 1
+    }
+   ]
+  },
+  {
    "name": "动漫漫画",
    "count": 43,
+   "weight": 60,
    "subs": [
     {
      "name": "首页",
@@ -561,42 +629,79 @@
    ]
   },
   {
-   "name": "资源搜索",
-   "count": 25,
+   "name": "音乐音频",
+   "count": 69,
+   "weight": 58,
    "subs": [
     {
-     "name": "资源搜索",
-     "count": 9
+     "name": "无损音乐下载",
+     "count": 22
     },
     {
-     "name": "影视搜索",
-     "count": 5
+     "name": "音乐",
+     "count": 14
     },
     {
-     "name": "搜索引擎",
+     "name": "免费在线听歌",
+     "count": 10
+    },
+    {
+     "name": "免费音乐",
+     "count": 8
+    },
+    {
+     "name": "归墟之地",
+     "count": 7
+    },
+    {
+     "name": "在线听歌",
      "count": 4
     },
     {
-     "name": "资讯聚合",
+     "name": "音频处理工具",
      "count": 3
     },
     {
-     "name": "视频",
+     "name": "曲艺",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "游戏",
+   "count": 64,
+   "weight": 55,
+   "subs": [
+    {
+     "name": "游戏下载",
+     "count": 31
+    },
+    {
+     "name": "在线游戏网站大全：汇集了全网",
+     "count": 11
+    },
+    {
+     "name": "在线小游戏",
+     "count": 10
+    },
+    {
+     "name": "游戏",
+     "count": 8
+    },
+    {
+     "name": "归墟之地",
      "count": 2
     },
     {
-     "name": "地图",
-     "count": 1
-    },
-    {
-     "name": "谷歌镜像",
-     "count": 1
+     "name": "单机游戏下载网站大全：汇集全",
+     "count": 2
     }
    ]
   },
   {
    "name": "社区资讯",
    "count": 12,
+   "weight": 50,
    "subs": [
     {
      "name": "优质论坛",
@@ -619,6 +724,7 @@
   {
    "name": "其他",
    "count": 42,
+   "weight": 10,
    "subs": [
     {
      "name": "网址导航",
