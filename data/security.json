@@ -1,0 +1,593 @@
+{
+ "count": 60,
+ "total_available": 212,
+ "source": "https://privacytools.io",
+ "source_name": "PrivacyTools.io",
+ "license": "CC0 1.0",
+ "updated": "2026-11-26",
+ "note": "首批收录 60 个工具，按用途分组，介绍译自原文",
+ "groups": [
+  {
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "count": 8
+  },
+  {
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "count": 8
+  },
+  {
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "count": 8
+  },
+  {
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "count": 8
+  },
+  {
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "count": 8
+  },
+  {
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "count": 8
+  },
+  {
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "count": 8
+  },
+  {
+   "cat": "Browsers",
+   "cat_zh": "浏览器",
+   "count": 4
+  }
+ ],
+ "items": [
+  {
+   "slug": "jitsi-meet",
+   "name": "Jitsi Meet",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Desktop version downloads can be found here .",
+   "desc_zh": "桌面版下载链接可在官网找到。开源视频会议方案，可自建服务器。",
+   "url": "https://privacytools.io/app/jitsi-meet"
+  },
+  {
+   "slug": "simplex-chat",
+   "name": "SimpleX Chat",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Decentralized messenger that assigns no identifier to users, not even a random number. Contacts are established via one-time invite links or QR codes, with all data stored on-device only.",
+   "desc_zh": "去中心化即时通讯，不给用户分配任何标识（连随机编号都没有）。通过一次性邀请链接或二维码建立联系人，所有数据只存在本机。",
+   "url": "https://privacytools.io/app/simplex-chat"
+  },
+  {
+   "slug": "signal",
+   "name": "Signal",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Similar look and feel of WhatsApp and other commonly used messaging apps, makes switching easy. Signal requires your phone number as an personal identifier.",
+   "desc_zh": "界面和用法接近 WhatsApp 等常见应用，迁移成本低。注册需要手机号作为身份标识。端到端加密开源通讯。",
+   "url": "https://privacytools.io/app/signal"
+  },
+  {
+   "slug": "stoat",
+   "name": "Stoat",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Open source, self-hostable Discord alternative, formerly Revolt. Built for communities that want off Discord, but it is not end-to-end encrypted.",
+   "desc_zh": "开源、可自托管的 Discord 替代品，原名 Revolt。面向想离开 Discord 的社群，但消息不是端到端加密的。",
+   "url": "https://privacytools.io/app/stoat"
+  },
+  {
+   "slug": "session",
+   "name": "Session",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "No phone number or email address is required to signup. Similar functionality like Element, but still in an earlier stage of development. Decentralized servers routed through…",
+   "desc_zh": "注册不需要手机号或邮箱，功能类似 Element，但仍在较早的开发阶段。去中心化服务器经由洋葱网络路由。",
+   "url": "https://privacytools.io/app/session"
+  },
+  {
+   "slug": "delta-chat",
+   "name": "Delta Chat",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Delta Chat doesn't have their own servers but uses the most massive and diverse open messaging system ever: the existing e-mail server network. Chat with anyone if you know…",
+   "desc_zh": "没有自己的服务器，而是复用现有电子邮件网络这套最庞大的开放消息系统。只要知道对方邮箱地址就能聊天。",
+   "url": "https://privacytools.io/app/delta-chat"
+  },
+  {
+   "slug": "molly",
+   "name": "Molly",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Hardened fork of Signal for Android that adds an encrypted local database, automatic RAM wiping on lock, and Tor/SOCKS proxy support via Orbot. Ships in two variants: one with FCM push and one fully FOSS without Google.",
+   "desc_zh": "Signal 的安卓加固分支，增加了加密本地数据库、锁屏时自动擦除内存，并通过 Orbot 支持 Tor 与 SOCKS 代理。提供两个版本：带 FCM 推送的，和完全不含谷歌组件的纯自由软件版。",
+   "url": "https://privacytools.io/app/molly"
+  },
+  {
+   "slug": "tox",
+   "name": "Tox",
+   "cat": "Messaging",
+   "cat_zh": "即时通讯",
+   "desc_en": "Wide range of features but a highly experimental protocol, use with caution.",
+   "desc_zh": "功能覆盖较广，但协议仍高度实验性，使用需谨慎。",
+   "url": "https://privacytools.io/app/tox"
+  },
+  {
+   "slug": "7-zip",
+   "name": "7-Zip",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "File archiver with a high compression ratio and built-in encryption functionality.",
+   "desc_zh": "高压缩率的文件归档工具，内置加密功能。开源，支持 7z、zip 等多种格式。",
+   "url": "https://privacytools.io/app/7-zip"
+  },
+  {
+   "slug": "veracrypt",
+   "name": "VeraCrypt",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "It can create a virtual encrypted disk that works just like a regular disk but within a file. It can also encrypt a partition or the entire storage device with pre-boot…",
+   "desc_zh": "可以创建一个虚拟加密磁盘，用起来和普通磁盘一样，实际数据存在单个文件里。也能加密分区或整块存储设备，支持启动前认证。",
+   "url": "https://privacytools.io/app/veracrypt"
+  },
+  {
+   "slug": "cryptomator",
+   "name": "Cryptomator",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to a cloud service.",
+   "desc_zh": "快速为文件加密，加密后再上传到云盘，云端只看到密文。开源，支持 Windows、macOS、Linux、安卓和 iOS。",
+   "url": "https://privacytools.io/app/cryptomator"
+  },
+  {
+   "slug": "openkeychain",
+   "name": "OpenKeychain",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "OpenKeychain is an OpenPGP implementation for Android. It manages your keys and those of your contacts, and integrates with K-9 Mail and FairEmail for end-to-end encrypted email on Android devices.",
+   "desc_zh": "安卓上的 OpenPGP 实现，管理自己和联系人的密钥，可与 K-9 Mail、FairEmail 配合，在安卓设备上收发端到端加密邮件。",
+   "url": "https://privacytools.io/app/openkeychain"
+  },
+  {
+   "slug": "tomb",
+   "name": "Tomb",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "Tomb is an open-source Linux CLI tool that creates and manages encrypted volumes using dm-crypt and LUKS. It wraps the standard kernel encryption stack in a simple shell script, with optional steganographic key hiding and FIDO2 support.",
+   "desc_zh": "开源的 Linux 命令行工具，基于 dm-crypt 与 LUKS 创建和管理加密卷。把内核加密栈封装成简单脚本，可选隐写式密钥隐藏和 FIDO2 支持。",
+   "url": "https://privacytools.io/app/tomb"
+  },
+  {
+   "slug": "gnupg",
+   "name": "GnuPG",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "GnuPG (GNU Privacy Guard) is the free, GPL-licensed implementation of the OpenPGP standard. A command-line tool for Linux, macOS, and Windows, it encrypts and signs files and email, and manages public-key directories.",
+   "desc_zh": "GnuPG（GNU 隐私卫士）是 OpenPGP 标准的自由实现，GPL 授权。命令行工具，支持 Linux、macOS、Windows，可加密与签名文件及邮件，并管理公钥目录。",
+   "url": "https://privacytools.io/app/gnupg"
+  },
+  {
+   "slug": "kryptor",
+   "name": "Kryptor",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "Kryptor is a free, open-source file encryption and signing CLI for Windows, Linux, and macOS. It uses modern primitives via libsodium (XChaCha20-Poly1305, Argon2id, Ed25519) with no configuration options and encrypts file names optionally.",
+   "desc_zh": "免费开源的文件加密与签名命令行工具，支持 Windows、Linux、macOS。通过 libsodium 使用 XChaCha20-Poly1305、Argon2id、Ed25519 等现代算法，无配置项，可选加密文件名。",
+   "url": "https://privacytools.io/app/kryptor"
+  },
+  {
+   "slug": "bitlocker",
+   "name": "BitLocker",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "desc_en": "BitLocker is the built-in full-disk encryption feature in Windows Pro, Enterprise, and Education editions. It encrypts the operating system drive and fixed data drives using AES-XTS, with optional TPM-backed pre-boot authentication.",
+   "desc_zh": "Windows 专业版、企业版和教育版内置的全盘加密功能。使用 AES-XTS 加密系统盘和固定数据盘，可选由 TPM 支持的启动前认证。",
+   "url": "https://privacytools.io/app/bitlocker"
+  },
+  {
+   "slug": "keepassxc",
+   "name": "KeePassXC",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "Securely store passwords using industry standard encryption, quickly auto-type them into desktop applications, and use browser extension to log into websites. KeePassDX for…",
+   "desc_zh": "使用业界标准加密存储密码，可自动填充到桌面应用，并通过浏览器扩展登录网站。配套 KeePassDX 用于安卓。开源、离线优先。",
+   "url": "https://privacytools.io/app/keepassxc"
+  },
+  {
+   "slug": "bitwarden",
+   "name": "Bitwarden",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "Bitwarden is our top choice. You can import your previous passwords from other password managers with ease. Free for personal use. Available for Desktop, all Browsers, Android…",
+   "desc_zh": "首推的密码管理器。可以方便地从其他管理器导入既有密码，个人使用免费，覆盖桌面端、各大浏览器、安卓与 iOS。开源，可自托管。",
+   "url": "https://privacytools.io/app/bitwarden"
+  },
+  {
+   "slug": "keepassdx",
+   "name": "KeePassDX",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "KeePassDX is a lightweight, open-source KeePass-compatible password manager for Android, storing credentials in a local encrypted database file (.kdbx) with support for biometric unlock, autofill, TOTP, and passkeys.",
+   "desc_zh": "轻量的开源安卓密码管理器，兼容 KeePass，凭据存储在本地加密数据库（.kdbx）中，支持生物识别解锁、自动填充、TOTP 和通行密钥。",
+   "url": "https://privacytools.io/app/keepassdx"
+  },
+  {
+   "slug": "aliasvault",
+   "name": "AliasVault",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "A self-hosted, zero-knowledge password manager with a built-in email aliasing server, end-to-end encrypted and licensed under AGPLv3.",
+   "desc_zh": "可自托管的零知识密码管理器，内置邮箱别名服务器，端到端加密，AGPLv3 授权。",
+   "url": "https://privacytools.io/app/aliasvault"
+  },
+  {
+   "slug": "lesspass",
+   "name": "LessPass",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "If you like Bitwarden but don't like syncing or storage of passwords then LessPass is your choice. Browsers, mobile phones and the command line are supported platforms.",
+   "desc_zh": "如果喜欢 Bitwarden 但不想同步或存储密码，LessPass 是另一种思路：按主密码和站点信息现场算出密码，不保存任何数据。支持浏览器、手机和命令行。",
+   "url": "https://privacytools.io/app/lesspass"
+  },
+  {
+   "slug": "keepassium",
+   "name": "KeePassium",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "KeePassium is a KeePass-compatible password manager for iOS and macOS, offering biometric unlock, Password AutoFill, automatic sync with iCloud Drive and cloud storage providers, and read/write support for all KeePass database formats.",
+   "desc_zh": "面向 iOS 与 macOS 的 KeePass 兼容密码管理器，支持生物识别解锁、密码自动填充、与 iCloud 云盘等自动同步，读写全部 KeePass 数据库格式。",
+   "url": "https://privacytools.io/app/keepassium"
+  },
+  {
+   "slug": "gopass",
+   "name": "gopass",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "gopass is an open-source, command-line password manager written in Go, compatible with the Unix pass store format. Credentials are encrypted with GPG (or age) and versioned in git, with packages available for Linux, macOS, and Windows.",
+   "desc_zh": "用 Go 编写的开源命令行密码管理器，兼容 Unix pass 的存储格式。凭据用 GPG 或 age 加密并纳入 git 版本管理，提供 Linux、macOS、Windows 安装包。",
+   "url": "https://privacytools.io/app/gopass"
+  },
+  {
+   "slug": "1password",
+   "name": "1Password",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "desc_en": "1Password is a commercial password manager for individuals, families, and teams, available on Windows, Mac, Linux, Android, iOS, and all major browsers. It uses a dual-key architecture combining your master password with a locally generated Secret Key.",
+   "desc_zh": "面向个人、家庭和团队的商业密码管理器，支持 Windows、macOS、Linux、安卓、iOS 及主流浏览器。采用双密钥架构，把主密码与本机生成的 Secret Key 结合使用。",
+   "url": "https://privacytools.io/app/1password"
+  },
+  {
+   "slug": "nixos",
+   "name": "NixOS",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "NixOS is a Linux distribution built entirely on the Nix package manager, where the whole system (kernel, packages, services, and configuration) is declared in a single set of files. Upgrades are atomic and fully reproducible rollbacks are a built-in feature.",
+   "desc_zh": "完全基于 Nix 包管理器的 Linux 发行版，整个系统（内核、软件包、服务、配置）都声明在一组文件里。升级是原子的，可完整回滚是内置能力。",
+   "url": "https://privacytools.io/app/nixos"
+  },
+  {
+   "slug": "secureblue",
+   "name": "secureblue",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "secureblue is a security-hardened immutable Linux OS built on Fedora Atomic Desktops. It ships as OCI bootable container images and applies kernel hardening, a hardened memory allocator from GrapheneOS, and a hardened Chromium browser called Trivalent.",
+   "desc_zh": "基于 Fedora Atomic 的安全加固不可变 Linux 系统，以 OCI 可启动容器镜像分发，应用内核加固、来自 GrapheneOS 的加固内存分配器，以及名为 Trivalent 的加固 Chromium 浏览器。",
+   "url": "https://privacytools.io/app/secureblue"
+  },
+  {
+   "slug": "kicksecure",
+   "name": "Kicksecure",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "Kicksecure is a security-hardened Debian-based Linux distribution that applies a broad set of kernel and userspace hardening settings out of the box, reducing the attack surface without requiring manual configuration. It also serves as the foundation for the Whonix anonymity OS.",
+   "desc_zh": "基于 Debian 的安全加固发行版，开箱即用大量内核与用户空间加固设置，在不需要手动配置的情况下缩小攻击面。它同时也是 Whonix 匿名系统的底座。",
+   "url": "https://privacytools.io/app/kicksecure"
+  },
+  {
+   "slug": "qubes-os",
+   "name": "Qubes OS",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "Qubes OS: A reasonably secure operating system",
+   "desc_zh": "Qubes OS，通过虚拟化把不同用途隔离在不同虚拟机中的操作系统，官方定位是「合理安全的操作系统」。",
+   "url": "https://privacytools.io/app/qubes-os"
+  },
+  {
+   "slug": "whonix",
+   "name": "Whonix",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "A free, open-source desktop operating system that forces all traffic through Tor, run as two isolated virtual machines.",
+   "desc_zh": "免费开源的桌面操作系统，强制所有流量经由 Tor 传输，由两台相互隔离的虚拟机组成（网关机与工作站）。",
+   "url": "https://privacytools.io/app/whonix"
+  },
+  {
+   "slug": "arch-linux",
+   "name": "Arch Linux",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "Arch Linux is a minimal, rolling-release Linux distribution built around a do-it-yourself philosophy. You assemble the system yourself from a bare base, choosing every component, and keep it current with the pacman package manager.",
+   "desc_zh": "极简的滚动更新发行版，遵循自己动手的哲学：从最基础的系统开始，逐个选择组件自建，用 pacman 持续更新。",
+   "url": "https://privacytools.io/app/arch-linux"
+  },
+  {
+   "slug": "fedora-atomic",
+   "name": "Fedora Atomic",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "Fedora Atomic Desktops (Silverblue, Kinoite, and others) are immutable Fedora variants where the base OS is read-only and updated atomically via rpm-ostree. Applications run as Flatpaks, and rollback to a prior OS image is built in.",
+   "desc_zh": "Fedora Atomic 桌面系列（Silverblue、Kinoite 等）是不可变版本，基础系统只读，通过 rpm-ostree 原子更新，应用以 Flatpak 运行，内置回到旧系统镜像的回滚能力。",
+   "url": "https://privacytools.io/app/fedora-atomic"
+  },
+  {
+   "slug": "fedora-workstation",
+   "name": "Fedora Workstation",
+   "cat": "Operating Systems",
+   "cat_zh": "操作系统",
+   "desc_en": "Fedora Workstation: User friendly and easy to setup",
+   "desc_zh": "Fedora 工作站版，用户友好，安装配置简单，适合日常使用。",
+   "url": "https://privacytools.io/app/fedora-workstation"
+  },
+  {
+   "slug": "newpipe",
+   "name": "NewPipe",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "NewPipe is a libre Android app for streaming content from YouTube, SoundCloud, PeerTube, Bandcamp, and media.ccc.de without Google Play Services, accounts, or ads. It stores subscriptions and playlists locally and is available on F-Droid.",
+   "desc_zh": "自由的安卓应用，可播放 YouTube、SoundCloud、PeerTube、Bandcamp 等平台的内容，无需谷歌服务、账号或广告。订阅与播放列表保存在本地，可在 F-Droid 获取。",
+   "url": "https://privacytools.io/app/newpipe"
+  },
+  {
+   "slug": "freetube",
+   "name": "FreeTube",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "FreeTube is an open-source desktop YouTube client for Windows, macOS, and Linux. It uses a built-in local extractor or the Invidious API to fetch content, blocks ads by default, and stores subscriptions, history, and playlists entirely on your device.",
+   "desc_zh": "开源的桌面 YouTube 客户端，支持 Windows、macOS、Linux。通过内置的本地解析器或 Invidious API 获取内容，默认拦截广告，订阅、历史与播放列表全部存在本机。",
+   "url": "https://privacytools.io/app/freetube"
+  },
+  {
+   "slug": "invidious",
+   "name": "Invidious",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "Desktop: FreeTube . For Windows, Mac and Linux.",
+   "desc_zh": "YouTube 的开源替代前端，可自托管。桌面端也可选用 FreeTube，支持 Windows、macOS 和 Linux。",
+   "url": "https://privacytools.io/app/invidious"
+  },
+  {
+   "slug": "libretube",
+   "name": "LibreTube",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "LibreTube is an open-source Android YouTube client that routes requests through the Piped API instead of Google directly. It supports SponsorBlock, ReturnYouTubeDislike, DeArrow, subscriptions, playlists, and background playback, with a Material 3 interface.",
+   "desc_zh": "开源的安卓 YouTube 客户端，请求经由 Piped API 转发而不直连谷歌。支持 SponsorBlock、ReturnYouTubeDislike、DeArrow、订阅、播放列表和后台播放，Material 3 界面。",
+   "url": "https://privacytools.io/app/libretube"
+  },
+  {
+   "slug": "nitter",
+   "name": "Nitter",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "Android: Fritter, a privacy-friendly Twitter frontend for Android devices.",
+   "desc_zh": "Twitter 的开源替代前端，无需账号即可浏览。安卓端也可选用 Fritter，一个注重隐私的 Twitter 前端。",
+   "url": "https://privacytools.io/app/nitter"
+  },
+  {
+   "slug": "piped",
+   "name": "Piped",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "Piped is an open-source, self-hostable web frontend for YouTube that makes no connections to Google servers during playback. It supports SponsorBlock, playlists, subscriptions, and a public JSON API, and runs as a federated multi-instance network.",
+   "desc_zh": "开源的 YouTube 网页前端，可自托管，播放过程中不连接谷歌服务器。支持 SponsorBlock、播放列表、订阅和公开的 JSON API，以多实例联邦网络运行。",
+   "url": "https://privacytools.io/app/piped"
+  },
+  {
+   "slug": "libredirect",
+   "name": "LibRedirect",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "Automatically redirects requests from popular websites to alternative and privacy friendly frontends. Uses random instances by default. You can modify this and add custom…",
+   "desc_zh": "自动把常见网站的请求重定向到对应的隐私友好前端，默认随机选择实例，也可自行指定或添加自定义规则。",
+   "url": "https://privacytools.io/app/libredirect"
+  },
+  {
+   "slug": "redlib",
+   "name": "Redlib",
+   "cat": "Frontends",
+   "cat_zh": "第三方前端",
+   "desc_en": "Redlib is an open-source, self-hostable web frontend for Reddit built in Rust. It proxies all content through the server, including media, so Reddit never sees your IP address or tracks you with cookies or JavaScript.",
+   "desc_zh": "用 Rust 编写的开源 Reddit 网页前端，可自托管。所有内容（包括媒体）都经服务器代理，Reddit 看不到你的 IP，也无法用 Cookie 或 JavaScript 追踪你。",
+   "url": "https://privacytools.io/app/redlib"
+  },
+  {
+   "slug": "loop-habit-tracker",
+   "name": "Loop Habit Tracker",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "Helps you to achieve long-term goals. Detailed charts and statistics show you how your habits improved over time. The app is completely ad-free, open source and it respects…",
+   "desc_zh": "帮助坚持长期目标的习惯追踪应用，用图表和统计展示习惯随时间的改善。完全无广告、开源，尊重隐私。",
+   "url": "https://privacytools.io/app/loop-habit-tracker"
+  },
+  {
+   "slug": "stretchly",
+   "name": "Stretchly",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "A cross-platform open source app that reminds you to take breaks when working on your computer.",
+   "desc_zh": "跨平台的开源提醒工具，在电脑前工作时定时提醒你休息。",
+   "url": "https://privacytools.io/app/stretchly"
+  },
+  {
+   "slug": "workrave",
+   "name": "Workrave",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "It monitors your keyboard and mouse usage and using this information, it frequently alerts you to take microbreaks, rest breaks and restricts you to your daily computer usage.",
+   "desc_zh": "监测键盘和鼠标使用情况，据此提醒你做微休息和长休息，并可限制每日使用电脑的总时长。",
+   "url": "https://privacytools.io/app/workrave"
+  },
+  {
+   "slug": "euki",
+   "name": "Euki",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "Reliable, evidence-based sexual and reproductive health information. Euki takes privacy seriously. They do not store any of the information you enter into the app in the cloud…",
+   "desc_zh": "提供可靠的、有循证依据的性与生殖健康信息。重视隐私，不把用户输入的任何信息存到云端。",
+   "url": "https://privacytools.io/app/euki"
+  },
+  {
+   "slug": "apple-fitness",
+   "name": "Apple 健身记录",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "Apple's built-in activity and fitness tracker for iPhone and Apple Watch, with health data processed on-device and synced to iCloud using end-to-end encryption that Apple cannot read.",
+   "desc_zh": "苹果内置的活动与健身记录应用，配合 iPhone 与 Apple Watch 使用，健康数据在设备端处理，通过端到端加密同步到 iCloud，苹果无法读取。",
+   "url": "https://privacytools.io/app/apple-fitness"
+  },
+  {
+   "slug": "apple-health",
+   "name": "Apple 健康",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "Already pre-installed and secure on your Apple device. The Health app was created to help organize your important health information and make it easy to access in a central and…",
+   "desc_zh": "苹果设备预装的健康应用，用于集中整理和查看重要的健康信息，数据受系统保护。",
+   "url": "https://privacytools.io/app/apple-health"
+  },
+  {
+   "slug": "autosleep",
+   "name": "AutoSleep",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "Automatically tracks your sleep from your Apple Watch with total privacy.",
+   "desc_zh": "通过 Apple Watch 自动追踪睡眠，数据处理完全在本地，注重隐私。",
+   "url": "https://privacytools.io/app/autosleep"
+  },
+  {
+   "slug": "commonhealth",
+   "name": "CommonHealth",
+   "cat": "Health & Fitness",
+   "cat_zh": "健康与健身",
+   "desc_en": "Android alternative to Apple Health. Helps you collect and manage personal health data and share it with the health services, organizations, and apps you trust. Data is only…",
+   "desc_zh": "安卓上的 Apple Health 替代品，用于收集和管理个人健康数据，并可按你的选择共享给信任的医疗服务、机构和应用。数据只保存在本地。",
+   "url": "https://privacytools.io/app/commonhealth"
+  },
+  {
+   "slug": "ollama",
+   "name": "Ollama",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "Ollama lets you download and run large language models locally via a simple CLI and REST API. Supports a growing library of open models including Llama, Mistral, and Gemma on Windows, Mac, and Linux with no data sent to the cloud.",
+   "desc_zh": "通过简单的命令行和 REST API 在本机下载并运行大语言模型，支持 Llama、Mistral、Gemma 等开源模型，覆盖 Windows、macOS、Linux，数据不上传到云端。",
+   "url": "https://privacytools.io/app/ollama"
+  },
+  {
+   "slug": "ensu",
+   "name": "Ensu",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "Offline AI chat from Ente that runs models entirely on your device, with no network calls required.",
+   "desc_zh": "Ente 出品的离线 AI 对话应用，模型完全在设备上运行，不需要任何网络请求。",
+   "url": "https://privacytools.io/app/ensu"
+  },
+  {
+   "slug": "koboldcpp",
+   "name": "KoboldCpp",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "KoboldCpp is a self-contained local AI inference tool with a built-in web UI. It runs GGUF text, image, and speech models with no installation beyond a single binary, primarily aimed at creative writing and roleplay workflows.",
+   "desc_zh": "自包含的本地 AI 推理工具，内置网页界面，可运行 GGUF 格式的文本、图像和语音模型。单个可执行文件即可使用，无需安装，主要面向创意写作与角色扮演场景。",
+   "url": "https://privacytools.io/app/koboldcpp"
+  },
+  {
+   "slug": "llamafile",
+   "name": "llamafile",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "A Mozilla project that packages a complete LLM and its runtime into a single executable file. Download one file, run it on Windows, Mac, or Linux with no installation, no dependencies, and no network connection required.",
+   "desc_zh": "Mozilla 的项目，把完整的模型和运行时打包成单个可执行文件。下载一个文件就能在 Windows、macOS、Linux 上运行，无需安装、无依赖、不需要联网。",
+   "url": "https://privacytools.io/app/llamafile"
+  },
+  {
+   "slug": "skales",
+   "name": "Skales",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "Skales is a local AI desktop agent that runs on your computer with any AI provider you choose. All conversations and data stay on your machine, and you control which model and which API keys you use.",
+   "desc_zh": "本地 AI 桌面助手，可接入你自己选择的任意 AI 服务商。所有对话和数据留在本机，模型和 API 密钥都由你掌控。",
+   "url": "https://privacytools.io/app/skales"
+  },
+  {
+   "slug": "apple-intelligence",
+   "name": "Apple Intelligence",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "Apple's AI. On-device where it can, with verifiable Private Cloud Compute for the rest.",
+   "desc_zh": "苹果的 AI 能力，尽可能在设备端处理，其余部分走可验证的私有云计算。",
+   "url": "https://privacytools.io/app/apple-intelligence"
+  },
+  {
+   "slug": "duck-ai",
+   "name": "DuckDuckGo AI Chat",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "DuckDuckGo's private AI chat that lets you talk to multiple models with no account and no training on your prompts.",
+   "desc_zh": "DuckDuckGo 的隐私 AI 对话，无需账号即可使用多个模型，且不会用你的提问训练模型。",
+   "url": "https://privacytools.io/app/duck-ai"
+  },
+  {
+   "slug": "euria",
+   "name": "Euria",
+   "cat": "Private AI",
+   "cat_zh": "本地 AI",
+   "desc_en": "Infomaniak's Swiss-hosted AI assistant that pledges no training on user data and operates under GDPR and Swiss data law.",
+   "desc_zh": "Infomaniak 的瑞士托管 AI 助手，承诺不用用户数据训练模型，遵守 GDPR 与瑞士数据保护法。",
+   "url": "https://privacytools.io/app/euria"
+  },
+  {
+   "slug": "helium",
+   "name": "Helium",
+   "cat": "Browsers",
+   "cat_zh": "浏览器",
+   "desc_en": "Privacy-first Chromium browser with uBlock Origin and tracker blocking on by default. Based on ungoogled-chromium, for Windows, macOS, and Linux.",
+   "desc_zh": "隐私优先的 Chromium 浏览器，默认启用 uBlock Origin 与追踪拦截，基于 ungoogled-chromium，支持 Windows、macOS、Linux。",
+   "url": "https://privacytools.io/app/helium"
+  },
+  {
+   "slug": "firefox",
+   "name": "Firefox",
+   "cat": "Browsers",
+   "cat_zh": "浏览器",
+   "desc_en": "Reliable, fast and privacy-friendly. Harden it with add-ons, enable DNS-over-HTTPS, and sync across all your devices.",
+   "desc_zh": "可靠、快速且注重隐私的浏览器。可以配合扩展加固，开启 DNS over HTTPS，并在各设备间同步。",
+   "url": "https://privacytools.io/app/firefox"
+  },
+  {
+   "slug": "firefox-focus",
+   "name": "Firefox Focus",
+   "cat": "Browsers",
+   "cat_zh": "浏览器",
+   "desc_en": "Dedicated mobile privacy browser with automatic tracking protection and ad blocking. With Focus, your pages load faster and your data stays private.",
+   "desc_zh": "专注隐私的移动浏览器，自动拦截追踪和广告。页面加载更快，数据留给自己。",
+   "url": "https://privacytools.io/app/firefox-focus"
+  },
+  {
+   "slug": "brave",
+   "name": "Brave",
+   "cat": "Browsers",
+   "cat_zh": "浏览器",
+   "desc_en": "Fast, cross-platform Chromium browser that blocks ads and trackers by default. A complete package out of the box, suitable for beginners or when setup time matters.",
+   "desc_zh": "快速的跨平台 Chromium 浏览器，默认拦截广告与追踪器，开箱即用，适合新手或不想花时间配置的人。",
+   "url": "https://privacytools.io/app/brave"
+  }
+ ]
+}
