@@ -337,3 +337,22 @@ html[data-theme="dark"] .pill.warn{background:#3a2a12;color:#e0a23c}
 @media(max-width:900px){
   .tag-bar{padding:8px 14px 0}
 }
+
+/* 搜索无结果时的推荐区 */
+.empty{text-align:left;padding:34px 4px 40px}
+.empty strong{display:block;font-size:15.5px;color:var(--text);margin-bottom:6px;text-align:center}
+.empty .empty-sub{font-size:12.5px;color:var(--faint);text-align:center;margin-bottom:22px}
+.empty-block{margin-bottom:18px}
+.empty-t{font-size:11.5px;color:var(--faint);margin-bottom:9px;letter-spacing:.3px}
+.empty-row{display:flex;flex-wrap:wrap;gap:8px}
+.empty-chip{
+  padding:7px 13px;border-radius:9px;font-size:12.5px;
+  background:var(--panel);border:1px solid var(--line);color:var(--text);
+}
+.empty-chip:hover{border-color:var(--brand);color:var(--brand)}
+.empty-chip i{font-style:normal;font-size:10px;color:var(--faint);margin-left:5px}
+.empty-out{
+  padding:7px 14px;border-radius:9px;font-size:12.5px;text-decoration:none;
+  background:var(--brand-soft);color:var(--brand);border:1px solid transparent;
+}
+.empty-out:hover{border-color:var(--brand)}

@@ -151,15 +151,51 @@
     return state.tags.every(function (x) { return t.indexOf(x) > -1; });
   }
 
+  // 同义词组：组内任意词可互相命中
+  var SYN_GROUPS = [
+    ['网盘', '云盘', '磁盘', '夸克', '阿里云盘', '百度网盘', '迅雷'],
+    ['电影', '影视', '影院', '追剧', '电视剧', '看片'],
+    ['书籍', '电子书', '图书', '读书', '阅读', '书库'],
+    ['工具', '软件', '工具箱', '在线工具', '应用'],
+    ['AI', '人工智能', '大模型', 'GPT', '智能'],
+    ['音乐', '歌曲', '听歌', '无损', '音频'],
+    ['动漫', '番剧', '二次元', '漫画', '追番'],
+    ['图片', '壁纸', '图库', '素材', '图标'],
+    ['教程', '学习', '课程', '文档', '公开课'],
+    ['搜索', '磁力', '引擎', '索引', '聚合'],
+    ['游戏', '单机', '手游', '小游戏'],
+    ['开源', 'github', 'gitee', '代码', '社区'],
+    ['学术', '论文', '期刊', '文献', '科研'],
+    ['翻译', '词典', '外语', '语言']
+  ];
+
+  function expandTerms(q) {
+    var out = [q];
+    for (var i = 0; i < SYN_GROUPS.length; i++) {
+      var g = SYN_GROUPS[i];
+      var hit = g.some(function (w) { return q.indexOf(w.toLowerCase()) > -1 || w.toLowerCase().indexOf(q) > -1; });
+      if (hit) {
+        out = out.concat(g.map(function (w) { return w.toLowerCase(); }));
+      }
+    }
+    return out.filter(function (v, i, a) { return a.indexOf(v) === i; });
+  }
+
   function scoreOf(it, q) {
-    var s = 0;
-    if ((it.name || '').toLowerCase().indexOf(q) > -1) s += 30;
-    if ((it.tags || []).join(' ').toLowerCase().indexOf(q) > -1) s += 20;
-    if ((it.py || '').indexOf(q) > -1 || (it.pyi || '').indexOf(q) > -1) s += 15;
-    if ((it.desc || '').toLowerCase().indexOf(q) > -1) s += 10;
-    if ((it.cat || '').toLowerCase().indexOf(q) > -1) s += 6;
-    if ((it.sub || '').toLowerCase().indexOf(q) > -1) s += 4;
-    return s;
+    var terms = expandTerms(q);
+    var best = 0;
+    for (var i = 0; i < terms.length; i++) {
+      var t = terms[i];
+      var s = 0;
+      if ((it.name || '').toLowerCase().indexOf(t) > -1) s += 30;
+      if ((it.tags || []).join(' ').toLowerCase().indexOf(t) > -1) s += 20;
+      if ((it.py || '').indexOf(t) > -1 || (it.pyi || '').indexOf(t) > -1) s += 15;
+      if ((it.desc || '').toLowerCase().indexOf(t) > -1) s += 10;
+      if ((it.cat || '').toLowerCase().indexOf(t) > -1) s += 6;
+      if ((it.sub || '').toLowerCase().indexOf(t) > -1) s += 4;
+      if (s > best) best = s;
+    }
+    return best;
   }
 
   function filtered() {
@@ -232,7 +268,7 @@
     }
 
     if (!list.length) {
-      grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><strong>没有找到匹配的站点</strong>换个关键词，或者切到其他分类看看</div>';
+      grid.innerHTML = emptyHTML(state.q.trim());
       if (io) io.disconnect();
       return;
     }
@@ -265,6 +301,60 @@
       return '<button class="tag' + (on ? ' on' : '') + '" data-tag="' + t + '" type="button">' +
         t + '<i>' + cnt[t] + '</i></button>';
     }).join('');
+  }
+
+  function emptyHTML(q) {
+    var html = '<div class="empty" style="grid-column:1/-1">';
+    html += '<strong>' + (q ? '没有找到与「' + esc(q) + '」相关的站点' : '这里还没有内容') + '</strong>';
+    html += '<p class="empty-sub">换个词试试，或者从下面的分类继续找</p>';
+
+    // 相关分类：词命中分类名/子类名，否则给条目最多的分类
+    var rel = CATS.filter(function (c) {
+      if (!q) return false;
+      if (c.name.toLowerCase().indexOf(q) > -1) return true;
+      return (c.subs || []).some(function (sb) { return sb.name.toLowerCase().indexOf(q) > -1; });
+    });
+    if (!rel.length) rel = CATS.slice().sort(function (a, b) { return b.count - a.count; }).slice(0, 6);
+    rel = rel.slice(0, 6);
+    if (rel.length) {
+      html += '<div class="empty-block"><div class="empty-t">相关分类</div><div class="empty-row">';
+      rel.forEach(function (c) {
+        html += '<button class="empty-chip" data-cat="' + esc(c.name) + '" type="button">' + esc(c.name) +
+          '<i>' + c.count + '</i></button>';
+      });
+      html += '</div></div>';
+    }
+
+    // 热门标签
+    var tagCnt = {};
+    DATA.forEach(function (it) { (it.tags || []).forEach(function (t) { tagCnt[t] = (tagCnt[t] || 0) + 1; }); });
+    var hotTags = Object.keys(tagCnt).sort(function (a, b) { return tagCnt[b] - tagCnt[a]; }).slice(0, 5);
+    if (hotTags.length) {
+      html += '<div class="empty-block"><div class="empty-t">按属性找</div><div class="empty-row">';
+      hotTags.forEach(function (t) {
+        html += '<button class="empty-chip" data-tag="' + esc(t) + '" type="button">' + esc(t) +
+          '<i>' + tagCnt[t] + '</i></button>';
+      });
+      html += '</div></div>';
+    }
+
+    // 外部搜索
+    if (q) {
+      var engines = [
+        ['Google', 'https://www.google.com/search?q='],
+        ['Bing', 'https://www.bing.com/search?q='],
+        ['秘塔 AI', 'https://metaso.cn/?q=']
+      ];
+      html += '<div class="empty-block"><div class="empty-t">站内没有，去外面搜</div><div class="empty-row">';
+      engines.forEach(function (e) {
+        html += '<a class="empty-out" href="' + e[1] + encodeURIComponent(q) + '" target="_blank" rel="noopener">' +
+          esc(e[0]) + ' &#8599;</a>';
+      });
+      html += '</div></div>';
+    }
+
+    html += '</div>';
+    return html;
   }
 
   function renderSubs() {
@@ -402,6 +492,17 @@
       }
       var ci = t.closest ? t.closest('.cat-item') : null;
       if (ci) { go(ci.getAttribute('data-cat')); return; }
+      var ec = t.closest ? t.closest('.empty-chip') : null;
+      if (ec) {
+        var ccat = ec.getAttribute('data-cat');
+        var ctag = ec.getAttribute('data-tag');
+        if (ccat) { go(ccat); return; }
+        if (ctag) {
+          state.q = ''; $('#q').value = ''; $('#clearBtn').hidden = true;
+          state.tags = [ctag]; state.cat = 'all'; state.view = 'all';
+          renderCats(); render(true); return;
+        }
+      }
       var tg = t.closest ? t.closest('.tag') : null;
       if (tg) {
         var tv = tg.getAttribute('data-tag');
