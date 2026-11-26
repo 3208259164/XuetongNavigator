@@ -7,32 +7,54 @@
 <meta name="description" content="一个好用的电子书资源站聚合搜索引擎">
 <link rel="canonical" href="https://3208259164.github.io/XuetongNavigator/s/l0730.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../assets/style.css">
 <style>
-.wrap{max-width:720px;margin:0 auto;padding:24px 18px 60px}
-.back{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--sub);margin-bottom:22px}
+.wrap{max-width:680px;margin:0 auto;padding:18px 18px 60px}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--sub);
+ padding:7px 14px;border-radius:999px;background:var(--panel);border:1px solid var(--line);
+ text-decoration:none;margin-bottom:20px}
+.back:hover{color:var(--brand);border-color:var(--brand)}
 .head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.head .ic{width:64px;height:64px;border-radius:16px;flex:none;background:var(--panel-2);
- display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:600;color:var(--brand);overflow:hidden}
+.head .ic{width:72px;height:72px;border-radius:18px;flex:none;background:var(--panel-2);
+ display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:600;
+ color:var(--brand);overflow:hidden;border:1px solid var(--line)}
 .head .ic img{width:100%;height:100%;object-fit:cover}
-h1{font-size:22px;font-weight:650;line-height:1.3}
-.tagline{font-size:12.5px;color:var(--faint);margin-top:6px}
-.desc{font-size:14.5px;line-height:1.85;color:var(--text);margin:20px 0 26px;
- padding:16px 18px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+h1{font-size:21px;font-weight:650;line-height:1.3}
+.tagline{font-size:12.5px;color:var(--faint);margin-top:5px}
 .cta{display:block;text-align:center;padding:14px;border-radius:12px;background:var(--brand);
- color:#fff;font-size:15px;font-weight:550;margin-bottom:14px}
-.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
-.pill{font-size:12px;padding:5px 11px;border-radius:999px;background:var(--panel);border:1px solid var(--line);color:var(--sub)}
-h2{font-size:14px;font-weight:600;color:var(--sub);margin:26px 0 12px}
-.rel{display:grid;gap:10px}
-.rel a{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--panel);
- border:1px solid var(--line);border-radius:10px}
-.rel .ic2{width:34px;height:34px;border-radius:50%;flex:none;background:var(--panel-2);
- display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--brand);overflow:hidden}
+ color:#fff;font-size:15px;font-weight:550;text-decoration:none;margin:18px 0 12px}
+.cta:active{transform:scale(.99)}
+.desc{font-size:14.5px;line-height:1.85;color:var(--text);margin:0 0 16px;
+ padding:15px 16px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.note{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.7;
+ padding:12px 14px;border-radius:11px;background:#fff8e6;color:#8a6100;margin-bottom:16px}
+html[data-theme="dark"] .note{background:#33291000;background-color:#2f2712;color:#e0b556}
+.note .ni{flex:none}
+.info{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:16px}
+.info-row{display:flex;align-items:center;gap:12px;padding:11px 14px;font-size:13px}
+.info-row+.info-row{border-top:1px solid var(--line)}
+.info-row .k{width:64px;flex:none;color:var(--faint);font-size:12.5px}
+.info-row .v{flex:1;color:var(--text);word-break:break-all}
+.ops{display:flex;gap:9px;margin-bottom:24px}
+.ops button,.ops a{
+  flex:1;text-align:center;padding:10px;border-radius:11px;font-size:12.5px;
+  background:var(--panel);border:1px solid var(--line);color:var(--sub);
+  text-decoration:none;cursor:pointer;font-family:inherit;
+}
+.ops button:hover,.ops a:hover{color:var(--brand);border-color:var(--brand)}
+.ops .on{color:#f5a623;border-color:#f5c46b;background:#fffaf0}
+h2{font-size:14px;font-weight:600;color:var(--sub);margin:0 0 12px}
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.rel a{display:flex;align-items:center;gap:9px;padding:10px;background:var(--panel);
+ border:1px solid var(--line);border-radius:10px;text-decoration:none;color:inherit;min-width:0}
+.rel a:hover{border-color:var(--brand)}
+.rel .ic2{width:32px;height:32px;border-radius:9px;flex:none;overflow:hidden;background:var(--panel-2);
+ display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--brand)}
 .rel .ic2 img{width:100%;height:100%;object-fit:cover}
-.rel .t{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.foot{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);
+.rel .t{font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.foot{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);
  font-size:11.5px;color:var(--faint);text-align:center;line-height:1.8}
+@media(min-width:700px){ .rel{grid-template-columns:1fr 1fr 1fr} }
 </style>
 </head>
 <body>
@@ -40,34 +62,76 @@ h2{font-size:14px;font-weight:600;color:var(--sub);margin:26px 0 12px}
   <a class="back" href="../index.html#/cat/图书馆与文献">&#8592; 返回 图书馆与文献</a>
 
   <div class="head">
-    <span class="ic"><img src="../../https://www.xiaozhongjishu.com/wp-content/uploads/2023/07/572ad-zhiso.top.png" alt="知搜"></span>
+    <span class="ic"><img src="../icons/l0730.png" alt="知搜" loading="lazy"></span>
     <div>
       <h1>知搜</h1>
       <div class="tagline">图书馆与文献 · 电子书下载</div>
     </div>
   </div>
 
+  <a class="cta" href="https://zhiso.cc" target="_blank" rel="noopener nofollow">访问 知搜 &#8599;</a>
+
   <div class="desc">一个好用的电子书资源站聚合搜索引擎</div>
 
-  <a class="cta" href="https://zhiso.cc" target="_blank" rel="noopener nofollow">打开 知搜</a>
+  
 
-  <div class="meta">
-    <span class="pill">zhiso.cc</span>
-    <span class="pill">图书馆与文献</span>
-    <span class="pill">电子书下载</span>
-    
-    
-    <span class="pill">收录于资源导航</span>
+  <div class="info">
+    <div class="info-row"><span class="k">域名</span><span class="v">zhiso.cc</span></div>
+    <div class="info-row"><span class="k">分类</span><span class="v">图书馆与文献 · 电子书下载</span></div>
+    <div class="info-row"><span class="k">属性</span><span class="v">—</span></div>
+    <div class="info-row"><span class="k">收录</span><span class="v">2026-11-25</span></div>
+  </div>
+
+  <div class="ops">
+    <button type="button" id="favBtn" data-id="l0730">☆ 收藏</button>
+    <button type="button" id="copyBtn" data-url="https://zhiso.cc">&#128203; 复制链接</button>
+    <a href="https://github.com/3208259164/XuetongNavigator/issues/new?title=站点问题：知搜&body=站点：知搜
+地址：https://zhiso.cc
+问题描述：" target="_blank" rel="noopener">&#9873; 报告问题</a>
   </div>
 
   <h2>同类站点</h2>
-  <div class="rel"><a href="l0995.html"><span class="ic2"><span style="color:hsl(80,62%,52%)">Z</span></span><span class="t">Z-Library</span></a><a href="l0996.html"><span class="ic2"><img src="../../icons/l0996.png" alt="安娜的档案"></span><span class="t">安娜的档案</span></a><a href="l0997.html"><span class="ic2"><img src="../../icons/l0997.png" alt="维基百科"></span><span class="t">维基百科</span></a><a href="l0207.html"><span class="ic2"><img src="../../icons/l0207.png" alt="502book"></span><span class="t">502book</span></a><a href="l0120.html"><span class="ic2"><img src="../../icons/l0120.png" alt="53BK报刊网"></span><span class="t">53BK报刊网</span></a><a href="l0155.html"><span class="ic2"><img src="../../icons/l0155.png" alt="AudioBook Bay"></span><span class="t">AudioBook Bay</span></a><a href="l0190.html"><span class="ic2"><img src="../../icons/l0190.png" alt="mobi图书网"></span><span class="t">mobi图书网</span></a><a href="l0734.html"><span class="ic2"><img src="../../https://www.xiaozhongjishu.com/wp-content/uploads/2022/04/2bea8-www.banshujiang.cn.png" alt="MoreRead"></span><span class="t">MoreRead</span></a></div>
+  <div class="rel"><a href="l0995.html"><span class="ic2"><img src="../icons/l0995.png" alt="Z-Library" loading="lazy"></span><span class="t">Z-Library</span></a><a href="l0996.html"><span class="ic2"><img src="../icons/l0996.png" alt="安娜的档案" loading="lazy"></span><span class="t">安娜的档案</span></a><a href="l0997.html"><span class="ic2"><img src="../icons/l0997.png" alt="维基百科" loading="lazy"></span><span class="t">维基百科</span></a><a href="l0207.html"><span class="ic2"><img src="../icons/l0207.png" alt="502book" loading="lazy"></span><span class="t">502book</span></a><a href="l0120.html"><span class="ic2"><img src="../icons/l0120.png" alt="53BK报刊网" loading="lazy"></span><span class="t">53BK报刊网</span></a><a href="l0155.html"><span class="ic2"><img src="../icons/l0155.png" alt="AudioBook Bay" loading="lazy"></span><span class="t">AudioBook Bay</span></a><a href="l0190.html"><span class="ic2"><img src="../icons/l0190.png" alt="mobi图书网" loading="lazy"></span><span class="t">mobi图书网</span></a><a href="l0734.html"><span class="ic2"><img src="../icons/l0734.png" alt="MoreRead" loading="lazy"></span><span class="t">MoreRead</span></a><a href="l0193.html"><span class="ic2"><img src="../icons/l0193.png" alt="NMOD" loading="lazy"></span><span class="t">NMOD</span></a><a href="l0432.html"><span class="ic2"><img src="../icons/l0432.png" alt="Olib开源图书（Win+安卓，Zlib无限下载器） 夸克" loading="lazy"></span><span class="t">Olib开源图书（Win+安卓，Zlib无限下载器） 夸克</span></a><a href="l0728.html"><span class="ic2"><img src="../icons/l0728.png" alt="Open-SLUM" loading="lazy"></span><span class="t">Open-SLUM</span></a><a href="l0727.html"><span class="ic2"><img src="../icons/l0727.png" alt="SaltyLeo的书架" loading="lazy"></span><span class="t">SaltyLeo的书架</span></a></div>
 
   <div class="foot">
     <p>本站仅收录网站名称、简介与链接，不存储、不代理任何内容。</p>
     <p>内容版权归 知搜 及各站点所有。</p>
   </div>
 </div>
+
+<script>
+(function(){
+  var t=null;
+  try{t=localStorage.getItem('nav_theme_v1')}catch(e){}
+  if(!t) t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);
+
+  var KEY='nav_fav_v1';
+  function favs(){try{return new Set(JSON.parse(localStorage.getItem(KEY)||'[]'))}catch(e){return new Set()}}
+  var b=document.getElementById('favBtn');
+  if(b){
+    var id=b.getAttribute('data-id');
+    var s=favs();
+    if(s.has(id)){b.classList.add('on');b.textContent='\u2605 已收藏'}
+    b.addEventListener('click',function(){
+      var cur=favs();
+      if(cur.has(id)){cur.delete(id);b.classList.remove('on');b.textContent='\u2606 收藏'}
+      else{cur.add(id);b.classList.add('on');b.textContent='\u2605 已收藏'}
+      try{localStorage.setItem(KEY,JSON.stringify(Array.from(cur)))}catch(e){}
+    });
+  }
+  var c=document.getElementById('copyBtn');
+  if(c){
+    c.addEventListener('click',function(){
+      var u=c.getAttribute('data-url');
+      var done=function(){var o=c.textContent;c.textContent='已复制';setTimeout(function(){c.textContent=o},1200)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,done)}
+      else{var ta=document.createElement('textarea');ta.value=u;document.body.appendChild(ta);ta.select();
+        try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);done()}
+    });
+  }
+})();
+</script>
 
 <script type="application/ld+json">
 {
