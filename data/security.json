@@ -1,5 +1,5 @@
 {
- "count": 110,
+ "count": 145,
  "total_available": 352,
  "source": "https://privacytools.io",
  "source_name": "PrivacyTools.io",
@@ -57,6 +57,36 @@
    "count": 7
   },
   {
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "count": 9
+  },
+  {
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "count": 6
+  },
+  {
+   "cat": "Private App Stores",
+   "cat_zh": "应用商店",
+   "count": 5
+  },
+  {
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "count": 6
+  },
+  {
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "count": 7
+  },
+  {
+   "cat": "Private Translation",
+   "cat_zh": "翻译工具",
+   "count": 2
+  },
+  {
    "cat": "Private Frontends",
    "cat_zh": "第三方前端",
    "count": 8
@@ -78,6 +108,24 @@
   }
  ],
  "items": [
+  {
+   "slug": "ente-authenticator",
+   "name": "ente Authenticator",
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "desc": "少见的一款开源两步验证应用，做端到端加密的云端备份，并在安卓与 iOS 之间同步，解决了只用离线的应用换手机就头疼的问题。你把加密备份托付给 Ente 的服务器，但加密才是重点，不想这样也可以用离线模式。想让验证码在手机丢失后还在、也能跨平台跟随，它是最省心的推荐。",
+   "pt": "https://privacytools.io/app/ente-authenticator",
+   "site": "https://ente.com/auth"
+  },
+  {
+   "slug": "czkawka",
+   "name": "Czkawka",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "它被诚实地标注为完全没有隐私功能，而这份坦率正是恰当的定位：一个快速、免费、开源的去杂物工具，用来找重复文件和垃圾，仅此而已。作为磁盘卫生它很出色，跨平台，是付费 Mac 重复文件查找器的真正免费对手。别指望它保护任何数据，它一点也没有。纯粹为了不花钱腾空间，就用它。",
+   "pt": "https://privacytools.io/app/czkawka",
+   "site": "https://github.com/qarmin/czkawka"
+  },
   {
    "slug": "ollama",
    "name": "Ollama",
@@ -122,6 +170,33 @@
    "desc": "离线、不上云、不要账号、不订阅，密码就放在一个完全由你掌握的数据库文件里。这种所有权是双向的：备份要你自己负责，弄丢了也是你自己的事。它适合本来就有备份习惯的人，会让那些希望换个新手机密码就自动出现的人受不了。安卓端是另一个应用 KeePassDX，不是官方顺滑接续。把本地掌控看得比便利更重，选它。",
    "pt": "https://privacytools.io/app/keepassxc",
    "site": "https://keepassxc.org/"
+  },
+  {
+   "slug": "mastodon",
+   "name": "Mastodon",
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "desc": "加入联邦宇宙人口最多、打磨最好的入口，也是离开 Twitter 又仍希望有人可聊的现实答案。学习曲线是真实的：选服务器、理解联邦机制、接受审核与触达因实例而异，都要适应。想要真正的微博客社区、不要算法替你决定信息流，选 Mastodon；指望它像旧应用那样装了就一模一样好用，就别。",
+   "pt": "https://privacytools.io/app/mastodon",
+   "site": "https://joinmastodon.org/"
+  },
+  {
+   "slug": "obtainium",
+   "name": "Obtainium",
+   "cat": "Private App Stores",
+   "cat_zh": "应用商店",
+   "desc": "它的吸引力在来源：你装的就是开发者亲自发布的那份，不是被重新打包或延迟的副本。这让 Obtainium 成为 F-Droid 的有力补充，适用于自己发布签名 APK、但还没进 F-Droid 的应用。诚实的短板是配置摩擦：每个应用都要手动配，有些来源靠网页抓取，上游页面一变就断。愿意自己维护应用清单，Obtainium 给你比任何传统商店更细的更新链控制；想要一键目录式体验，它就不合适。",
+   "pt": "https://privacytools.io/app/obtainium",
+   "site": "https://obtainium.page/"
+  },
+  {
+   "slug": "bleachbit",
+   "name": "BleachBit",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "开源、免费，带着这里对隐私真正要紧的那项功能：粉碎文件、擦净空闲空间，让已删除的数据不再残留。这份专注既是长处也是局限，它是能擦除的清理器，不是打磨精致的优化套件。界面务实，你勾错一个框，它也会痛快地删掉你其实想留的东西。安全删除是重点时选它，想要漂亮的 Mac 优化器则不是。",
+   "pt": "https://privacytools.io/app/bleachbit",
+   "site": "https://www.bleachbit.org/"
   },
   {
    "slug": "newpipe",
@@ -241,6 +316,15 @@
    "site": "https://www.mozilla.org/firefox/browsers/mobile/focus/"
   },
   {
+   "slug": "aegis-authenticator",
+   "name": "Aegis Authenticator",
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "desc": "如果你在安卓上，想让两步验证码加密存储、备份完全由自己掌握、整个过程不牵扯云端账号，就选 Aegis。只用离线的另一面是换新手机得手动导出再导入，还得记得去做，而且根本没有 iOS 版。想要开源、加密、不要账号的安卓用户，它是突出选择。",
+   "pt": "https://privacytools.io/app/aegis-authenticator",
+   "site": "https://getaegis.app/"
+  },
+  {
    "slug": "simplex-chat",
    "name": "SimpleX Chat",
    "cat": "Private Messaging",
@@ -322,6 +406,15 @@
    "site": "https://cryptomator.org/"
   },
   {
+   "slug": "libretranslate",
+   "name": "LibreTranslate",
+   "cat": "Private Translation",
+   "cat_zh": "翻译工具",
+   "desc": "这一组里唯一完全可自建的机器学习翻译器，意味着用自己的实例，任何文本都不碰专有服务，这是真实的隐私收益。诚实的取舍是质量：它的开源模型在细腻程度上比不过 DeepL 或谷歌，对不常见语言尤其明显。独立、不把文本漏给第三方优先于精致，而且你能跑起服务，选 LibreTranslate。最看重翻译准确、隐私次要，就不是它。",
+   "pt": "https://privacytools.io/app/libretranslate",
+   "site": "https://libretranslate.com/"
+  },
+  {
    "slug": "protonmail",
    "name": "ProtonMail",
    "cat": "Private Email",
@@ -358,6 +451,15 @@
    "site": "https://www.keepassdx.com/"
   },
   {
+   "slug": "accrescent",
+   "name": "Accrescent",
+   "cat": "Private App Stores",
+   "cat_zh": "应用商店",
+   "desc": "Accrescent 的技术设计确实用心：签名密钥固定消除了其他商店留下的一整类供应链攻击，签名的元数据意味着被攻破的镜像无法悄悄换包。项目与加固安卓社区关系紧密，GrapheneOS 就在自己的应用商店里提供它。诚实的短板是 alpha 状态意味着真有粗糙之处，目录也仍然单薄：主流应用基本缺席。GrapheneOS 或 CalyxOS 上注重安全、想要当下最强的安装时完整性保证，Accrescent 值得密切关注；今天的日常应用需求，就与 F-Droid 或 Aurora Store 搭配使用。",
+   "pt": "https://privacytools.io/app/accrescent",
+   "site": "https://accrescent.app"
+  },
+  {
    "slug": "stoat",
    "name": "Stoat",
    "cat": "Private Messaging",
@@ -374,6 +476,15 @@
    "desc": "一个开源安卓应用里同时有加密 DNS 和真正按应用区分的防火墙，还不需要账号，这确实少见。拦截库的深度和设备端日志，对想核查应用到底在干什么的人很有吸引力。短板是界面要花时间学，而且 DNS 与防火墙都走 VPN 通道，意味着不能同时和真正的 VPN 并用，除非绕道。愿意投入配置时间的隐私意识安卓用户，用它合适。",
    "pt": "https://privacytools.io/app/rethinkdns",
    "site": "https://rethinkdns.com/"
+  },
+  {
+   "slug": "lemmy",
+   "name": "Lemmy",
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "desc": "联邦宇宙里最活跃的 Reddit 式一角，也是想要串式社区、又不愿由一家公司拥有平台或开采你活动数据的现实落点。短板是规模与碎片：社区更小，散落在各实例上，你选的服务器决定你看到什么，因为有些实例会屏蔽另一些。想要自治的论坛、也愿意帮你缺的社区添砖，选 Lemmy；第一天就要 Reddit 那样的广度，就别。",
+   "pt": "https://privacytools.io/app/lemmy",
+   "site": "https://join-lemmy.org/instances"
   },
   {
    "slug": "notesnook",
@@ -448,6 +559,15 @@
    "site": "https://email.faircode.eu/"
   },
   {
+   "slug": "pixelfed",
+   "name": "PixelFed",
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "desc": "联邦宇宙里的照片分享一角，对想要图片却不要广告定向和互动算法的人来说，是最自然的 Instagram 替代。联邦宇宙的老话照旧适用：实例大小与可靠性不一，受众小得多，所以触达有限。想把照片发在你真能离开的基础设施上，选它；追大粉丝量，就把预期调低。",
+   "pt": "https://privacytools.io/app/pixelfed",
+   "site": "https://pixelfed.org/"
+  },
+  {
    "slug": "workrave",
    "name": "Workrave",
    "cat": "Private Health & Fitness",
@@ -475,6 +595,15 @@
    "site": "https://delta.chat/"
   },
   {
+   "slug": "yubico-authenticator",
+   "name": "Yubico Authenticator",
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "desc": "把 TOTP 密钥从设备挪进硬件，比任何基于手机的应用都是实质的安全升级。手机被偷、电脑被攻破，攻击者没有那把实体 YubiKey 仍然生成不了验证码。短板是依赖：你必须有一把兼容的 YubiKey，丢了又没备份，就等于丢掉存于其上的所有账号。这让备份纪律不可妥协。已经随身带 YubiKey 用于通行密钥或 SSH 的人，这是理所当然的配套应用；其他人则要面对硬件成本与备份要求，门槛高于 Aegis 这类应用。",
+   "pt": "https://privacytools.io/app/yubico-authenticator",
+   "site": "https://www.yubico.com/products/yubico-authenticator/"
+  },
+  {
    "slug": "lesspass",
    "name": "LessPass",
    "cat": "Private Password Managers",
@@ -482,6 +611,24 @@
    "desc": "如果喜欢 Bitwarden 但不想同步或存储密码，LessPass 是另一种思路：按主密码和站点信息现场算出密码，不保存任何数据。支持浏览器、手机和命令行。",
    "pt": "https://privacytools.io/app/lesspass",
    "site": "https://lesspass.com/"
+  },
+  {
+   "slug": "tor",
+   "name": "Tor",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "它慢是有意设计的，把这当成缺陷，说明你误解了它的用途。真正需要匿名、也能接受网页按自己的节奏加载时用它，而不是当日常浏览器指望视频流畅播放。就它针对的威胁模型而言，也就是向网络观察者隐藏你是谁、在哪里，没有别的东西可比。追求随手就快，它不合适；真正要紧的时候，它是正确工具。",
+   "pt": "https://privacytools.io/app/tor",
+   "site": "https://www.torproject.org/"
+  },
+  {
+   "slug": "orbot",
+   "name": "Orbot",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "手机上的 Tor 接入，Orbot 是实用的标准做法。安卓上按应用分流是最突出的功能：可以把某个敏感应用推进 Tor，而不拖慢其他一切。诚实的取舍是 Tor 本身比直连慢，iOS 上的架构也比安卓更受限。想在手机上访问 .onion 或抵抗流量分析、也愿意接受更慢的速度，选 Orbot。",
+   "pt": "https://privacytools.io/app/orbot",
+   "site": "https://orbot.app/"
   },
   {
    "slug": "molly",
@@ -511,6 +658,24 @@
    "site": "https://neomutt.org/"
   },
   {
+   "slug": "tofu",
+   "name": "Tofu",
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "desc": "Tofu 是刻意做小的、易用的 iOS 专用验证器，给只想要干净应用、不要求别的的人。它的简单既是吸引力也是局限：不支持跨平台，开发也很安静，别指望持续的新功能。看重清爽、不加修饰的 iPhone 用户，它是个好选择；想要加密的跨设备备份，就看 Ente。",
+   "pt": "https://privacytools.io/app/tofu",
+   "site": "https://www.tofuauth.com/"
+  },
+  {
+   "slug": "exifcleaner",
+   "name": "ExifCleaner",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "格式覆盖面是亮点：图片、视频、PDF，批量拖放，给整个文件夹剥元数据毫不费劲。正是这份广度让它在发布前清理时比单一格式的工具更该当默认。短板是只有桌面端，直接从手机分享的照片它管不到。以笔记本为工作流的发布，它是最省心的推荐。",
+   "pt": "https://privacytools.io/app/exifcleaner",
+   "site": "https://exifcleaner.com/"
+  },
+  {
    "slug": "keepassium",
    "name": "KeePassium",
    "cat": "Private Password Managers",
@@ -520,6 +685,33 @@
    "site": "https://keepassium.com/"
   },
   {
+   "slug": "2fas",
+   "name": "2FAS",
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "desc": "2FAS 靠浏览器扩展这一手赢得位置：在电脑上点一下，而不用抓手机眯眼看六位数字。它开源、跨平台，不过依赖浏览器扩展和设备同步，比精简的离线应用多了些运转部件。桌面一键的便利真的合你的日常，就选它；宁愿把一切离线留在一台设备上，更简单的应用更适合你。",
+   "pt": "https://privacytools.io/app/2fas",
+   "site": "https://2fas.com/"
+  },
+  {
+   "slug": "zapstore",
+   "name": "Zapstore",
+   "cat": "Private App Stores",
+   "cat_zh": "应用商店",
+   "desc": "Zapstore 最好的想法是信任跟随人而不是守门人：没有中心审核队列决定谁能上架，每个发布都带可追溯到作者的签名。这适合自己出构建包、却始终没进 F-Droid 的应用。诚实的短板是无需许可的商店把更多判断交给你，因为谁都能发布，目录也比 F-Droid 或 Aurora Store 小。已经在用 Nostr、或想直接跟随特定开发者，就选它；想要一套审核政策下的精选目录，从 F-Droid 或 Accrescent 起步。",
+   "pt": "https://privacytools.io/app/zapstore",
+   "site": "https://zapstore.dev"
+  },
+  {
+   "slug": "ipfs",
+   "name": "IPFS",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "按星数它是这里最热门的工具，但请把分类看仔细：IPFS 是内容寻址的分布式存储，不是匿名网络，它不隐藏谁在请求或提供文件。把它当成隐私工具是实打实的误解。它的长处是弹性、去重、抗审查的数据共享，完整性比匿名更重要时最合适。目标是隐藏身份而不是寻址内容，它就不是答案。",
+   "pt": "https://privacytools.io/app/ipfs",
+   "site": "https://ipfs.io/"
+  },
+  {
    "slug": "koboldcpp",
    "name": "KoboldCpp",
    "cat": "AI",
@@ -527,6 +719,15 @@
    "desc": "自包含的本地 AI 推理工具，内置网页界面，可运行 GGUF 格式的文本、图像和语音模型。单个可执行文件即可使用，无需安装，主要面向创意写作与角色扮演场景。",
    "pt": "https://privacytools.io/app/koboldcpp",
    "site": "https://github.com/LostRuins/koboldcpp"
+  },
+  {
+   "slug": "diaspora",
+   "name": "diaspora*",
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "desc": "最老的联邦社交网络之一，它去中心化、数据归你的模型纸面上仍然漂亮。硬道理是势头：网络很安静，活跃开发放慢，而社交工具的好坏取决于上面有没有人。特别想要它基于 pod 的设计与历史，可以一看；今天想要活跃社区，更热闹的联邦平台会更好地服务你。",
+   "pt": "https://privacytools.io/app/diaspora",
+   "site": "https://diasporafoundation.org/"
   },
   {
    "slug": "piped",
@@ -592,6 +793,15 @@
    "site": "https://mailvelope.com/"
   },
   {
+   "slug": "lokinet",
+   "name": "Lokinet",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "一个跑在 Oxen 服务节点上的洋葱路由网络，也就是 Session 背后的同一套基础设施，这既是它的差异点也是风险：网络比 Tor 小、受的审视更少，中继基数薄得多。这意味着实践中匿名集的保证更弱，无论设计多巧妙。对混合网络替代方案感兴趣，值得关注和试验。凡是安全真正依赖结果的地方，Tor 的成熟度和规模仍然胜出。",
+   "pt": "https://privacytools.io/app/lokinet",
+   "site": "https://lokinet.org/"
+  },
+  {
    "slug": "libredirect",
    "name": "LibRedirect",
    "cat": "Private Frontends",
@@ -610,6 +820,33 @@
    "site": "https://skales.app/"
   },
   {
+   "slug": "friendica",
+   "name": "Friendica",
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "desc": "它的长处是广度，一个账号能跟 Mastodon、diaspora 等互通，像是一个带 Facebook 式功能的万能联邦客户端。这份雄心也是短板：比单一用途的替代品更重、运行和使用都更复杂。想用一个枢纽跨多个网络、也能容忍复杂度，它合适；只想要简单信息流，就太多了。",
+   "pt": "https://privacytools.io/app/friendica",
+   "site": "https://friendi.ca/"
+  },
+  {
+   "slug": "freenet",
+   "name": "Hyphanet",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "现在叫 Hyphanet，是一个抗审查的分布式数据存储，定位很具体：你把内容发布进网络，它就持续存在，即使受压也仍可达。代价是慢、操作方式不寻常，完全不像正常浏览，学习投入是真实的。在封禁下架构成威胁的场合，它靠韧性发布赢得位置。别指望它是更快、更友好的 Tor。",
+   "pt": "https://privacytools.io/app/freenet",
+   "site": "https://www.hyphanet.org/"
+  },
+  {
+   "slug": "i2p",
+   "name": "I2P",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "它做的活和 Tor 不同：一个封闭的点对点网络，为网络内部的隐藏服务和种子下载优化，而不是匿名访问普通网站。这份专注也是短板：通过它访问普通互联网只是附带能力，学习曲线陡。想搭建或使用 eepsite、也能忍受配置摩擦，选它。只想匿名浏览普通网站的人，用 Tor 更好。",
+   "pt": "https://privacytools.io/app/i2p",
+   "site": "https://geti2p.net/"
+  },
+  {
    "slug": "forward-email",
    "name": "Forward Email",
    "cat": "Private Email",
@@ -619,6 +856,33 @@
    "site": "https://forwardemail.net"
   },
   {
+   "slug": "linguist",
+   "name": "Linguist",
+   "cat": "Private Translation",
+   "cat_zh": "翻译工具",
+   "desc": "比常见的翻译扩展更有野心，支持设备端离线翻译，还能指向你自己的翻译后端，这确实少见。这份灵活的代价是配置：让离线模型或自建服务跑起来，比一键装个插件费事。想让翻译完全留在自己机器上、也愿意配置，选 Linguist。只想无脑快速翻一页，更轻的前端更快到手。",
+   "pt": "https://privacytools.io/app/linguist",
+   "site": "https://github.com/translate-tools/linguist/#readme"
+  },
+  {
+   "slug": "raivo-otp",
+   "name": "Raivo OTP",
+   "cat": "Private 2FA / Authenticators",
+   "cat_zh": "两步验证",
+   "desc": "Raivo OTP 暂时别用。它曾是一款受好评的 iOS 验证器，但被卖掉了，新主人没有澄清换手引发的疑虑，而这正是你不希望守着第二因素的那种所有权含糊。在这一点解决之前，换到维护中、归属明确的替代品，比如 Ente 或 Aegis；等情况真正理清再回头看 Raivo。",
+   "pt": "https://privacytools.io/app/raivo-otp",
+   "site": "https://raivo-otp.com/"
+  },
+  {
+   "slug": "retroshare",
+   "name": "Retroshare",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "建立在 GPG 之上的友对友模型，关键区别在这里：隐私来自只与你明确信任的人连接，而不是在陌生人之间匿名。这让它在一个已知的圈子里很强，一旦你想延伸到圈外就弱了。适合想要加密聊天和文件共享、又不要中心服务器的封闭群体。需要广泛、匿名的触达，它的形状就不对。",
+   "pt": "https://privacytools.io/app/retroshare",
+   "site": "https://retroshare.cc/"
+  },
+  {
    "slug": "tomb",
    "name": "Tomb",
    "cat": "Private File Encryption",
@@ -626,6 +890,15 @@
    "desc": "开源的 Linux 命令行工具，基于 dm-crypt 与 LUKS 创建和管理加密卷。把内核加密栈封装成简单脚本，可选隐写式密钥隐藏和 FIDO2 支持。",
    "pt": "https://privacytools.io/app/tomb",
    "site": "https://dyne.org/software/tomb/"
+  },
+  {
+   "slug": "aether",
+   "name": "Aether",
+   "cat": "Private Social Networks",
+   "cat_zh": "社交网络",
+   "desc": "设计确实不寻常：短暂的对等公共论坛，内容不会永久存在中心服务器上，与 Reddit 的模式是真正的背离。两点要注意：只有桌面端，开发断断续续、很安静，所以它更像有趣的实验，而不是兴旺的社区。它那种非永久、无服务器的路数合你胃口，可以探索；别指望它成为你订阅板块的活跃替代。",
+   "pt": "https://privacytools.io/app/aether",
+   "site": "https://getaether.net/"
   },
   {
    "slug": "gnupg",
@@ -644,6 +917,15 @@
    "desc": "基于 Debian 的安全加固发行版，开箱即用大量内核与用户空间加固设置，在不需要手动配置的情况下缩小攻击面。它同时也是 Whonix 匿名系统的底座。",
    "pt": "https://privacytools.io/app/kicksecure",
    "site": "https://www.kicksecure.com/"
+  },
+  {
+   "slug": "exiferaser",
+   "name": "ExifEraser",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "清理需要在手机本身上完成时就选它，因为过度分享大多就发生在按发送之前。开源、MIT 许可，简单得让人舒服。局限是格式支持窄，只有 JPEG、PNG 和 WebP，视频和其他类型碰不了。作为安卓上的分享前习惯，它把这一件事做得干净，只是别把它当成你唯一的元数据工具。",
+   "pt": "https://privacytools.io/app/exiferaser",
+   "site": "https://github.com/Tommy-Geenexus/exif-eraser"
   },
   {
    "slug": "kryptor",
@@ -763,6 +1045,24 @@
    "site": "https://apps.apple.com/us/app/id1164801111"
   },
   {
+   "slug": "cleanmymac-pc",
+   "name": "CleanMyMac & PC",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "一款打磨精致、对新手友好的清理器，名声靠界面和手把手，而不是硬实力。清晰的仪表盘加一键清垃圾，真能让你动手维护机器，那就值真金白银。不过要对自己诚实：它做的很多事，清缓存、卸载应用，有点耐心你自己也能免费做到。看重省事胜过省下订阅费的人，它不错。",
+   "pt": "https://privacytools.io/app/cleanmymac-pc",
+   "site": "https://macpaw.com/cleanmymac"
+  },
+  {
+   "slug": "aurora-store",
+   "name": "Aurora Store",
+   "cat": "Private App Stores",
+   "cat_zh": "应用商店",
+   "desc": "Aurora Store 巧妙地解决了一个矛盾：你拿到完整的 Google Play 目录，身份却不进谷歌的视野。相比原生 Play 商店这是真实的隐私收益。短板是结构性的：匿名会话是共用的，偶尔会被谷歌封禁或限流，下载随之中断直到会话轮换。你也在信任 AuroraOSS 对 Play API 客户端的构建，而不是谷歌控制的供应链。需要主流应用又想尽量少被追踪，Aurora Store 是实用之选；只要自由软件的纯粹派该用 F-Droid。",
+   "pt": "https://privacytools.io/app/aurora-store",
+   "site": "https://auroraoss.com"
+  },
+  {
    "slug": "brave-search",
    "name": "Brave Search",
    "cat": "Private Search Engines",
@@ -826,6 +1126,15 @@
    "site": "https://euria.infomaniak.com"
   },
   {
+   "slug": "f-droid",
+   "name": "F-Droid",
+   "cat": "Private App Stores",
+   "cat_zh": "应用商店",
+   "desc": "对只装自由软件的安卓用户，F-Droid 是有原则的选择：从源码构建的流程与可复现构建，提供了 Google Play 比不了的供应链透明度。诚实的短板是选择面与时效：审核队列意味着新版本常比开发者自己的发布晚几天到几周，很多流行应用根本不在这里。给设备去谷歌化、想要可审计的软件，F-Droid 该在工具箱里；需要广泛目录和当天更新，就与 Obtainium 搭配，或保留第二个来源。",
+   "pt": "https://privacytools.io/app/f-droid",
+   "site": "https://f-droid.org"
+  },
+  {
    "slug": "control-d",
    "name": "Control D",
    "cat": "Private DNS",
@@ -878,6 +1187,24 @@
    "desc": "对用 GNOME 桌面、想要一套完整个人信息管理而不愿东拼西凑的人来说，Evolution 是自然之选：邮件、日历、通讯录共用同一层数据，收件箱里的会议邀请会直接落进日历。原生支持 OpenPGP，不需要 Enigmail 这类绕法。缺点是界面显老，Exchange/EWS 连接器是单独的包，而且它严格只做 Linux 应用，没有手机端和 Windows 版。最适合已经习惯桌面的 GNOME 用户，需要一个集成、尊重隐私的 Outlook 替代品。",
    "pt": "https://privacytools.io/app/gnome-evolution",
    "site": "https://gitlab.gnome.org/GNOME/evolution/-/wikis/home"
+  },
+  {
+   "slug": "gemini-2",
+   "name": "Gemini 2",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "在一件事上出色：在 Mac 上找出并删除重复文件，这份专注正是它好用的原因。只是别把重复文件查找器当成隐私工具；它回收空间，不保护数据。重复文件真的在吃掉你的硬盘、你也宁愿付钱而不想手工翻，就值；偶尔才整理一次，这笔钱很难比手动过一遍更值。",
+   "pt": "https://privacytools.io/app/gemini-2",
+   "site": "https://macpaw.com/gemini"
+  },
+  {
+   "slug": "gnunet",
+   "name": "GNUnet",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "GNU 的雄心之作，去中心化网络框架，带链路加密，可跨多种协议传输，更像研究级工具包，而不是装完就能用的成品应用。这份广度正是短板：复杂、学术化，并不面向普通采用。对保护隐私的网络设计有技术好奇心，值得探索。日常实际的匿名需求，更成熟、更专注的工具会更好地服务你。",
+   "pt": "https://privacytools.io/app/gnunet",
+   "site": "https://www.gnunet.org/"
   },
   {
    "slug": "filen",
@@ -943,6 +1270,15 @@
    "site": "https://mega.io/"
   },
   {
+   "slug": "metapho",
+   "name": "Metapho",
+   "cat": "Private Disk Cleaners",
+   "cat_zh": "磁盘清理",
+   "desc": "在 iOS 上剥元数据默认很别扭，它在分享前让你删掉或只挑掉位置数据，填上了真实的空缺。诚实的提醒是闭源，你信任的是开发者而不是自己验证行为，放在其他平台的开源替代旁边总有点不放心。想让位置信息在不上传电脑的情况下被清掉的 iPhone 用户，它是最方便的答案。看重可验证的纯粹派，仍可能偏爱桌面上的开源一遍。",
+   "pt": "https://privacytools.io/app/metapho",
+   "site": "https://zininworks.com/metapho/"
+  },
+  {
    "slug": "mailbox-org",
    "name": "mailbox.org",
    "cat": "Private Email",
@@ -1004,6 +1340,15 @@
    "desc": "StartMail 出自 Startpage 团队，是稳妥、不折腾的付费邮箱，别名不限量、支持自有域名，算得上真正能替代 Gmail 的东西而不是玩具。短板是价格：没有免费档，你得付钱才能离开那个免费但被开采的收件箱。想要一个荷兰托管、能与 Thunderbird 配合的账号，也已经接受隐私邮件就是要花钱，就选它。",
    "pt": "https://privacytools.io/app/startmail",
    "site": "https://www.startmail.com/"
+  },
+  {
+   "slug": "snowflake",
+   "name": "Snowflake",
+   "cat": "Private Anonymizing Networks",
+   "cat_zh": "匿名网络",
+   "desc": "Snowflake 解决一个具体而重要的问题：在封锁 Tor 的地方让 Tor 能用。用 WebRTC 伪装比 obfs4 这类旧传输更难被识别和封锁。短板是它不是独立应用而是传输层，所以只有你已经在用 Tor Browser 或 Orbot 时才有帮助。志愿运行代理扩展，是以极低成本支持被封用户的有意义方式。对不受审查地区、只想保护隐私的用户没有关系。",
+   "pt": "https://privacytools.io/app/snowflake",
+   "site": "https://snowflake.torproject.org/"
   },
   {
    "slug": "commonhealth",
