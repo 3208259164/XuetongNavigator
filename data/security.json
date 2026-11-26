@@ -1,5 +1,5 @@
 {
- "count": 145,
+ "count": 196,
  "total_available": 352,
  "source": "https://privacytools.io",
  "source_name": "PrivacyTools.io",
@@ -77,8 +77,53 @@
    "count": 6
   },
   {
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "count": 8
+  },
+  {
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "count": 6
+  },
+  {
+   "cat": "Private Photo Storage",
+   "cat_zh": "照片存储",
+   "count": 5
+  },
+  {
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "count": 6
+  },
+  {
+   "cat": "Private Torrent Clients",
+   "cat_zh": "种子下载",
+   "count": 5
+  },
+  {
+   "cat": "Private Smart Home",
+   "cat_zh": "智能家居",
+   "count": 5
+  },
+  {
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "count": 6
+  },
+  {
    "cat": "Private Disk Cleaners",
    "cat_zh": "磁盘清理",
+   "count": 7
+  },
+  {
+   "cat": "Private Code Editors",
+   "cat_zh": "代码编辑器",
+   "count": 3
+  },
+  {
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
    "count": 7
   },
   {
@@ -136,6 +181,15 @@
    "site": "https://ollama.com/"
   },
   {
+   "slug": "qbittorrent",
+   "name": "qBittorrent",
+   "cat": "Private Torrent Clients",
+   "cat_zh": "种子下载",
+   "desc": "多数人的默认推荐，因为它给你一个干净、无广告、uTorrent 风格的客户端，而没有原版后来沾上的捆绑垃圾。开源、跨平台，内置搜索，需要时还有网页界面。提醒其实不在应用本身：光有种子客户端对隐私毫无帮助，不配 VPN，你的真实 IP 就暴露给每一个对等端。没有特别理由要更轻或更专门的客户端，就从这个开始。",
+   "pt": "https://privacytools.io/app/qbittorrent",
+   "site": "https://www.qbittorrent.org/"
+  },
+  {
    "slug": "helium",
    "name": "Helium",
    "cat": "Private Browsers",
@@ -161,6 +215,24 @@
    "desc": "SearXNG 真正划算的地方是自建，因为这样就没有第三方，哪怕是友善的实例运营者，也看不到你的查询；它在你自己屋檐下汇总多家引擎的结果。短板也在这里：跑起来要功夫，而公共实例虽然方便，却意味着信任运营者，还可能被上游引擎限流或封禁。技术上够格自建、想要没有中间人的元搜索，就选它。其余人把公共实例当成不错但不理想的捷径。",
    "pt": "https://privacytools.io/app/searx",
    "site": "https://searxng.org/"
+  },
+  {
+   "slug": "immich",
+   "name": "Immich",
+   "cat": "Private Photo Storage",
+   "cat_zh": "照片存储",
+   "desc": "Immich 已成为自建照片管理的事实推荐，理由充分：界面接近 Google Photos，迁移感觉自然，FUTO 的支持给了它开源媒体项目少见的财务稳定。隐私模型很直白：你的服务器、你的数据、没有第三方。一条重要的实话：Immich 不是端到端加密。文件以可读形式存在你的服务器上，照片的安全取决于你把主机和网络访问守得多好。愿意跑家用服务器或 VPS 的人，用这个换回对照片库的控制，是合理的交易。",
+   "pt": "https://privacytools.io/app/immich",
+   "site": "https://immich.app"
+  },
+  {
+   "slug": "neovim",
+   "name": "Neovim",
+   "cat": "Private Code Editors",
+   "cat_zh": "代码编辑器",
+   "desc": "Neovim 是给想要完全控制、不让任何东西离开自己机器的开发者，在隐私这一点上它是这里最干净的：没有遥测要关，因为从来没内置过。这份能力有真实代价。学习曲线陡，模态编辑要几周才觉得自然。舒服的配置意味着自己拼装并维护，而不是装一个打磨好的 IDE。它是终端里键盘驱动的工具，不是点选式的。整天待在终端、也愿意花时间调它，就用它。想要一打开就能干活的编辑器，就别。",
+   "pt": "https://privacytools.io/app/neovim",
+   "site": "https://neovim.io/"
   },
   {
    "slug": "keepassxc",
@@ -199,6 +271,15 @@
    "site": "https://www.bleachbit.org/"
   },
   {
+   "slug": "opencut",
+   "name": "OpenCut",
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "desc": "它的说法简单而且成立：CapCut 式的剪辑，却不把原始素材和使用习惯交给字节跳动。诚实的短板是年轻、有些地方粗糙，与成熟的桌面编辑器相比会缺功能、偶尔卡壳。想要快速做社媒短视频、什么都不用装、什么也不离开浏览器，选 OpenCut。今天就需要深度特效或真正的调色，先用 Kdenlive 上手，等 OpenCut 长大再看。",
+   "pt": "https://privacytools.io/app/opencut",
+   "site": "https://opencut.app/"
+  },
+  {
    "slug": "newpipe",
    "name": "NewPipe",
    "cat": "Private Frontends",
@@ -206,6 +287,15 @@
    "desc": "自由的安卓应用，可播放 YouTube、SoundCloud、PeerTube、Bandcamp 等平台的内容，无需谷歌服务、账号或广告。订阅与播放列表保存在本地，可在 F-Droid 获取。",
    "pt": "https://privacytools.io/app/newpipe",
    "site": "https://newpipe.net"
+  },
+  {
+   "slug": "ente",
+   "name": "ente",
+   "cat": "Private Photo Storage",
+   "cat_zh": "照片存储",
+   "desc": "Ente 是那个不需要你妥协的照片存储推荐：端到端加密、开源、安卓和 iOS 上都有真正的跨平台应用，这在这个领域很少见。你把加密数据块托付给它的服务器，但密钥始终在你手里，不想信任任何人也有自建路径。对多数想找一个真能日常用的私密 Google Photos 替代品的人来说，选它。关于司法管辖：Ente 在印度班加罗尔构建和运营，美国注册的实体只是特拉华州的控股公司，所以我们按印度列，团队和工程实际所在的地方。",
+   "pt": "https://privacytools.io/app/ente",
+   "site": "https://ente.io/"
   },
   {
    "slug": "freetube",
@@ -226,6 +316,15 @@
    "site": "https://logseq.com/"
   },
   {
+   "slug": "vscodium",
+   "name": "VSCodium",
+   "cat": "Private Code Editors",
+   "cat_zh": "代码编辑器",
+   "desc": "VSCodium 是保留你已熟悉的编辑器、又切掉向微软上报那部分的最低摩擦方式。设置和快捷键照旧迁移，遥测在构建层面就没有了，而不是藏在一个要你信任的开关后面。诚实的短板是扩展仓库：微软 Marketplace 的条款禁止第三方构建使用，VSCodium 改从 Open VSX 取，覆盖多数流行扩展，但不包括少数专有的。想要没有追踪的 VS Code、关键扩展都在 Open VSX 上，选它。依赖微软独占扩展的，才需要考虑别处。",
+   "pt": "https://privacytools.io/app/vscodium",
+   "site": "https://vscodium.com/"
+  },
+  {
    "slug": "joplin",
    "name": "Joplin",
    "cat": "Private Notebooks",
@@ -235,6 +334,15 @@
    "site": "https://joplinapp.org/"
   },
   {
+   "slug": "zed",
+   "name": "Zed",
+   "cat": "Private Code Editors",
+   "cat_zh": "代码编辑器",
+   "desc": "追求原始速度就选 Zed，它的 Rust 内核让它在多数开发者正在离开的那款编辑器面前明显更快，多人协作对结对也真的有用。诚实的短板是遥测：默认开着，所以隐私是要你主动选的，而不是起点，得先去设置里关掉。生态也比 VS Code 年轻，插件长尾更薄。看重性能和协作、也愿意第一天就关掉遥测，选 Zed。想要开箱零收集、或依赖成熟扩展目录，就别。",
+   "pt": "https://privacytools.io/app/zed",
+   "site": "https://zed.dev/"
+  },
+  {
    "slug": "nixos",
    "name": "NixOS",
    "cat": "Private Operating Systems",
@@ -242,6 +350,15 @@
    "desc": "完全基于 Nix 包管理器的 Linux 发行版，整个系统（内核、软件包、服务、配置）都声明在一组文件里。升级是原子的，可完整回滚是内置能力。",
    "pt": "https://privacytools.io/app/nixos",
    "site": "https://nixos.org/"
+  },
+  {
+   "slug": "home-assistant",
+   "name": "Home Assistant",
+   "cat": "Private Smart Home",
+   "cat_zh": "智能家居",
+   "desc": "这一类里没有别的能比 Home Assistant 的集成广度和自动化引擎的深度。本地处理意味着厂商的云挂了你的灯照样能用，使用数据也不离开家。真正的代价是复杂度：初始搭建、进阶自动化要写 YAML 配置、还要自己管更新，这把它牢牢放在爱好者领域。从 Google Home 或 Alexa 过来的人要预期一段陡峭的学习曲线。认真对待隐私与设备寿命的人，这份投入会回本；随意的智能家居用户，开箱体验会比商业方案粗糙。",
+   "pt": "https://privacytools.io/app/home-assistant",
+   "site": "https://www.home-assistant.io"
   },
   {
    "slug": "k-9-mail",
@@ -260,6 +377,15 @@
    "desc": "这是第一选择，理由很简单：开源、经过审计、个人使用免费，各平台都能跑，不必在便利与信任之间二选一。实话实说的前提是，用官方云端意味着你的加密密码库放在别人的服务器上；介意的话可以自建。对大多数想摆脱浏览器自带密码管理的人来说，第一个该装的就是它，不用附加条件。",
    "pt": "https://privacytools.io/app/bitwarden",
    "site": "https://bitwarden.com/"
+  },
+  {
+   "slug": "shotcut",
+   "name": "Shotcut",
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "desc": "Shotcut 位于简单与专业之间：比入门玩具强，比 Kdenlive 少些杂乱。素材来自不同来源时，原生多格式时间线真能省时间，在普通硬件上也跑得动。弱点是界面，停靠面板式布局看着旧，要摆弄一阵才顺手。想要真剪辑能力、又不想爬最陡的坡，它是个扎实的选择，而且干活完全不需要联网。",
+   "pt": "https://privacytools.io/app/shotcut",
+   "site": "https://shotcut.org/"
   },
   {
    "slug": "nextcloud",
@@ -334,6 +460,15 @@
    "site": "https://simplex.chat/"
   },
   {
+   "slug": "miniflux",
+   "name": "Miniflux",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "Miniflux 刻意有主张：没有分类、没有星标、没有杂物。想要一个快、少维护、完全由你掌控的阅读器，它接近理想。Go 单文件加 Postgres 的栈好维护，兼容 Fever 与 Google Reader API，意味着能配上你已经在用的任何手机应用。诚实的短板是自建在这里是真要求，不是可勾选选项。有托管方案，但这个工具的全部吸引力在于数据归你。习惯 VPS 的开发者会如鱼得水。",
+   "pt": "https://privacytools.io/app/miniflux",
+   "site": "https://miniflux.app/"
+  },
+  {
    "slug": "libretube",
    "name": "LibreTube",
    "cat": "Private Frontends",
@@ -377,6 +512,24 @@
    "desc": "自己跑一个带验证的递归解析器，是停止信任任何别人 DNS 的办法，Unbound 就是为此而生的精简、审计充分的工具，支持 DoT。代价是你成了运营者：安装、缓存行为、上游选择都归你，这超出多数人的意愿。追求真正独立的自建者和小型网络该这么做；一个信誉良好的公共解析器已经让你满意的，没必要。",
    "pt": "https://privacytools.io/app/unbound",
    "site": "https://nlnetlabs.nl/projects/unbound/about/"
+  },
+  {
+   "slug": "kdenlive",
+   "name": "Kdenlive",
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "desc": "当你已经超出手机剪辑应用、想要真正的控制又不想给 Adobe 付钱，就用 Kdenlive。它支持代理剪辑、调色和数百种特效，稳定开发了十多年。取舍是学习曲线：界面密集，第一天会让人觉得压人。经常剪辑、想要一个能随你成长的工具，值得熬过去。",
+   "pt": "https://privacytools.io/app/kdenlive",
+   "site": "https://kdenlive.org/"
+  },
+  {
+   "slug": "libreoffice",
+   "name": "LibreOffice",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "桌面办公套件的默认选择，适合想让文档始终留在自己磁盘上、不上云、不要账号、不发遥测的人。诚实的取舍是界面在商业套件旁边显得旧，云端协作偏弱，实时共同编辑不是它的强项。离线、私密、功能齐全的文档处理选它；实时协作才是重点，另找别家。",
+   "pt": "https://privacytools.io/app/libreoffice",
+   "site": "https://www.libreoffice.org/"
   },
   {
    "slug": "dnscrypt-proxy",
@@ -424,6 +577,15 @@
    "site": "https://proton.me/mail"
   },
   {
+   "slug": "etherpad",
+   "name": "Etherpad",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "长期运行、部署广泛的协作编辑器，快速开一个共享文档很好用，背后有庞大的插件生态。标签上写得很直白：文档不加密，所以谁运营服务器谁就能读到全部内容，信任完全取决于托管方。临时团队笔记和头脑风暴可以自建实例；别把敏感内容放进公共实例。",
+   "pt": "https://privacytools.io/app/etherpad",
+   "site": "https://etherpad.org/"
+  },
+  {
    "slug": "nitter",
    "name": "Nitter",
    "cat": "Private Frontends",
@@ -442,6 +604,15 @@
    "site": "https://proton.me/drive"
   },
   {
+   "slug": "proton-calendar",
+   "name": "Proton Calendar",
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "desc": "端到端加密的日历，连事件详情和标题都对服务商隐藏，这很少见也真有价值，尤其你已经在 Proton 生态里。诚实的局限很实际：最好的功能在付费方案后面，全加密日历也牺牲了谷歌那种顺滑的分享与集成。把你的日程当作敏感数据，选它。习惯主流便利的人会觉得它比预想的更封闭。",
+   "pt": "https://privacytools.io/app/proton-calendar",
+   "site": "https://proton.me/calendar"
+  },
+  {
    "slug": "keepassdx",
    "name": "KeePassDX",
    "cat": "Private Password Managers",
@@ -449,6 +620,15 @@
    "desc": "轻量的开源安卓密码管理器，兼容 KeePass，凭据存储在本地加密数据库（.kdbx）中，支持生物识别解锁、自动填充、TOTP 和通行密钥。",
    "pt": "https://privacytools.io/app/keepassdx",
    "site": "https://www.keepassdx.com/"
+  },
+  {
+   "slug": "onlyoffice",
+   "name": "ONLYOFFICE",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "如果你真正的问题是兼容微软 Office 又不想把文件交给微软，它处理 .docx 和 .xlsx 比多数开放替代品更忠实。注意它对加密的定位：保护传输中的数据，以及你自己服务器上的存储，不是 CryptPad 那种浏览器端零知识模型。整天泡在 Office 格式里的团队可以自建；主要想要客户端加密的，这不是那个工具。",
+   "pt": "https://privacytools.io/app/onlyoffice",
+   "site": "https://www.onlyoffice.com"
   },
   {
    "slug": "accrescent",
@@ -460,6 +640,15 @@
    "site": "https://accrescent.app"
   },
   {
+   "slug": "openshot",
+   "name": "OpenShot",
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "desc": "OpenShot 是开源剪辑器里最温和的入口，而这正是它的意义：如果你的参照是 CapCut 或 iMovie，几分钟就会觉得熟悉。这份简单的代价是稳定性。它长期有名声说在较重项目上容易绊倒，所以要勤保存，别指望它扛长而复杂的剪辑。短片和第一次剪辑的好起点，时间线一有野心就会让人烦，那时就该升到 Shotcut 或 Kdenlive。",
+   "pt": "https://privacytools.io/app/openshot",
+   "site": "https://www.openshot.org/"
+  },
+  {
    "slug": "stoat",
    "name": "Stoat",
    "cat": "Private Messaging",
@@ -467,6 +656,15 @@
    "desc": "开源、可自托管的 Discord 替代品，原名 Revolt。面向想离开 Discord 的社群，但消息不是端到端加密的。",
    "pt": "https://privacytools.io/app/stoat",
    "site": "https://stoat.chat/"
+  },
+  {
+   "slug": "radicale",
+   "name": "Radicale",
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "desc": "想把日历和联系人从谷歌、苹果的服务器上拿开，又要尽量少的复杂度，Radicale 是最直接的路径。配置极简，文件格式可迁移，GPLv3 代码库从 2008 年维护到现在。短板是自建 CalDAV 服务器有运维开销：服务器、TLS，最好还有备份，才够可靠到替代托管服务。自建带来的隐私是真实且有意义的，但它不是端到端加密。安卓配 DAVx5、桌面配一个 CalDAV 客户端，就能替代 Google 日历，而不在任何第三方服务器上留下你的日程副本。",
+   "pt": "https://privacytools.io/app/radicale",
+   "site": "https://radicale.org"
   },
   {
    "slug": "rethinkdns",
@@ -505,6 +703,15 @@
    "site": "https://aliasvault.net"
   },
   {
+   "slug": "transmission",
+   "name": "Transmission",
+   "cat": "Private Torrent Clients",
+   "cat_zh": "种子下载",
+   "desc": "极简是卖点：占用小，界面几乎不存在，不挡你的路，所以它在 Linux 上、以及作为无头守护进程很受欢迎。这份克制也是局限，想要精细带宽调度和插件的高阶用户会觉得被框住。想要一个只管传文件的轻量客户端，尤其是在服务器或低配机器上，选 Transmission。想要一堆旋钮和面板的人，去看 qBittorrent 或 BiglyBT。",
+   "pt": "https://privacytools.io/app/transmission",
+   "site": "https://transmissionbt.com/"
+  },
+  {
    "slug": "loop-habit-tracker",
    "name": "Loop Habit Tracker",
    "cat": "Private Health & Fitness",
@@ -512,6 +719,15 @@
    "desc": "无广告、开源、数据只在本机，背后有一大批长期用户，对一个这么简单的应用来说是很高的信任。另一面是它只做一件事：习惯打卡的连续天数和图表，不去当计划表或日记本，目标定得很重的人迟早会觉得不够用。这份专注正是它的吸引力：想在安卓上清爽地记习惯、不要账号、不被推销，选它；需要把提醒挂在一整套任务系统上的，另找别家。",
    "pt": "https://privacytools.io/app/loop-habit-tracker",
    "site": "https://play.google.com/store/apps/details?id=org.isoron.uhabits"
+  },
+  {
+   "slug": "photoprism",
+   "name": "PhotoPrism",
+   "cat": "Private Photo Storage",
+   "cat_zh": "照片存储",
+   "desc": "PhotoPrism 是给想彻底拥有自己照片库的人：自建，自动标签和搜索强到能和云巨头比，而且没有月费。诚实的短板是自建就是全部工作，服务器要你提供并守住，目前也没有交钥匙的托管选项，所以这里的隐私等于责任。已经在跑家用服务器或 NAS、想把照片完全从别人的云上拿开，选它。",
+   "pt": "https://privacytools.io/app/photoprism",
+   "site": "https://photoprism.app/"
   },
   {
    "slug": "simplelogin",
@@ -559,6 +775,24 @@
    "site": "https://email.faircode.eu/"
   },
   {
+   "slug": "biglybt",
+   "name": "BiglyBT",
+   "cat": "Private Torrent Clients",
+   "cat_zh": "种子下载",
+   "desc": "功能极繁主义的选择，承自老的 Vuze 代码，有 swarm 合并、大量设置、安卓远程控制，给想要每个旋钮的人。这份深度也是警告：在精简客户端旁边会显得沉重杂乱，界面也拿不到设计奖。真的需要高级控制和远程管理、并且会用，选 BiglyBT。只是偶尔下个文件，它的复杂度超出所需，用 qBittorrent。",
+   "pt": "https://privacytools.io/app/biglybt",
+   "site": "https://www.biglybt.com/"
+  },
+  {
+   "slug": "lineageos",
+   "name": "LineageOS",
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "desc": "任何第三方 ROM 里最广的设备支持，也是它诚实的卖点：手机太旧或太冷门、GrapheneOS 不支持，往往只有这条路能让它继续打补丁、去谷歌化。但要看清广度换来的是深度不足。加固程度因维护者而异，验证启动在少数设备之外很不稳定，所以它更适合理解为延长寿命和去臃肿，而不是最高安全。让老手机复活很好，威胁模型严肃时就是错的选择。",
+   "pt": "https://privacytools.io/app/lineageos",
+   "site": "https://www.lineageos.org/"
+  },
+  {
    "slug": "pixelfed",
    "name": "PixelFed",
    "cat": "Private Social Networks",
@@ -575,6 +809,24 @@
    "desc": "监测键盘和鼠标使用情况，据此提醒你做微休息和长休息，并可限制每日使用电脑的总时长。",
    "pt": "https://privacytools.io/app/workrave",
    "site": "https://workrave.org/"
+  },
+  {
+   "slug": "feeder",
+   "name": "Feeder",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "Feeder 是安卓上省心的 RSS 选择：开源、在 F-Droid 上，直接在设备上读订阅，不需要账号，也没有同步服务盯着你读什么。它只做安卓，刻意简单，别指望跨平台同步或功能堆满的高阶阅读器。安卓用户想要一个私密、不要账号的订阅阅读器、别的都不要，它把这件事做得好。",
+   "pt": "https://privacytools.io/app/feeder",
+   "site": "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play"
+  },
+  {
+   "slug": "tuta",
+   "name": "Tuta",
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "desc": "零知识、跨平台的日历，有真正可用的免费档，与它的加密邮件绑得很紧，这既是吸引力也是约束。加密意味着它不说标准 CalDAV，与外部应用同步受限，想用好就得投入 Tuta 的应用。这份锁定是隐私的代价。已经在其邮箱里、或正打算迁过去，它是强选；想要能接入一切其他应用的日历，就别扭。Tuta 会删掉六个月未登录的免费账号，之后也不回收那个地址：失效的名字会被禁止重新注册，要找回得订阅付费方案并用原账号的凭据登录。偶尔登录一次没问题，注册个免费地址然后忘掉，就是真陷阱。",
+   "pt": "https://privacytools.io/app/tuta",
+   "site": "https://tuta.com/"
   },
   {
    "slug": "session",
@@ -604,6 +856,15 @@
    "site": "https://www.yubico.com/products/yubico-authenticator/"
   },
   {
+   "slug": "netnewswire",
+   "name": "NetNewsWire",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "在苹果设备上想要订阅私密又免费，就选 NetNewsWire：开源、没有广告和追踪，直接读订阅，不把阅读习惯经由某家公司的服务器。局限就在吸引力里，只做 Mac 和 iOS，跨平台家庭得另找。苹果生态里想要干净、无杂物、尊重用户的阅读器，它显然是首选。",
+   "pt": "https://privacytools.io/app/netnewswire",
+   "site": "https://netnewswire.com/"
+  },
+  {
    "slug": "lesspass",
    "name": "LessPass",
    "cat": "Private Password Managers",
@@ -611,6 +872,15 @@
    "desc": "如果喜欢 Bitwarden 但不想同步或存储密码，LessPass 是另一种思路：按主密码和站点信息现场算出密码，不保存任何数据。支持浏览器、手机和命令行。",
    "pt": "https://privacytools.io/app/lesspass",
    "site": "https://lesspass.com/"
+  },
+  {
+   "slug": "ardour",
+   "name": "Ardour",
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "desc": "剪个播客用 Ardour 过头，做一张唱片则刚刚好。它是真正的数字音频工作站，深度能与商业工具相比，项目从 2000 年代初持续开发至今。这份深度同样是警告：它是这一类里最陡的学习曲线，并且默认你已经懂音频路由和信号流。做音乐或认真的多轨工作，选 Ardour。快速剪辑和清理，Tenacity 是更理智的起点。",
+   "pt": "https://privacytools.io/app/ardour",
+   "site": "https://ardour.org/"
   },
   {
    "slug": "tor",
@@ -640,6 +910,15 @@
    "site": "https://molly.im/"
   },
   {
+   "slug": "newsboat",
+   "name": "Newsboat",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "Newsboat 赢得的是那部分整天待在终端、希望订阅阅读器像文本编辑器一样工作的用户。Vim 键位、可脚本化的过滤语言、能把文章管道给任何外部程序，对自动化和自定义工作流确实强大。它不适合所有人：没有图形界面、没有同步、没有手机端，你就在运行阅读器的那台机器上读。按季度发布、签名压缩包，是有维护的项目的信号。终端本来就是你的家，它就是显然的选择。",
+   "pt": "https://privacytools.io/app/newsboat",
+   "site": "https://newsboat.org/"
+  },
+  {
    "slug": "tox",
    "name": "Tox",
    "cat": "Private Messaging",
@@ -656,6 +935,24 @@
    "desc": "NeoMutt 是终端邮件客户端的首选，适合要最大控制权、不要图形界面开销的人：整个程序跑在终端里，与 GnuPG 的 OpenPGP 集成干净，配 Notmuch 能在大量邮件里做快速全文检索。配置文件本身当脚本用，高阶用户几乎什么都能自动化。实话说的短板是入门曲线陡，纯文本界面是有意的取舍，不是缺陷。需要手机客户端或拖拽附件就别选；它适合开发者、系统管理员和整天待在终端里的隐私意识用户。",
    "pt": "https://privacytools.io/app/neomutt",
    "site": "https://neomutt.org/"
+  },
+  {
+   "slug": "vikunja",
+   "name": "Vikunja",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "可自建的待办与项目应用，真能导入 Todoist、Trello 和 Microsoft To-Do，离开这些服务就没那么痛。两个诚实提醒：它不加密，隐私来自你拥有服务器；原生应用还粗糙，主要靠网页版撑着。会自建、想把任务数据从大厂挪走的人，它是强选；今天就需要打磨好的手机应用，则不太合适。",
+   "pt": "https://privacytools.io/app/vikunja",
+   "site": "https://vikunja.io/"
+  },
+  {
+   "slug": "webtorrent",
+   "name": "WebTorrent",
+   "cat": "Private Torrent Clients",
+   "cat_zh": "种子下载",
+   "desc": "它与名单里其余的不同，而且这点要紧：WebTorrent 讲 WebRTC，能在浏览器里串流种子，确实新奇，但也意味着该功能只能和同样支持 WebTorrent 的对等端组网，这限制了它作为通用下载器的用处。浏览器内或串流播放就是目标时选它，只是想抓文件则不是。普通的种子下载，qBittorrent 这类传统客户端能连上多得多的对等端。",
+   "pt": "https://privacytools.io/app/webtorrent",
+   "site": "https://webtorrent.io/"
   },
   {
    "slug": "tofu",
@@ -757,6 +1054,15 @@
    "site": "https://www.gopass.pw/"
   },
   {
+   "slug": "collabora",
+   "name": "Collabora Online",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "已经在跑 Nextcloud 或类似自建云，Collabora Online 是能给它配上的最完整办公编辑层，LibreOffice 格式兼容性强，又不把文档发给第三方服务。免费的社区版很适合小团队和个人自建者。实际的限制是部署要熟悉容器和服务器管理，这不是消费级产品。已经决定自建的组织，用这个代价换办公编辑的完整数据主权，可以接受。",
+   "pt": "https://privacytools.io/app/collabora",
+   "site": "https://www.collaboraonline.com"
+  },
+  {
    "slug": "redlib",
    "name": "Redlib",
    "cat": "Private Frontends",
@@ -764,6 +1070,15 @@
    "desc": "用 Rust 编写的开源 Reddit 网页前端，可自托管。所有内容（包括媒体）都经服务器代理，Reddit 看不到你的 IP，也无法用 Cookie 或 JavaScript 追踪你。",
    "pt": "https://privacytools.io/app/redlib",
    "site": "https://github.com/redlib-org/redlib"
+  },
+  {
+   "slug": "piwigo",
+   "name": "Piwigo",
+   "cat": "Private Photo Storage",
+   "cat_zh": "照片存储",
+   "desc": "Piwigo 是老资格的照片图库平台，吸引点在灵活：自建求完全控制，或不想折腾就用它的托管，内置像样的用户管理。在现代顺滑应用旁边它显老，手机体验偏实用而谈不上愉悦。想要成熟、可自建、共享控制细致的图库，也不介意更老派的界面，它值得。",
+   "pt": "https://privacytools.io/app/piwigo",
+   "site": "https://piwigo.org/"
   },
   {
    "slug": "openkeychain",
@@ -775,6 +1090,24 @@
    "site": "https://www.openkeychain.org/"
   },
   {
+   "slug": "domoticz",
+   "name": "Domoticz",
+   "cat": "Private Smart Home",
+   "cat_zh": "智能家居",
+   "desc": "Domoticz 的名声来自在低配硬件上跑得舒服：树莓派 Zero 或第一代派就能扛住一个不大的安装，这对常开的家居自动化很重要。全本地架构意味着没有厂商能关掉你的系统，硬件支持清单也确实宽。短板是界面没跟上现代交互预期，配置流程比 Home Assistant 现在的面板工具显得过时。想要在极简硬件上长期运行、也能接受实用主义界面，Domoticz 是可靠的选择；想要打磨好的搭建体验，先看 Home Assistant。",
+   "pt": "https://privacytools.io/app/domoticz",
+   "site": "https://www.domoticz.com"
+  },
+  {
+   "slug": "peergos",
+   "name": "Peergos",
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "desc": "Cure53 的审计是实打实的信誉标记，整体愿景也有野心：一个加密、自持的存储与应用平台，日历只是其中一块。这份广度也是要留意的地方，项目更年轻、更小众，日历不像专门工具那样打磨成独立成品。它的去中心化存储哲学合你胃口，可以一看。今天只想要一个可靠的加密日历，更专注的选项更稳。",
+   "pt": "https://privacytools.io/app/peergos",
+   "site": "https://peergos.org/posts/calendar"
+  },
+  {
    "slug": "addy-io",
    "name": "addy.io",
    "cat": "Private Email",
@@ -784,6 +1117,15 @@
    "site": "https://addy.io/"
   },
   {
+   "slug": "cryptpad",
+   "name": "CryptPad",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "突出之处是加密在你的浏览器里完成，数据到达服务器之前就已经是密文，所以连托管方都读不到你的文档，同时还有一整套编辑器和 CryptDrive。代价是性能与打磨：比 Google Docs 更重更粗，大而复杂的文档会暴露这点。文档的保密性比顺滑更重要时选它；随意的协作，这份摩擦可能不值。",
+   "pt": "https://privacytools.io/app/cryptpad",
+   "site": "https://cryptpad.fr/"
+  },
+  {
    "slug": "mailvelope",
    "name": "Mailvelope",
    "cat": "Private Email Clients",
@@ -791,6 +1133,15 @@
    "desc": "Mailvelope 把 OpenPGP 直接装进 Gmail、Outlook 这类网页邮箱，在浏览器里就能用，这既是它的全部吸引力，也是全部局限。它只保护邮件内容，不保护元数据，收发双方都要配好密钥，所以繁琐，私密程度也只取决于你写给谁。卡在主流的网页邮箱账号上、又必须给某些邮件做真正的端到端加密时用它；不要把它误当成换了隐私服务商。",
    "pt": "https://privacytools.io/app/mailvelope",
    "site": "https://mailvelope.com/"
+  },
+  {
+   "slug": "ethercalc",
+   "name": "EtherCalc",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "Etherpad 的表格版，想实时共享表格又不想被谷歌账号挡在门外时很好用。同样直白的提醒在这里更要紧，因为涉及数字：它不加密，托管方看得到你的数据，而且这里的许可信息不明确。在你控制的实例上做非敏感的协作计算没问题；数字一旦私密，就该换加密工具。",
+   "pt": "https://privacytools.io/app/ethercalc",
+   "site": "https://ethercalc.net/"
   },
   {
    "slug": "lokinet",
@@ -829,6 +1180,15 @@
    "site": "https://friendi.ca/"
   },
   {
+   "slug": "etesync",
+   "name": "EteSync",
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "desc": "自建这条逃生通道才是真正的吸引点：自己跑服务器就完全跳过订阅，同时保留端到端加密、对标准友好的日历与联系人同步。另一面是开发已经安静下来，把数据押上去之前先权衡。适合想要自己拥有服务器、看重 CalDAV 式兼容的技术用户。想要有人替你托管、且项目活跃，就不太理想。",
+   "pt": "https://privacytools.io/app/etesync",
+   "site": "https://www.etesync.com/"
+  },
+  {
    "slug": "freenet",
    "name": "Hyphanet",
    "cat": "Private Anonymizing Networks",
@@ -836,6 +1196,24 @@
    "desc": "现在叫 Hyphanet，是一个抗审查的分布式数据存储，定位很具体：你把内容发布进网络，它就持续存在，即使受压也仍可达。代价是慢、操作方式不寻常，完全不像正常浏览，学习投入是真实的。在封禁下架构成威胁的场合，它靠韧性发布赢得位置。别指望它是更快、更友好的 Tor。",
    "pt": "https://privacytools.io/app/freenet",
    "site": "https://www.hyphanet.org/"
+  },
+  {
+   "slug": "deluge",
+   "name": "Deluge",
+   "cat": "Private Torrent Clients",
+   "cat_zh": "种子下载",
+   "desc": "吸引点是插件架构和薄核心，后者可作为守护进程运行，配一个独立的网页界面，对常开的环境很灵活。不过开发推进很慢，最近一次提交在三月，所以比 qBittorrent 显得没那么活跃打磨。特别想要插件模型、或客户端与守护进程分离的轻量结构，选 Deluge。没有这个需求，更热闹的客户端开箱体验更顺。",
+   "pt": "https://privacytools.io/app/deluge",
+   "site": "https://deluge-torrent.org/"
+  },
+  {
+   "slug": "iobroker",
+   "name": "ioBroker",
+   "cat": "Private Smart Home",
+   "cat_zh": "智能家居",
+   "desc": "ioBroker 的适配器生态是它最强的论据之一：有些平台只能靠通用 MQTT 桥接，ioBroker 往往已有原生适配器，处理某个设备家族的怪癖。JavaScript 与 Node.js 的基础也让写自定义适配器对熟悉这套栈的开发者很顺。诚实的短板是管理界面和初始搭建不如 Home Assistant 现在的体验精致，分布式适配器架构意味着更多要维护更新的部件。想用 JavaScript 写自定义逻辑、或需要覆盖 Home Assistant 处理得不好的设备协议，它是最佳选择；刚接触家居自动化的人，有更友好的起点。",
+   "pt": "https://privacytools.io/app/iobroker",
+   "site": "https://www.iobroker.net"
   },
   {
    "slug": "i2p",
@@ -910,6 +1288,15 @@
    "site": "https://gnupg.org/"
   },
   {
+   "slug": "tenacity",
+   "name": "Tenacity",
+   "cat": "Private Video & Audio",
+   "cat_zh": "视频与音频",
+   "desc": "Tenacity 存在的理由只有一个，而且是好理由：去掉让人不安的部分之后的 Audacity，也就是遥测，以及易主之后到来的新条款。功能上它就是熟悉的 Audacity，用过的人马上就能上手。短板是势头，志愿分叉比有资金的原始项目走得慢，发布可能不频繁。想要一个不往外报数据的纯粹本地音频编辑器，它干净合适。重度音乐制作，Ardour 是更大的工具。",
+   "pt": "https://privacytools.io/app/tenacity",
+   "site": "https://tenacityaudio.org/"
+  },
+  {
    "slug": "kicksecure",
    "name": "Kicksecure",
    "cat": "Private Operating Systems",
@@ -917,6 +1304,15 @@
    "desc": "基于 Debian 的安全加固发行版，开箱即用大量内核与用户空间加固设置，在不需要手动配置的情况下缩小攻击面。它同时也是 Whonix 匿名系统的底座。",
    "pt": "https://privacytools.io/app/kicksecure",
    "site": "https://www.kicksecure.com/"
+  },
+  {
+   "slug": "grapheneos",
+   "name": "GrapheneOS",
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "desc": "只支持 Pixel，而且毫不掩饰，因为把自己绑在带验证启动的硬件上，正是它能给出比追求设备广度的对手更强保证的方式。这就是交易：买谷歌的手机硬件，来逃离谷歌的软件，沙箱化的 Play 层让真实应用仍能运行。威胁模型高但务实，它是当下最可信的手机系统。只有你拒绝拥有 Pixel 时才该跳过。",
+   "pt": "https://privacytools.io/app/grapheneos",
+   "site": "https://grapheneos.org/"
   },
   {
    "slug": "exiferaser",
@@ -1000,6 +1396,15 @@
    "site": "https://www.qubes-os.org/"
   },
   {
+   "slug": "openhab",
+   "name": "openHAB",
+   "cat": "Private Smart Home",
+   "cat_zh": "智能家居",
+   "desc": "openHAB 的厂商中立设计和深厚的 OSGi 架构，让它适合需要把传统工业协议（KNX、Modbus）与现代物联网设备一起桥接的集成者，这是 Home Assistant 只能靠插件补上的能力。一切跑在你自己的硬件上，完全本地控制。诚实的短板是 Java 与 OSGi 技术栈以及规则 DSL 的学习曲线比多数对手陡，界面工具也落后于 Home Assistant 现在提供的。技术用户手里既有商业设备又有自制设备、想要一个稳定、有基金会支持的平台，openHAB 是认真的选择；新手，上手过程要难得多。",
+   "pt": "https://privacytools.io/app/openhab",
+   "site": "https://www.openhab.org"
+  },
+  {
    "slug": "1password",
    "name": "1Password",
    "cat": "Private Password Managers",
@@ -1007,6 +1412,33 @@
    "desc": "面向个人、家庭和团队的商业密码管理器，支持 Windows、macOS、Linux、安卓、iOS 及主流浏览器。采用双密钥架构，把主密码与本机生成的 Secret Key 结合使用。",
    "pt": "https://privacytools.io/app/1password",
    "site": "https://1password.com/"
+  },
+  {
+   "slug": "e-os",
+   "name": "/e/OS",
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "desc": "想要日常主力机的安卓体验、又不把数据交给谷歌，/e/OS 开箱就比多数替代品做得多：追踪器评分、microG 兼容层、简单安装器，相比手动折腾 LineageOS 门槛低了很多。取舍是 microG 不是谷歌服务的完美替代，少数需要证明或专有 API 的应用无法正常工作。能容忍偶尔的应用摩擦、想要一个法国基金会支持、社区可审计的系统而不是自己从零搭，它最合适。",
+   "pt": "https://privacytools.io/app/e-os",
+   "site": "https://e.foundation/e-os"
+  },
+  {
+   "slug": "silentsuite",
+   "name": "SilentSuite",
+   "cat": "Private Calendars",
+   "cat_zh": "日历",
+   "desc": "桥接才是它值得一看的原因。多数加密同步要求你搬进它自己的应用，SilentSuite 把加密留在你的设备上，同时给普通的桌面日历一个明文的 CalDAV 端点去对接，这正是试一试的工具和长期用下去的工具之间的差别。短板是覆盖面：没有原生 iOS 同步，配置里有 iPhone 就只能在浏览器里开网页版，内置日历和通讯录什么也收不到。项目年轻，付费档养着托管那一侧。想要 EteSync 式还在被开发的加密同步，自建或付费托管，选它；苹果设备是核心，就先跳过。",
+   "pt": "https://privacytools.io/app/silentsuite",
+   "site": "https://silentsuite.io"
+  },
+  {
+   "slug": "akregator",
+   "name": "Akregator",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "KDE Plasma 用户想要原生订阅阅读器、又不想在桌面环境之外装东西，Akregator 是自然之选。它处理大量订阅表现好，与其他 Kontact 应用集成干净，不需要账号或云服务。取舍是界面比更新的 GTK 或网页阅读器显老，跨设备同步订阅这类进阶功能也没有。作为纯本地桌面阅读器，最适合已经在 KDE 生态里的人。6.4 起也可用于 Windows。",
+   "pt": "https://privacytools.io/app/akregator",
+   "site": "https://apps.kde.org/akregator/"
   },
   {
    "slug": "arch-linux",
@@ -1216,6 +1648,15 @@
    "site": "https://filen.io/"
   },
   {
+   "slug": "feedbro",
+   "name": "Feedbro",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "Feedbro 是浏览器扩展式的订阅阅读器，订阅留在浏览器本地而不是经由某服务同步，这就是它的隐私角度。代价是闭源，那份隐私说法你只能信；绑在浏览器上也意味着订阅不跟到手机。适合桌面只用一个浏览器、想把阅读留在外部服务器之外的人；想要开源代码或手机同步的，另找别处。",
+   "pt": "https://privacytools.io/app/feedbro",
+   "site": "https://nodetics.com/feedbro/"
+  },
+  {
    "slug": "fedora-atomic",
    "name": "Fedora Atomic",
    "cat": "Private Operating Systems",
@@ -1232,6 +1673,15 @@
    "desc": "kDrive 的长处是瑞士司法管辖加上真能用的产品：桌面同步客户端、手机应用、浏览器内办公编辑，数据不经过美国或欧盟的云服务商。普通文件在静态和传输中都加密，但默认不是零知识，所以 Infomaniak 在被强制时能访问。Vault 功能为敏感文件提供真正的客户端零知识加密，但要手动开启，不是默认体验。想要一个不用自建的 Google Drive 替代品，kDrive 是稳妥之选，前提是你明白完整的零知识得用 Vault，而不是主盘。",
    "pt": "https://privacytools.io/app/infomaniak-kdrive",
    "site": "https://www.infomaniak.com/en/ksuite/kdrive"
+  },
+  {
+   "slug": "internxt-photos",
+   "name": "Internxt Photos",
+   "cat": "Private Photo Storage",
+   "cat_zh": "照片存储",
+   "desc": "Internxt 照片在云端照片存储的隐私基本功上是齐的：零知识加密，免费档可试，还有让厌倦永久订阅的人心动的终身方案。作为较年轻的西班牙服务，它的履历更短，应用也不如它竞争的巨头成熟，把这些和价格一起权衡。想要欧盟管辖下的加密照片备份、又被打动于终身定价，它是个公平的选择。",
+   "pt": "https://privacytools.io/app/internxt-photos",
+   "site": "https://internxt.com/photos"
   },
   {
    "slug": "kagi",
@@ -1261,6 +1711,15 @@
    "site": "https://kontact.kde.org/"
   },
   {
+   "slug": "ios",
+   "name": "iOS",
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "desc": "开箱状态下 iOS 泄漏比原生谷歌安卓手机少，因为追踪要用户主动同意，苹果也不跑谷歌那套建立在你的数据上的广告机器。短板是它完全闭源，隐私依赖苹果的承诺而不是你能查验的东西，而且它仍是受法律要求约束的美国公司。对多数人来说是务实的稳妥选择。最大化的做法是 GrapheneOS 这类去谷歌化的安卓，用可验证的代码换掉苹果的口头保证。",
+   "pt": "https://privacytools.io/app/ios",
+   "site": "https://www.apple.com/ios/"
+  },
+  {
    "slug": "mega",
    "name": "MEGA",
    "cat": "Private Cloud Storage",
@@ -1288,6 +1747,15 @@
    "site": "https://mailbox.org/"
   },
   {
+   "slug": "newsflash",
+   "name": "NewsFlash",
+   "cat": "Private RSS Readers",
+   "cat_zh": "RSS 阅读器",
+   "desc": "NewsFlash 是 GNOME 桌面上打磨最好的订阅前端，已经在跑自建订阅服务的人是自然的搭配。设计干净，全程键盘可用，自适应布局能缩到小屏。需要提前知道的局限是它主要是同步客户端，不是独立阅读器。没有现成的订阅服务账号，得先自己搭一个。只做 Linux，明确面向 GNOME 用户，不过在别的 GTK 桌面上也能正常运行。",
+   "pt": "https://privacytools.io/app/newsflash",
+   "site": "https://apps.gnome.org/NewsFlash/"
+  },
+  {
    "slug": "mojeek",
    "name": "Mojeek",
    "cat": "Private Search Engines",
@@ -1297,6 +1765,15 @@
    "site": "https://www.mojeek.com/"
   },
   {
+   "slug": "homekit",
+   "name": "HomeKit",
+   "cat": "Private Smart Home",
+   "cat_zh": "智能家居",
+   "desc": "作为主流智能家居平台，它的隐私姿态很强：家庭数据端到端加密，摄像头分析在你家的中枢上完成而不是公司云端，苹果也没有广告理由去开采它。局限是苹果惯有的那些：封闭生态，指望你买带对应标志的苹果硬件和配件，也没法自建。iPhone 家庭想要比 Alexa 更好的隐私、又不想跑服务器，这是省心的选择。要完全控制和任意厂商支持，Home Assistant 是那扇逃生门。",
+   "pt": "https://privacytools.io/app/homekit",
+   "site": "https://www.apple.com/home-app/"
+  },
+  {
    "slug": "org-mode",
    "name": "Org-mode",
    "cat": "Private Notebooks",
@@ -1304,6 +1781,24 @@
    "desc": "Org-mode 是这一类里的高手上限：笔记是你完全拥有的纯文本文件，可以用 GPG 加密单条或整份文件，用 git 给所有内容做版本管理，从不碰不属于你的服务器。诚实的短板是它需要 Emacs，学习曲线陡，而且除了手机端第三方工具和其他编辑器插件，完整功能只在 Emacs 内可用。想要最大程度主宰笔记的技术型用户，没有别的能接近它。",
    "pt": "https://privacytools.io/app/org-mode",
    "site": "https://orgmode.org/"
+  },
+  {
+   "slug": "privmx",
+   "name": "PrivMX",
+   "cat": "Private Productivity",
+   "cat_zh": "效率工具",
+   "desc": "波兰出的一款一体化加密团队协作套件，涵盖聊天、通话、文件、任务和看板，对隐私优先的工具来说野心不小。开发闭源、没有公开仓库，意味着你对加密的信任比对开源项目要更多落在厂商口头上，把整个团队的工作搬进去之前先考察清楚。适合想要一个可自建加密枢纽、也愿意做这份考察的组织；个人用单一用途的工具更好。",
+   "pt": "https://privacytools.io/app/privmx",
+   "site": "https://privmx.com/"
+  },
+  {
+   "slug": "calyxos",
+   "name": "CalyxOS",
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "desc": "它位于 LineageOS 与 GrapheneOS 之间：开箱的隐私工具和 microG 比前者多，设备容忍度和便利性比后者的纯粹立场多。代价是把 microG 塞进来让依赖谷歌的应用可用，确实是攻击面和信任上的妥协，GrapheneOS 刻意拒绝这么做。想要一台能用、不必每天和应用打架的去谷歌化 Pixel，选它。想要最硬的基线，GrapheneOS 更严格。",
+   "pt": "https://privacytools.io/app/calyxos",
+   "site": "https://calyxos.org/"
   },
   {
    "slug": "posteo",
@@ -1367,6 +1862,15 @@
    "desc": "想把自己邮件留在本地、在不信任网页邮箱的前提下加上 PGP，桌面端就选 Thunderbird，免费，背后有 Mozilla。但要弄清它的身份：客户端，不是服务商，隐私跟随你所连的账号，它本身不施什么魔法。界面感觉旧，配置要有耐心；不过在真正的电脑上集中管理多个账号，比它更灵活的不多。",
    "pt": "https://privacytools.io/app/thunderbird",
    "site": "https://www.thunderbird.net/"
+  },
+  {
+   "slug": "ubuntu-touch",
+   "name": "Ubuntu Touch",
+   "cat": "Private Mobile OS",
+   "cat_zh": "手机系统",
+   "desc": "真正既非安卓也非 iOS 的手机系统很稀少，这份理想主义就是它的全部吸引力。短板是主力机的现实：应用生态单薄，硬件支持窄，你会不断绕开缺口。运行一台真正的 Linux 手机本身就是目标、也把这台设备当项目来做，就选它。需要手机拿来就能用的人，另找别处。",
+   "pt": "https://privacytools.io/app/ubuntu-touch",
+   "site": "https://ubuntu-touch.io/"
   },
   {
    "slug": "startpage",
