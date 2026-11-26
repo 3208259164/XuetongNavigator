@@ -465,13 +465,42 @@
   function openDrawer() { $('#sidebar').classList.add('open'); $('#scrim').classList.add('on'); }
   function closeDrawer() { $('#sidebar').classList.remove('open'); $('#scrim').classList.remove('on'); }
 
+  /* ---------- 搜索历史 ---------- */
+  var HIS_KEY = 'nav_his_v1';
+  function loadHis() {
+    try { return JSON.parse(localStorage.getItem(HIS_KEY) || '[]'); } catch (e) { return []; }
+  }
+  function addHis(q) {
+    q = (q || '').trim();
+    if (q.length < 1) return;
+    var a = loadHis().filter(function (x) { return x !== q; });
+    a.unshift(q);
+    try { localStorage.setItem(HIS_KEY, JSON.stringify(a.slice(0, 8))); } catch (e) {}
+  }
+  function clearHis() {
+    try { localStorage.removeItem(HIS_KEY); } catch (e) {}
+    renderHis();
+  }
+  function renderHis() {
+    var his = loadHis();
+    var grid = $('#grid');
+    if (!his.length) { grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><strong>还没有搜索记录</strong><p class="empty-sub">输入关键词试试，搜过的词会记在这里</p></div>'; return; }
+    var h = '<div class="his-wrap"><div class="his-t">最近搜索<button type="button" id="hisClear">清空</button></div><div class="his-row">';
+    his.forEach(function (w) {
+      h += '<button class="his-item" data-w="' + esc(w) + '" type="button">' + esc(w) + '</button>';
+    });
+    h += '</div></div>';
+    grid.innerHTML = h;
+    state.shown = 0;
+  }
+
   /* ---------- 搜索 ---------- */
   var timer = null;
   function onSearch() {
     clearTimeout(timer);
     timer = setTimeout(function () {
       state.q = $('#q').value;
-      if (state.q) state.tags = [];
+      if (state.q) { state.tags = []; addHis(state.q); }
       $('#clearBtn').hidden = !state.q;
       state.view = state.view === 'fav' ? 'all' : state.view;
       render(true);
@@ -492,6 +521,16 @@
       }
       var ci = t.closest ? t.closest('.cat-item') : null;
       if (ci) { go(ci.getAttribute('data-cat')); return; }
+      var hi = t.closest ? t.closest('.his-item') : null;
+      if (hi) {
+        var w = hi.getAttribute('data-w');
+        $('#q').value = w;
+        state.q = w; state.tags = [];
+        $('#clearBtn').hidden = false;
+        render(true);
+        return;
+      }
+      if (t.id === 'hisClear') { clearHis(); return; }
       var ec = t.closest ? t.closest('.empty-chip') : null;
       if (ec) {
         var ccat = ec.getAttribute('data-cat');
@@ -545,6 +584,14 @@
       }
     });
     var q = $('#q');
+    q.addEventListener('focus', function () {
+      if (!q.value.trim() && state.view !== 'fav') renderHis();
+    });
+    q.addEventListener('blur', function () {
+      setTimeout(function () {
+        if (!q.value.trim() && !state.q.trim() && state.shown === 0) render(true);
+      }, 180);
+    });
     q.addEventListener('input', onSearch);
     q.addEventListener('keydown', function (e) { if (e.key === 'Escape') { q.value = ''; state.q = ''; render(true); } });
     document.addEventListener('keydown', function (e) {
