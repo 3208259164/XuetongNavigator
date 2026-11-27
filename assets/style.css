@@ -254,6 +254,29 @@ html[data-theme="dark"] .chip.on{color:#0e1116}
 .grp .grp-n{font-size:11px;color:var(--faint);background:var(--panel-2);padding:1px 6px;border-radius:999px}
 .grp:first-child{margin-top:0;padding-top:0}
 
+/* ---------- 首页分组区块 ---------- */
+.grid.secs{display:block;padding:6px 20px 50px}
+.sec{margin:0 0 26px}
+.sec:last-child{margin-bottom:4px}
+.sec-h{display:flex;align-items:center;gap:8px;padding:0 2px;margin-bottom:10px}
+.sec-t{font-size:14.5px;font-weight:650;color:var(--text);text-decoration:none;letter-spacing:.2px}
+.sec-t:hover{color:var(--brand)}
+.sec-n{font-size:11px;color:var(--faint);background:var(--panel-2);padding:1px 7px;border-radius:999px;flex:none}
+.sec-more{margin-left:auto;font-size:12px;color:var(--sub);text-decoration:none;
+ padding:5px 10px;border-radius:8px;flex:none;transition:color .15s,background .15s}
+.sec-more:hover{color:var(--brand);background:var(--panel-2)}
+.sec-g{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:640px){.sec-g{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1024px){.sec-g{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:1320px){.sec-g{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:900px){
+  .grid.secs{padding:4px 14px 90px}
+  .sec{margin-bottom:22px}
+  .sec-h{margin-bottom:8px}
+  .sec-t{font-size:14px}
+  .sec-g{gap:9px}
+}
+
 /* ---------- 详情浮层 ---------- */
 .sheet{
   position:fixed;inset:0;z-index:90;display:none;

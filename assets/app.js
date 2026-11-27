@@ -244,6 +244,7 @@
 
   function render(reset) {
     var grid = $('#grid');
+    grid.classList.remove('secs');
     if (reset) { grid.innerHTML = ''; state.shown = 0; }
     list = filtered();
 
@@ -269,6 +270,12 @@
 
     if (!list.length) {
       grid.innerHTML = emptyHTML(state.q.trim());
+      if (io) io.disconnect();
+      return;
+    }
+    // 首页默认视图：按分类分区块，每组只露前几张，其余进分类页
+    if (state.cat === 'all' && !state.q.trim() && state.view !== 'fav' && !state.tags.length) {
+      renderSections();
       if (io) io.disconnect();
       return;
     }
@@ -369,6 +376,33 @@
         esc(s.name) + ' ' + s.count + '</button>';
     });
     bar.innerHTML = html;
+  }
+
+  /* 首页分组视图：每个分类一个区块 */
+  var SEC_PER = 8; // 与 index.html 预渲染张数保持一致，避免首屏跳动
+  function secHead(cname, cnt) {
+    var h = '#cat/' + encodeURIComponent(cname);
+    return '<div class="sec-h"><a class="sec-t" href="' + h + '">' + esc(cname) + '</a>' +
+      '<span class="sec-n">' + cnt + '</span>' +
+      '<a class="sec-more" href="' + h + '">全部 &#8594;</a></div>';
+  }
+  function renderSections() {
+    var grid = $('#grid');
+    var per = SEC_PER;
+    var map = {};
+    DATA.forEach(function (it) { (map[it.cat] = map[it.cat] || []).push(it); });
+    var order = CATS.map(function (c) { return c.name; });
+    Object.keys(map).forEach(function (k) { if (order.indexOf(k) < 0) order.push(k); });
+    var html = '';
+    order.forEach(function (c) {
+      var arr = map[c];
+      if (!arr || !arr.length) return;
+      html += '<section class="sec">' + secHead(c, arr.length) + '<div class="sec-g">';
+      for (var i = 0; i < Math.min(per, arr.length); i++) html += cardHTML(arr[i], i);
+      html += '</div></section>';
+    });
+    grid.classList.add('secs');
+    grid.innerHTML = html;
   }
 
   function renderGrouped() {
@@ -495,7 +529,7 @@
   }
 
   /* ---------- 数据版本（用于绕过缓存，改数据时同步递增） ---------- */
-  var DATA_VER = '20261127a';
+  var DATA_VER = '20261127b';
 
   /* ---------- 搜索 ---------- */
   var timer = null;
