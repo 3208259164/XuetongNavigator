@@ -1,5 +1,5 @@
 {
- "count": 336,
+ "count": 386,
  "total_available": 352,
  "source": "https://privacytools.io",
  "source_name": "PrivacyTools.io",
@@ -14,12 +14,12 @@
   {
    "gid": "mail-clients",
    "name": "邮件客户端",
-   "count": 9
+   "count": 12
   },
   {
    "gid": "mail",
    "name": "邮箱服务",
-   "count": 8
+   "count": 16
   },
   {
    "gid": "file-share",
@@ -34,7 +34,7 @@
   {
    "gid": "notes",
    "name": "笔记与知识库",
-   "count": 9
+   "count": 13
   },
   {
    "gid": "file-encryption",
@@ -44,7 +44,7 @@
   {
    "gid": "password-managers",
    "name": "密码管理器",
-   "count": 12
+   "count": 16
   },
   {
    "gid": "os",
@@ -54,7 +54,7 @@
   {
    "gid": "dns",
    "name": "加密 DNS",
-   "count": 8
+   "count": 10
   },
   {
    "gid": "search",
@@ -69,7 +69,7 @@
   {
    "gid": "2fa",
    "name": "两步验证",
-   "count": 6
+   "count": 11
   },
   {
    "gid": "appstore",
@@ -94,7 +94,7 @@
   {
    "gid": "calendar",
    "name": "日历",
-   "count": 6
+   "count": 11
   },
   {
    "gid": "photo",
@@ -104,7 +104,7 @@
   {
    "gid": "av",
    "name": "视频与音频",
-   "count": 6
+   "count": 13
   },
   {
    "gid": "streaming",
@@ -139,7 +139,7 @@
   {
    "gid": "cleaner",
    "name": "磁盘清理",
-   "count": 7
+   "count": 13
   },
   {
    "gid": "code",
@@ -189,7 +189,7 @@
   {
    "gid": "browsers",
    "name": "浏览器与扩展",
-   "count": 18
+   "count": 24
   },
   {
    "gid": "hw",
@@ -3903,6 +3903,606 @@
    "desc": "Nord 家族的加密存储，方案直白，500GB 与 2TB 两档，30 天退款期，冲着想要开箱即用的人去。值得点明的取舍是闭源，你信任的是公司的实现而不是自己验证。看重打磨好、有支持的产品胜过开源代码的人，它合理；把开源可验证当作硬要求，它就不是你的工具。",
    "pt": "https://privacytools.io/app/nordlocker",
    "site": "https://nordlocker.com/"
+  },
+  {
+   "slug": "ap-keepass",
+   "name": "KeePass",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "gid": "password-managers",
+   "gname": "密码管理器",
+   "desc": "加固、安全、离线的密码管理器，不内置云同步，被视为安全密码管理器的黄金标准。配套客户端有 Strongbox 与 KeePassium（Mac 和 iOS）、KeePassDX（安卓）、KeeWeb（网页版或自建）、KeePassXC（Windows、Mac、Linux）。更多客户端和扩展见 awesome-keepass 清单。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://keepass.info"
+  },
+  {
+   "slug": "ap-pass",
+   "name": "Pass",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "gid": "password-managers",
+   "gname": "密码管理器",
+   "desc": "Unix 上的标准密码管理器。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.passwordstore.org/"
+  },
+  {
+   "slug": "ap-papervault",
+   "name": "PaperVault",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "gid": "password-managers",
+   "gname": "密码管理器",
+   "desc": "把密钥和密码以加密形式存到纸面上，密钥分散保存，设计目标是能传承几代。开源，纯客户端，可离线使用。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://papervault.xyz"
+  },
+  {
+   "slug": "ap-2of3-by-ente",
+   "name": "2of3 by Ente",
+   "cat": "Password Managers",
+   "cat_zh": "密码管理器",
+   "gid": "password-managers",
+   "gname": "密码管理器",
+   "desc": "把恢复密钥、密码或其他秘密拆成三张卡片，可以分别放在不同地点。开源，纯客户端，带离线恢复页面。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://2of3.ente.com"
+  },
+  {
+   "slug": "ap-stratum",
+   "name": "Stratum",
+   "cat": "2-Factor Authentication",
+   "cat_zh": "两步验证",
+   "gid": "2fa",
+   "gname": "两步验证",
+   "desc": "安卓上免费开源的两步验证应用，支持加密备份、图标、分类，可定制程度高，还有 Wear OS 配套应用。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://stratumauth.com/"
+  },
+  {
+   "slug": "ap-authenticator",
+   "name": "Authenticator",
+   "cat": "2-Factor Authentication",
+   "cat_zh": "两步验证",
+   "gid": "2fa",
+   "gname": "两步验证",
+   "desc": "iOS 上简单、原生的开源两步验证客户端，从不联网。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mattrubin.me/authenticator"
+  },
+  {
+   "slug": "ap-authenticator-cc",
+   "name": "Authenticator CC",
+   "cat": "2-Factor Authentication",
+   "cat_zh": "两步验证",
+   "gid": "2fa",
+   "gname": "两步验证",
+   "desc": "浏览器内的一次性口令客户端，同时支持基于时间（TOTP）和基于 HMAC 计数（HOTP）两种方式。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://authenticator.cc"
+  },
+  {
+   "slug": "ap-chronos-authenticator",
+   "name": "Chronos Authenticator",
+   "cat": "2-Factor Authentication",
+   "cat_zh": "两步验证",
+   "gid": "2fa",
+   "gname": "两步验证",
+   "desc": "iOS 上免费开源的两步验证应用，主打稳健的安全性和可靠的备份方案。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://chronosauth.com"
+  },
+  {
+   "slug": "ap-autheris",
+   "name": "Autheris",
+   "cat": "2-Factor Authentication",
+   "cat_zh": "两步验证",
+   "gid": "2fa",
+   "gname": "两步验证",
+   "desc": "面向 iPhone、iPad、Mac 和 Apple Watch 的开源两步验证器。密钥保存在设备钥匙串里，不要账号，不做分析，可选 iCloud 同步。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://autheris.app"
+  },
+  {
+   "slug": "ap-em-client",
+   "name": "eM Client",
+   "cat": "Email Clients",
+   "cat_zh": "邮件客户端",
+   "gid": "mail-clients",
+   "gname": "邮件客户端",
+   "desc": "面向 Windows 和 macOS 的效率型邮件客户端，界面干净、响应快、兼容性好。付费版带有一些实用功能：延迟收件、盯住某个会话的回复、邮件翻译、定时发送，以及内置的日历、任务、联系人和笔记。要注意它闭源，不是开源软件。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.emclient.com"
+  },
+  {
+   "slug": "ap-snappymail",
+   "name": "SnappyMail",
+   "cat": "Email Clients",
+   "cat_zh": "邮件客户端",
+   "gid": "mail-clients",
+   "gname": "邮件客户端",
+   "desc": "简单、现代、快速的网页邮件客户端。它是 RainLoop 只保留 IMAP 的分支，修掉了 RainLoop 的一个严重漏洞，并增加了若干新功能。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://snappymail.eu"
+  },
+  {
+   "slug": "ap-roundcube",
+   "name": "RoundCube",
+   "cat": "Email Clients",
+   "cat_zh": "邮件客户端",
+   "gid": "mail-clients",
+   "gname": "邮件客户端",
+   "desc": "浏览器里的多语言 IMAP 客户端，界面接近桌面应用。邮件客户端该有的功能基本齐全：MIME 支持、通讯录、文件夹管理、邮件搜索、拼写检查。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://roundcube.net"
+  },
+  {
+   "slug": "ap-mailfence",
+   "name": "Mailfence",
+   "cat": "Encrypted Email",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "Mailfence 支持 OpenPGP，密钥交换可以完全绕开它的服务器手动完成，控制权在你手上。界面简单，接近 Outlook，附带日历、通讯录和文件功能，邮件设置可调项很多但仍然清楚好用。注册并不匿名，要填姓名和一个原有邮箱地址。有功能完整的免费方案，付费可绑自有域名，接受比特币、莱特币或信用卡付款。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mailfence.com?src=digitald"
+  },
+  {
+   "slug": "ap-firefox-private-relay",
+   "name": "Firefox Private Relay",
+   "cat": "Mail Forwarding",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "由 Mozilla 开发和运营的 Firefox 扩展，一键生成邮箱别名，所有来信转发到你真实的邮箱。完全免费，对新手很友好，同时开源，进阶用法还能自建。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://relay.firefox.com"
+  },
+  {
+   "slug": "ap-email-privacy-tester",
+   "name": "Email Privacy Tester",
+   "cat": "Email Security Tools",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "测试你的邮件客户端会不会在你打开之前就读信，以及它把哪些分析、已读回执或其他追踪数据泄漏给发件人。建议用一个备用地址测试，不要拿真实邮箱去试。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.emailprivacytester.com/"
+  },
+  {
+   "slug": "ap-dkim-verifier",
+   "name": "DKIM Verifier",
+   "cat": "Email Security Tools",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "校验 DKIM 签名并把结果显示在邮件头里，帮助识别伪造发件域名的冒名邮件。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://addons.thunderbird.net/en-US/thunderbird/addon/dkim-verifier/?collection_id=a5557f08-eafd-7a39-81c6-09127da790f7"
+  },
+  {
+   "slug": "ap-paperweight",
+   "name": "Paperweight",
+   "cat": "Email Security Tools",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "扫描你的收件箱，把你的数字足迹画出来，再帮你收回控制权、清掉数据。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.paperweight.email/"
+  },
+  {
+   "slug": "ap-mail-in-a-box",
+   "name": "Mail-in-a-box",
+   "cat": "Mail Servers",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "易于部署、全功能且预先配置好的 SMTP 邮件服务器，从网页邮箱到反垃圾过滤、备份都包含在内。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mailinabox.email"
+  },
+  {
+   "slug": "ap-docker-mailserver",
+   "name": "Docker Mailserver",
+   "cat": "Mail Servers",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "用 Docker 搭的全栈邮件服务器（smtp、imap、反垃圾、杀毒、ssl 等），配置完整、可定制，部署很简单。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://docker-mailserver.github.io/docker-mailserver/latest"
+  },
+  {
+   "slug": "ap-mailcow",
+   "name": "mailcow",
+   "cat": "Mail Servers",
+   "cat_zh": "邮箱服务",
+   "gid": "mail",
+   "gname": "邮箱服务",
+   "desc": "用 Docker 提供你需要的全部邮件服务：SMTP、IMAP、网页邮箱，还支持对接 Nextcloud。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mailcow.email/"
+  },
+  {
+   "slug": "ap-notable",
+   "name": "Notable",
+   "cat": "Digital Notes",
+   "cat_zh": "笔记与知识库",
+   "gid": "notes",
+   "gname": "笔记与知识库",
+   "desc": "桌面端的离线 Markdown 笔记编辑器，界面简单但功能不少。每条笔记单独存成 .md 文件，便于管理。没有手机端、内置云同步、加密或网页界面；不过因为文件结构简单，容易接入你自己的云同步，更多功能靠扩展补。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://notable.md"
+  },
+  {
+   "slug": "ap-obsidian",
+   "name": "Obsidian",
+   "cat": "Digital Notes",
+   "cat_zh": "笔记与知识库",
+   "gid": "notes",
+   "gname": "笔记与知识库",
+   "desc": "建立在本地纯文本 Markdown 文件之上的知识库，社区活跃，插件和主题很多。整体上尊重隐私，但开箱没有加密，部分代码经过混淆或不完全开源。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://obsidian.md/"
+  },
+  {
+   "slug": "ap-vnote",
+   "name": "VNote",
+   "cat": "Digital Notes",
+   "cat_zh": "笔记与知识库",
+   "gid": "notes",
+   "gname": "笔记与知识库",
+   "desc": "用 Qt 写的免费开源笔记应用，专注于让 Markdown 写起来舒服。笔记直接以纯文本文件的形式存在本地系统里。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://app.vnote.fun/en_us/"
+  },
+  {
+   "slug": "ap-poznote",
+   "name": "Poznote",
+   "cat": "Digital Notes",
+   "cat_zh": "笔记与知识库",
+   "gid": "notes",
+   "gname": "笔记与知识库",
+   "desc": "可自建的笔记与任务应用，带富文本、Markdown 和绘图编辑器，支持标签、多用户、OIDC 登录和 REST API。基于 Docker（PHP 加 SQLite），唯一的外部请求是每天检查更新。没有独立手机应用，走 PWA，也没有端到端加密。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://poznote.com"
+  },
+  {
+   "slug": "ap-stubby",
+   "name": "Stubby",
+   "cat": "DNS Clients",
+   "cat_zh": "加密 DNS",
+   "gid": "dns",
+   "gname": "加密 DNS",
+   "desc": "本地的 DNS 隐私存根解析器，走 DNS-over-TLS。它把客户端机器发出的 DNS 查询加密后再送到隐私解析器，提升终端用户的隐私。可以和 Unbound 配合：Unbound 管本地缓存，Stubby 管上游的 TLS 连接。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby"
+  },
+  {
+   "slug": "ap-desec",
+   "name": "deSEC",
+   "cat": "DNS Hosting",
+   "cat_zh": "加密 DNS",
+   "gid": "dns",
+   "gname": "加密 DNS",
+   "desc": "免费、以安全为设计前提的 DNS 托管服务，全部跑在开源软件上，由 SSE 资助。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://desec.io"
+  },
+  {
+   "slug": "ap-eraser",
+   "name": "Eraser",
+   "cat": "Data Erasers",
+   "cat_zh": "磁盘清理",
+   "gid": "cleaner",
+   "gname": "磁盘清理",
+   "desc": "通过用精选的模式多次覆写，把敏感数据从硬盘上彻底抹掉。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://eraser.heidi.ie"
+  },
+  {
+   "slug": "ap-sdelete",
+   "name": "SDelete",
+   "cat": "Data Erasers",
+   "cat_zh": "磁盘清理",
+   "gid": "cleaner",
+   "gname": "磁盘清理",
+   "desc": "微软的安全删除命令行工具，采用 DoD 5220.22-M 标准覆写。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete"
+  },
+  {
+   "slug": "ap-dban",
+   "name": "DBAN",
+   "cat": "Data Erasers",
+   "cat_zh": "磁盘清理",
+   "gid": "cleaner",
+   "gname": "磁盘清理",
+   "desc": "自包含的启动盘，用于安全擦除多数电脑的硬盘。它会自动、彻底删除能检测到的所有硬盘内容，适合批量或紧急销毁数据。它是企业级合规工具 Blanco 的免费版本。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://dban.org"
+  },
+  {
+   "slug": "ap-shred",
+   "name": "shred",
+   "cat": "Data Erasers",
+   "cat_zh": "磁盘清理",
+   "gid": "cleaner",
+   "gname": "磁盘清理",
+   "desc": "命令行工具，可以安全删除文件与设备内容，使恢复变得极其困难。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html"
+  },
+  {
+   "slug": "ap-secure-remove",
+   "name": "Secure Remove",
+   "cat": "Data Erasers",
+   "cat_zh": "磁盘清理",
+   "gid": "cleaner",
+   "gname": "磁盘清理",
+   "desc": "命令行工具，用于安全删除文件、目录和整块磁盘，支持 Linux、BSD 和 macOS。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://srm.sourceforge.net/srm.html"
+  },
+  {
+   "slug": "ap-mr-phone",
+   "name": "Mr. Phone",
+   "cat": "Data Erasers",
+   "cat_zh": "磁盘清理",
+   "gid": "cleaner",
+   "gname": "磁盘清理",
+   "desc": "闭源的商业手机取证数据工具套件。其中的数据擦除功能可以连上电脑后把安卓和 iOS 设备彻底擦净。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://drfone.wondershare.com"
+  },
+  {
+   "slug": "ap-vlc-media-player",
+   "name": "VLC Media Player",
+   "cat": "Video Players",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "来自非营利组织 VideoLAN 的免费跨平台播放器，本地几乎能播放所有音视频格式，没有广告、追踪或遥测。功能与设置很多，界面上手初期可能不太好用。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.videolan.org/vlc/"
+  },
+  {
+   "slug": "ap-antennapod",
+   "name": "AntennaPod",
+   "cat": "Podcast Players",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "安卓上的开源播客管理器，可订阅任意 RSS 源，支持离线下载、变速播放，可选 gpodder.net 或 Nextcloud 同步。不含广告和追踪，但只做安卓，没有 iOS 和桌面版。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://antennapod.org"
+  },
+  {
+   "slug": "ap-flowblade",
+   "name": "FlowBlade",
+   "cat": "Video Editors",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "多轨非线性视频编辑器，界面简单。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://jliljebl.github.io/flowblade"
+  },
+  {
+   "slug": "ap-cinelerra-gg-infinity",
+   "name": "Cinelerra GG Infinity",
+   "cat": "Video Editors",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "简单的视频编辑器，可做转场、特效、字幕，以及片段拼接。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.cinelerra-gg.org"
+  },
+  {
+   "slug": "ap-vitcutter",
+   "name": "VitCutter",
+   "cat": "Video Editors",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "基于 Python 的跨平台小工具，用来剪切和拼接视频。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://sourceforge.net/projects/vidcutter/"
+  },
+  {
+   "slug": "ap-natron",
+   "name": "Natron",
+   "cat": "Video Editors",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "免费开源的桌面节点式视频合成软件，功能接近 After Effects。支持灵活的转描、二维与平面跟踪、抠像工具、曲线与偏移编辑器、GPU 与网络渲染，还能通过社区插件或 Python 脚本扩展。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://natrongithub.github.io"
+  },
+  {
+   "slug": "ap-audacity",
+   "name": "Audacity",
+   "cat": "Audio Editors & Recorders",
+   "cat_zh": "视频与音频",
+   "gid": "av",
+   "gname": "视频与音频",
+   "desc": "桌面端易用的多轨音频编辑器与录音工具，Adobe Audition 的免费替代。可从真实与虚拟设备录音，导入导出多种格式，具备高质量处理、进阶多轨编辑、降噪、音高校正、音频修复等能力，可通过社区插件扩展，也支持自定义宏和多种脚本。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.audacityteam.org"
+  },
+  {
+   "slug": "ap-nextcloud-calendar",
+   "name": "Nextcloud Calendar",
+   "cat": "Calendar",
+   "cat_zh": "日历",
+   "gid": "calendar",
+   "gname": "日历",
+   "desc": "自建 Nextcloud 平台的日历应用，用 CalDAV 在设备间同步，不支持端到端加密。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://apps.nextcloud.com/apps/calendar"
+  },
+  {
+   "slug": "ap-fossify-calendar",
+   "name": "Fossify Calendar",
+   "cat": "Calendar",
+   "cat_zh": "日历",
+   "gid": "calendar",
+   "gname": "日历",
+   "desc": "出自 SimpleMobileTools 停更后分叉出来的 FOSS 应用家族，简单、可定制，带小部件。要注意目前对 CalDAV 的支持有限。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.fossify.org/"
+  },
+  {
+   "slug": "ap-kashcal",
+   "name": "KashCal",
+   "cat": "Calendar",
+   "cat_zh": "日历",
+   "gid": "calendar",
+   "gname": "日历",
+   "desc": "离线优先的安卓日历，可与 iCloud、CalDAV 和本机日历同步。不要账号，没有遥测，凭据存在安卓密钥库中。事件本身不是端到端加密，同步安全取决于你的服务商。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://kashcal.onekash.org"
+  },
+  {
+   "slug": "ap-tymeslot",
+   "name": "Tymeslot",
+   "cat": "Scheduling",
+   "cat_zh": "日历",
+   "gid": "calendar",
+   "gname": "日历",
+   "desc": "开源（AGPL-3.0）、可自建的日程与日历平台。访客不用注册就能预约；主理人得到一个完整日历，可与谷歌、Outlook、iCloud 双向同步。也提供托管云方案。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://tymeslot.app"
+  },
+  {
+   "slug": "ap-rallly",
+   "name": "Rallly",
+   "cat": "Scheduling",
+   "cat_zh": "日历",
+   "gid": "calendar",
+   "gname": "日历",
+   "desc": "开源、可自建的排期工具，帮你找出大家最合适的碰头时间。定几个选项建个投票，把链接发出去让大家勾选可用时间，省掉来回发邮件。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://rallly.co/"
+  },
+  {
+   "slug": "ap-privacy-badger",
+   "name": "Privacy Badger",
+   "cat": "Browser Extensions",
+   "cat_zh": "浏览器与扩展",
+   "gid": "browsers",
+   "gname": "浏览器与扩展",
+   "desc": "拦截隐形追踪器，阻止广告商和其他第三方偷偷记录你去过哪里、看了什么页面。比 uBlock 更简单、可配置项更少，只针对追踪器，不拦广告。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://privacybadger.org/"
+  },
+  {
+   "slug": "ap-firefox-multi-account-containers",
+   "name": "Firefox Multi-Account Containers",
+   "cat": "Browser Extensions",
+   "cat_zh": "浏览器与扩展",
+   "gid": "browsers",
+   "gname": "浏览器与扩展",
+   "desc": "把在线生活的不同部分分进按颜色区分的标签页，从而保护隐私。cookie 按容器隔离，可以同时用多个身份或账号上网。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/"
+  },
+  {
+   "slug": "ap-webrtc-leak-prevent",
+   "name": "WebRTC-Leak-Prevent",
+   "cat": "Browser Extensions",
+   "cat_zh": "浏览器与扩展",
+   "gid": "browsers",
+   "gname": "浏览器与扩展",
+   "desc": "让 Chromium 用户能自己控制 WebRTC 隐私设置，防止 WebRTC 泄漏。Firefox 用户可直接在浏览器设置里关掉。可以用 browserleaks 的 WebRTC 页面自测是否泄漏。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://diafygi.github.io/webrtc-ips"
+  },
+  {
+   "slug": "ap-canvas-fingerprint-blocker",
+   "name": "Canvas Fingerprint Blocker",
+   "cat": "Browser Extensions",
+   "cat_zh": "浏览器与扩展",
+   "gid": "browsers",
+   "gname": "浏览器与扩展",
+   "desc": "在不剥夺网页使用 HTML5 Canvas 的前提下阻断指纹。Canvas 指纹常被用来追踪，这个扩展通过不让浏览器生成真正唯一的键来减轻这种追踪。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://add0n.com/canvas-fingerprint-blocker.html"
+  },
+  {
+   "slug": "ap-privacy-oriented-origin-policy",
+   "name": "Privacy-Oriented Origin Policy",
+   "cat": "Browser Extensions",
+   "cat_zh": "浏览器与扩展",
+   "gid": "browsers",
+   "gname": "浏览器与扩展",
+   "desc": "在 Origin 头最不必要的时候阻止 Firefox 发送它，以保护隐私。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://claustromaniac.github.io/poop"
+  },
+  {
+   "slug": "ap-localcdn",
+   "name": "LocalCDN",
+   "cat": "Browser Extensions",
+   "cat_zh": "浏览器与扩展",
+   "gid": "browsers",
+   "gname": "浏览器与扩展",
+   "desc": "模拟远程框架（如 jQuery、Bootstrap、Angular），改由本地资源提供，避免向追踪型 CDN 发出不必要的第三方请求。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.localcdn.org/"
   }
  ]
 }
