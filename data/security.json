@@ -210,7 +210,7 @@
  "items": [
   {
    "slug": "ente-authenticator",
-   "name": "ente Authenticator",
+   "name": "Ente Authenticator",
    "cat": "Private 2FA / Authenticators",
    "cat_zh": "两步验证",
    "gid": "2fa",
@@ -474,7 +474,7 @@
   },
   {
    "slug": "ente",
-   "name": "ente",
+   "name": "Ente",
    "cat": "Private Photo Storage",
    "cat_zh": "照片存储",
    "gid": "photo",

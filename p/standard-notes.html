@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>Standard Notes：介绍、注意事项与开源信息 | 资源导航</title>
+<meta name="description" content="Standard Notes 属于笔记与知识库。中文介绍译自 PrivacyTools.io 的原文评述，含注意事项与开源仓库信息。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Standard Notes | 隐私与安全工具">
+<meta property="og:description" content="Standard Notes 的中文介绍、注意事项与开源仓库信息。">
+<link rel="canonical" href="https://3208259164.github.io/XuetongNavigator/p/standard-notes.html">
+<link rel="icon" href="../icons/s-standard-notes.png">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wrap{max-width:760px;margin:0 auto;padding:18px 18px 70px}
+.head{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+.head img{width:60px;height:60px;border-radius:14px;border:1px solid var(--line);background:var(--panel-2);object-fit:cover}
+.head .t{min-width:0}
+.head h2{font-size:19px;font-weight:650;line-height:1.3}
+.head .c{font-size:12px;color:var(--faint);margin-top:5px}
+.head .c a{color:var(--brand);text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:#fff;text-decoration:none;
+ font-size:13px;font-weight:600;padding:9px 16px;border-radius:10px;margin:0 0 18px}
+.body p{font-size:14px;line-height:1.85;color:var(--text);margin-bottom:14px}
+.warn{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:10px;padding:12px 14px;margin:6px 0 18px}
+.warn .wt{font-size:12px;font-weight:650;color:var(--brand);margin-bottom:7px}
+.warn ul{margin:0;padding-left:18px}
+.warn li{font-size:13px;line-height:1.75;color:var(--sub);margin-bottom:4px}
+.gh{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin:4px 0 20px}
+.gh .ght{font-size:12px;font-weight:650;color:var(--faint);margin-bottom:9px;letter-spacing:.4px}
+.ghrow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:9px}
+.repo{font-size:13px;font-weight:600;color:var(--brand);text-decoration:none}
+.kv{font-size:11px;color:var(--sub);background:var(--panel-2);border-radius:6px;padding:2px 7px}
+.langs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:9px}
+.lg{font-size:11.5px;color:var(--faint)}
+.lg b{color:var(--text);font-weight:600}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tg{font-size:11px;color:var(--faint);border:1px solid var(--line);border-radius:999px;padding:2px 8px}
+.ghn{font-size:10.5px;color:var(--faint);margin-top:9px}
+h3{font-size:14px;font-weight:650;margin:22px 0 10px}
+.rel{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.rc{display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+ padding:8px 10px;text-decoration:none;color:var(--text);font-size:12.5px;min-width:0}
+.rc img{width:28px;height:28px;border-radius:7px;flex-shrink:0}
+.rc span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--faint);line-height:1.8}
+.foot a{color:var(--brand);text-decoration:none}
+</style>
+</head>
+<body>
+<header class="bhead">
+  <a href="../security.html#notes">&#8592;</a>
+  <h1>Standard Notes</h1>
+</header>
+<div class="wrap">
+  <div class="head">
+    <img src="../icons/s-standard-notes.png" alt="" width="60" height="60">
+    <div class="t">
+      <h2>Standard Notes</h2>
+      <div class="c"><a href="../security.html#notes">笔记与知识库</a></div>
+    </div>
+  </div>
+  <a class="btn" href="https://standardnotes.com/" target="_blank" rel="noopener nofollow">访问官网 &#8599;</a>
+  <div class="body"><p>经过审计、AGPL 授权，正是这一类该奖励的组合，对想要可验证端到端加密笔记的人，它是更稳的选择。</p><p>诚实的短板是免费档故意只给纯文本：大家真正想要的功能，比如富文本和附件，都放在订阅后面。</p><p>长期信任、美国团队、有审计的代码库比花哨编辑器更重要时选它，也要接受你大概会付费让它日常好用。</p></div>
+  <div class="warn"><div class="wt">要注意的</div><ul><li>诚实的短板是免费档故意只给纯文本：大家真正想要的功能，比如富文本和附件，都放在订阅后面。</li></ul></div>
+  <section class="gh"><div class="ght">开源仓库</div><div class="ghrow"><a class="repo" href="https://github.com/standardnotes/app" target="_blank" rel="noopener nofollow">standardnotes/app &#8599;</a><span class="kv">AGPL-3.0</span><span class="kv">6,738 星</span></div><div class="langs"><span class="lg">TypeScript <b>82.6%</b></span><span class="lg">JavaScript <b>13.9%</b></span><span class="lg">SCSS <b>1.6%</b></span><span class="lg">Other <b>1.9%</b></span></div><div class="tags"><span class="tg">encrypted</span><span class="tg">evernote</span><span class="tg">markdown</span><span class="tg">note-taking</span><span class="tg">notes</span><span class="tg">privacy</span><span class="tg">secure</span><span class="tg">snippets</span></div><div class="ghn">数据取自 2026-11-27</div></section>
+  <h3>同类工具</h3>
+  <div class="rel"><a class="rc" href="logseq.html"><img src="../icons/s-logseq.png" alt="" width="28" height="28" loading="lazy"><span>Logseq</span></a><a class="rc" href="joplin.html"><img src="../icons/s-joplin.png" alt="" width="28" height="28" loading="lazy"><span>Joplin</span></a><a class="rc" href="memos.html"><img src="../icons/s-memos.png" alt="" width="28" height="28" loading="lazy"><span>Memos</span></a><a class="rc" href="notesnook.html"><img src="../icons/s-notesnook.png" alt="" width="28" height="28" loading="lazy"><span>Notesnook</span></a><a class="rc" href="cryptee.html"><img src="../icons/s-cryptee.png" alt="" width="28" height="28" loading="lazy"><span>Cryptee</span></a><a class="rc" href="turtl.html"><img src="../icons/s-turtl.png" alt="" width="28" height="28" loading="lazy"><span>Turtl</span></a><a class="rc" href="anytype.html"><img src="../icons/s-anytype.png" alt="" width="28" height="28" loading="lazy"><span>Anytype</span></a><a class="rc" href="org-mode.html"><img src="../icons/s-org-mode.png" alt="" width="28" height="28" loading="lazy"><span>Org-mode</span></a></div>
+  <div class="foot">
+    <p>介绍译自 <a href="https://privacytools.io/app/standard-notes" target="_blank" rel="noopener nofollow">PrivacyTools.io 原文</a>，该站内容以 CC0 协议发布。本站只提供介绍与链接，不代理、不存储任何软件。</p>
+  </div>
+</div>
+<script>
+(function(){var t=null;try{t=localStorage.getItem('nav_theme_v1')}catch(e){}
+if(!t) t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+document.documentElement.setAttribute('data-theme',t);})();
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5afb2a8eaba941f8bab9cd5dd49666f2"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
