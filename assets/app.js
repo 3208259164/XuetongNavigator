@@ -181,6 +181,38 @@
     return out.filter(function (v, i, a) { return a.indexOf(v) === i; });
   }
 
+  /* ---------- 正文检索（详情页段落，首次搜索时懒加载） ---------- */
+  var BODIES = null, _bodyLoading = false;
+  function ensureBodies() {
+    if (BODIES || _bodyLoading) return;
+    _bodyLoading = true;
+    fetch('data/bodies.json?v=' + DATA_VER, { cache: 'default' })
+      .then(function (r) { return r.json(); })
+      .then(function (m) { BODIES = m; _bodyLoading = false; if (state.q) render(true); })
+      .catch(function () { BODIES = {}; _bodyLoading = false; });
+  }
+  function bodyHit(it, q) {
+    if (!BODIES || !q) return '';
+    var ps = BODIES[it.id];
+    if (!ps) return '';
+    for (var i = 0; i < ps.length; i++) {
+      var p = ps[i], k = p.toLowerCase().indexOf(q);
+      if (k > -1) {
+        var a = Math.max(0, k - 24), b = Math.min(p.length, k + q.length + 36);
+        return (a > 0 ? '\u2026' : '') + p.slice(a, b) + (b < p.length ? '\u2026' : '');
+      }
+    }
+    return '';
+  }
+  function hlText(s, q) {
+    var e = esc(s);
+    if (!q) return e;
+    try {
+      var re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      return e.replace(re, '<mark>$1</mark>');
+    } catch (err) { return e; }
+  }
+
   function scoreOf(it, q) {
     var terms = expandTerms(q);
     var best = 0;
@@ -210,7 +242,12 @@
         if (state.sub && it.sub !== state.sub) return false;
       }
       if (!matchTags(it)) return false;
-      if (q && scoreOf(it, q) === 0) return false;
+      it._hit = '';
+      if (q) {
+        var sc = scoreOf(it, q);
+        if (BODIES) it._hit = bodyHit(it, q);
+        if (sc === 0 && !it._hit) return false;
+      }
       return true;
     });
     if (q) {
@@ -234,6 +271,9 @@
     var ds = it.desc
       ? '<div class="ds">' + esc(it.desc) + '</div>'
       : '<div class="ds none">' + esc(it.cat + (it.sub ? ' · ' + it.sub : '')) + '</div>';
+    if (state.q.trim() && it._hit) {
+      ds += '<div class="ds hit">' + hlText(it._hit, state.q.trim().toLowerCase()) + '</div>';
+    }
     return '<a class="card" href="s/' + it.id + '.html" data-id="' + it.id + '" ' +
       'style="animation-delay:' + Math.min(i * 8, 160) + 'ms" title="' + esc(it.name) + '">' +
       '<span class="ico-box">' + ico + '</span>' +
@@ -529,7 +569,7 @@
   }
 
   /* ---------- 数据版本（用于绕过缓存，改数据时同步递增） ---------- */
-  var DATA_VER = '20261127b';
+  var DATA_VER = '20261127c';
 
   /* ---------- 搜索 ---------- */
   var timer = null;
@@ -541,7 +581,7 @@
       $('#clearBtn').hidden = !state.q;
       state.view = state.view === 'fav' ? 'all' : state.view;
       render(true);
-      if (state.q) setMnav('search');
+      if (state.q) { setMnav('search'); ensureBodies(); }
     }, 120);
   }
 
