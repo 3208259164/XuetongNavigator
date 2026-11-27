@@ -1,5 +1,5 @@
 {
- "count": 482,
+ "count": 540,
  "total_available": 352,
  "source": "https://privacytools.io",
  "source_name": "PrivacyTools.io",
@@ -9,7 +9,7 @@
   {
    "gid": "messaging",
    "name": "即时通讯",
-   "count": 17
+   "count": 19
   },
   {
    "gid": "mail-clients",
@@ -24,12 +24,12 @@
   {
    "gid": "file-share",
    "name": "文件共享与同步",
-   "count": 4
+   "count": 9
   },
   {
    "gid": "cloud",
    "name": "云存储",
-   "count": 9
+   "count": 11
   },
   {
    "gid": "notes",
@@ -39,7 +39,7 @@
   {
    "gid": "file-encryption",
    "name": "文件加密",
-   "count": 13
+   "count": 17
   },
   {
    "gid": "password-managers",
@@ -49,7 +49,7 @@
   {
    "gid": "os",
    "name": "操作系统",
-   "count": 12
+   "count": 14
   },
   {
    "gid": "dns",
@@ -59,7 +59,7 @@
   {
    "gid": "search",
    "name": "搜索引擎",
-   "count": 7
+   "count": 9
   },
   {
    "gid": "anon",
@@ -79,17 +79,17 @@
   {
    "gid": "social",
    "name": "社交网络",
-   "count": 6
+   "count": 7
   },
   {
    "gid": "team",
    "name": "团队协作",
-   "count": 3
+   "count": 5
   },
   {
    "gid": "productivity",
    "name": "效率工具",
-   "count": 8
+   "count": 12
   },
   {
    "gid": "calendar",
@@ -109,7 +109,7 @@
   {
    "gid": "streaming",
    "name": "流媒体",
-   "count": 4
+   "count": 5
   },
   {
    "gid": "torrent",
@@ -119,7 +119,7 @@
   {
    "gid": "smarthome",
    "name": "智能家居",
-   "count": 5
+   "count": 7
   },
   {
    "gid": "mobileos",
@@ -134,7 +134,7 @@
   {
    "gid": "dev-tools",
    "name": "开发工具",
-   "count": 12
+   "count": 15
   },
   {
    "gid": "cleaner",
@@ -149,7 +149,7 @@
   {
    "gid": "rss",
    "name": "RSS 阅读器",
-   "count": 7
+   "count": 8
   },
   {
    "gid": "translate",
@@ -164,7 +164,7 @@
   {
    "gid": "health",
    "name": "健康与健身",
-   "count": 11
+   "count": 12
   },
   {
    "gid": "ai",
@@ -209,17 +209,32 @@
   {
    "gid": "online-tools",
    "name": "在线工具",
-   "count": 9
+   "count": 18
   },
   {
    "gid": "finance",
    "name": "财务与记账",
-   "count": 4
+   "count": 7
+  },
+  {
+   "gid": "system",
+   "name": "系统工具",
+   "count": 3
+  },
+  {
+   "gid": "other",
+   "name": "其他",
+   "count": 11
   },
   {
    "gid": "maps",
    "name": "地图",
    "count": 4
+  },
+  {
+   "gid": "other",
+   "name": "其他",
+   "count": 11
   }
  ],
  "items": [
@@ -5670,6 +5685,702 @@
    "src": "ap",
    "pt": "https://awesome-privacy.xyz/",
    "site": "https://ezbookkeeping.mayswind.net/"
+  },
+  {
+   "slug": "ap-age",
+   "name": "age",
+   "cat": "File Encryption",
+   "cat_zh": "文件加密",
+   "gid": "file-encryption",
+   "gname": "文件加密",
+   "desc": "简单、现代、安全的命令行文件加密工具，同时是 Go 库。特点是显式的小密钥、没有配置项、遵循 Unix 式的可组合。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://age-encryption.org"
+  },
+  {
+   "slug": "ap-uruky",
+   "name": "Uruky",
+   "cat": "Search Engines",
+   "cat_zh": "搜索引擎",
+   "gid": "search",
+   "gname": "搜索引擎",
+   "desc": "无广告的私密搜索引擎，主打个性化。除自有数据外，也使用 Mojeek、Marginalia 等提供方。总部在欧盟，不保存也不追踪任何个人数据。它不是完全开源，但付费客户满 12 个月后可获得一份源码。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://uruky.com"
+  },
+  {
+   "slug": "ap-prieco",
+   "name": "PriEco",
+   "cat": "Search Engines",
+   "cat_zh": "搜索引擎",
+   "gid": "search",
+   "gname": "搜索引擎",
+   "desc": "独立的网页搜索引擎，索引在成长中。位于欧盟，完全开源，可通过 Goggles 自定义。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://prieco.net"
+  },
+  {
+   "slug": "ap-xmpp",
+   "name": "XMPP",
+   "cat": "Encrypted Messaging",
+   "cat_zh": "即时通讯",
+   "gid": "messaging",
+   "gname": "即时通讯",
+   "desc": "XMPP 也叫 Jabber，是去中心化消息的开放标准，几十年间被广泛使用。WhatsApp、Facebook 聊天和 Google Talk 其实都建立在它之上，只是这些公司最终选择切断与其他服务器的互通。主流 XMPP 客户端支持基于双棘轮算法的 OMEMO 端到端加密，Signal 用的也是这套算法。想上手并注册账号，可以看 JoinJabber。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://xmpp.org"
+  },
+  {
+   "slug": "ap-matrix",
+   "name": "Matrix",
+   "cat": "Encrypted Messaging",
+   "cat_zh": "即时通讯",
+   "gid": "messaging",
+   "gname": "即时通讯",
+   "desc": "去中心化的开放安全通信网络，用 Olm 与 Megolm 做端到端加密。配合 Element 客户端，支持语音与视频通话、即时消息和群聊。要注意 homeserver 可能记录 IP 与元数据，未经中继的一对一通话可能把 IP 暴露给对方。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://matrix.org"
+  },
+  {
+   "slug": "ap-mumble",
+   "name": "Mumble",
+   "cat": "VOIP Clients",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "开源、低延迟、高质量的语音聊天软件。可以自建服务器，也可以用托管实例，Windows、macOS、Linux 有客户端，安卓和 iOS 有第三方应用。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.mumble.info/"
+  },
+  {
+   "slug": "ap-mattermost",
+   "name": "Mattermost",
+   "cat": "Team Collaboration",
+   "cat_zh": "团队协作",
+   "gid": "team",
+   "gname": "团队协作",
+   "desc": "可自建的 Slack 替代品，有原生桌面、手机和网页应用，集成很多。没有端到端加密，服务器能读到所有消息，遥测默认开启。开源版最多 250 个用户。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mattermost.com/"
+  },
+  {
+   "slug": "ap-xeres",
+   "name": "Xeres",
+   "cat": "Team Collaboration",
+   "cat_zh": "团队协作",
+   "gid": "team",
+   "gname": "团队协作",
+   "desc": "去中心化、加密的点对点好友之间应用，支持聊天、论坛、频道、留言板、语音通话和匿名文件共享。最适合可信联系人之间使用，因为除非走 Tor，它并不匿名，而 Tor 默认不开。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://xeres.io"
+  },
+  {
+   "slug": "ap-netguard",
+   "name": "NetGuard",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "安卓上的防火墙应用，不需要 root。提供简单和进阶两种方式阻断联网，可以逐个决定应用和地址能否使用 Wi-Fi 或移动网络。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://netguard.me/"
+  },
+  {
+   "slug": "ap-island",
+   "name": "Island",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "沙盒环境，可以克隆选定的应用，让它们在隔离盒里运行，从而无法访问你的个人数据或设备信息。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://island.oasisfeng.com/"
+  },
+  {
+   "slug": "ap-exodus",
+   "name": "Exodus",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "显示你已安装的每个应用在用哪些追踪器，帮你更好理解数据是怎么被采集的。数据来自 Exodus 对安装包的扫描库。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://exodus-privacy.eu.org/en/page/what/#android-app"
+  },
+  {
+   "slug": "ap-superfreezz",
+   "name": "SuperFreezZ",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "可以按应用彻底冻结全部后台活动。本意是让手机更快、续航更长，但它也是阻止某些应用在后台采集数据、追踪你行为的好工具。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://superfreezz.gitlab.io/"
+  },
+  {
+   "slug": "ap-fing-app",
+   "name": "Fing App",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "网络扫描器，帮你监控并加固自己的 Wi-Fi 网络。应用完全免费，但要用进阶控制需要 Fing Box。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.fing.com/products/fing-app"
+  },
+  {
+   "slug": "ap-blokada",
+   "name": "Blokada",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "拦截广告和追踪器，不需要 root，对安卓手机上所有应用生效。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://blokada.org/"
+  },
+  {
+   "slug": "ap-trackercontrol",
+   "name": "TrackerControl",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "监控并控制手机应用里针对用户行为的隐蔽数据采集与追踪。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://trackercontrol.org/"
+  },
+  {
+   "slug": "ap-camwings",
+   "name": "CamWings",
+   "cat": "Mobile Apps",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "防止后台进程未经授权访问设备摄像头。不过更好的办法还是给摄像头贴个遮挡贴。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://schiffer.tech/camwings-mobile.html"
+  },
+  {
+   "slug": "ap-virus-total",
+   "name": "Virus Total",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "分析可疑的网络资源，按网址、IP、域名或文件哈希判断恶意软件类型。注意文件是被公开扫描的。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.virustotal.com"
+  },
+  {
+   "slug": "ap-hardenize",
+   "name": "Hardenize",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "扫描网站并给出安全概览，涉及 HTTPS、域名信息、邮件数据、万维网协议等方面。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.hardenize.com/"
+  },
+  {
+   "slug": "ap-is-legit",
+   "name": "Is Legit?",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "在买东西之前，先查这个网站或商家是不是骗局。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.islegitsite.com/"
+  },
+  {
+   "slug": "ap-should-i-remove-it",
+   "name": "Should I Remove It?",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "在 Windows 上卸载程序时不确定某个东西是什么？这是一个 Windows 软件数据库，说明哪些是必需的、无害的、危险的。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.shouldiremoveit.com"
+  },
+  {
+   "slug": "ap-10-minute-mail",
+   "name": "10 Minute Mail",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "生成临时一次性邮箱地址，避免交出真实信息。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://10minemail.com/"
+  },
+  {
+   "slug": "ap-mxtoolbox-mail-headers",
+   "name": "MXToolBox Mail Headers",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "分析邮件头的工具，可用来核查邮件的真实性，也能看清你在发出的邮件里暴露了哪些信息。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx"
+  },
+  {
+   "slug": "ap-site-report",
+   "name": "Site Report",
+   "cat": "Online Tools",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "Netcraft 的工具，用来分析任意网站在跑什么、位于哪里，以及它的主机、注册商、IP 和 SSL 证书信息。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://sitereport.netcraft.com/"
+  },
+  {
+   "slug": "ap-super-productivity",
+   "name": "Super Productivity",
+   "cat": "Task Management",
+   "cat_zh": "效率工具",
+   "gid": "productivity",
+   "gname": "效率工具",
+   "desc": "尊重隐私的开源任务管理器与时间追踪工具。数据全部存在本地，不要账号、不依赖云、零遥测。支持 Jira、GitLab、GitHub、Gitea、OpenProject 和 CalDAV 集成，带时间记录、番茄钟、休息提醒和空闲检测。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://super-productivity.com"
+  },
+  {
+   "slug": "ap-mindwtr",
+   "name": "Mindwtr",
+   "cat": "Task Management",
+   "cat_zh": "效率工具",
+   "gid": "productivity",
+   "gname": "效率工具",
+   "desc": "把 GTD 与番茄钟合在一起的生产力系统，有桌面和手机端。本地优先，不要账号，可通过 WebDAV、Dropbox、本地文件或自建部署同步。提供命令行、REST API 和 MCP 以便脚本化，AI 可选且自带密钥。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mindwtr.app"
+  },
+  {
+   "slug": "ap-seafile",
+   "name": "SeaFile",
+   "cat": "Backup and Sync",
+   "cat_zh": "文件共享与同步",
+   "gid": "file-share",
+   "gname": "文件共享与同步",
+   "desc": "开源的云存储与同步方案。文件按资料库分组，每个库可以单独加密、共享或同步。有 Docker 镜像便于部署，Windows、Mac、Linux、安卓、iOS 都有原生客户端。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.seafile.com"
+  },
+  {
+   "slug": "ap-bewcloud",
+   "name": "bewCloud",
+   "cat": "Backup and Sync",
+   "cat_zh": "文件共享与同步",
+   "gid": "file-share",
+   "gname": "文件共享与同步",
+   "desc": "用 TypeScript 写的、比 Nextcloud 和 ownCloud 更现代也更简单的替代品。把文件管理、同步、共享、笔记、订阅、开支、日历、联系人、照片统在一起，支持多因素认证、WebDAV、CalDAV、CardDAV、单点登录等。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://bewcloud.com"
+  },
+  {
+   "slug": "ap-sandstorm",
+   "name": "Sandstorm",
+   "cat": "Cloud Productivity Suites",
+   "cat_zh": "效率工具",
+   "gid": "productivity",
+   "gname": "效率工具",
+   "desc": "用来自建网页应用的开源平台。装好之后，可以从 Sandstorm 应用市场一键装东西，灵活度大致和 NextCloud 相当。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://sandstorm.io"
+  },
+  {
+   "slug": "ap-icedrive",
+   "name": "IceDrive",
+   "cat": "Encrypted Cloud Storage",
+   "cat_zh": "云存储",
+   "gid": "cloud",
+   "gname": "云存储",
+   "desc": "价格很低的加密存储服务，有跨平台应用。每月 1.5 英镑起给 150GB，3.33 英镑给 1TB。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://icedrive.net"
+  },
+  {
+   "slug": "ap-koofr",
+   "name": "Koofr",
+   "cat": "Encrypted Cloud Storage",
+   "cat_zh": "云存储",
+   "gid": "cloud",
+   "gname": "云存储",
+   "desc": "符合欧盟数据保护规定的存储服务，有网页、桌面、手机、WebDAV、RClone 各条路子，隐私政策合理。可选开源的客户端加密，兼容 RClone。能连接其他云服务和 MS Office。免费 10GB，服务器在德国且有 ISO 27001。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://koofr.eu"
+  },
+  {
+   "slug": "ap-crypt-fyi",
+   "name": "crypt.fyi",
+   "cat": "Secret Sharing",
+   "cat_zh": "文件共享与同步",
+   "gid": "file-share",
+   "gname": "文件共享与同步",
+   "desc": "短暂、零知识的敏感数据分享平台，有网页、命令行和 Chrome 扩展客户端。配置项比同类私密粘贴板更多：最大读取次数、IP 或网段白名单、webhook 等。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://crypt.fyi"
+  },
+  {
+   "slug": "ap-1time-io",
+   "name": "1time.io",
+   "cat": "Secret Sharing",
+   "cat_zh": "文件共享与同步",
+   "gid": "file-share",
+   "gname": "文件共享与同步",
+   "desc": "零知识的一次性秘密分享，浏览器端用 AES-256-GCM 加密、HKDF 派生密钥，有命令行工具，也能用 Docker 自建。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://1time.io/"
+  },
+  {
+   "slug": "ap-skysend",
+   "name": "SkySend",
+   "cat": "Secret Sharing",
+   "cat_zh": "文件共享与同步",
+   "gid": "file-share",
+   "gname": "文件共享与同步",
+   "desc": "端到端加密地分享 Markdown 笔记、文件、代码和密码、密钥，也能向别人索取秘密。可设口令、过期时间和最大查看次数，不需要账号。可自建，带客户端与管理命令行。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://skysend.app/"
+  },
+  {
+   "slug": "ap-openhabittracker",
+   "name": "OpenHabitTracker",
+   "cat": "Habit Trackers",
+   "cat_zh": "健康与健身",
+   "gid": "health",
+   "gname": "健康与健身",
+   "desc": "免费开源的习惯追踪器，可以记笔记、规划任务、追踪习惯。数据全部本地保存，或用 Docker 自建，不要账号。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://openhabittracker.net"
+  },
+  {
+   "slug": "ap-vocalinux",
+   "name": "Vocalinux",
+   "cat": "Accessibility",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "Linux（X11 与 Wayland）上的离线全系统语音听写。使用本地模型（whisper.cpp、Whisper 或 VOSK），麦克风音频从不离开设备。带快捷键的托盘应用，GPLv3 授权，目前仍属测试软件。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://vocalinux.com/"
+  },
+  {
+   "slug": "ap-bentopdf",
+   "name": "BentoPDF",
+   "cat": "Document Tools",
+   "cat_zh": "效率工具",
+   "gid": "productivity",
+   "gname": "效率工具",
+   "desc": "可自建的 PDF 工具集，在浏览器里完成简单和进阶的编辑、签名与整理。所有处理都在你的设备本地完成。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://bentopdf.com"
+  },
+  {
+   "slug": "ap-virtualbox",
+   "name": "VirtualBox",
+   "cat": "Virtual Machines",
+   "cat_zh": "系统工具",
+   "gid": "system",
+   "gname": "系统工具",
+   "desc": "开源、强大、功能丰富的虚拟化产品，支持 x86 与 AMD64、Intel64 架构。Windows、macOS、Linux、BSD 都能用，个人和企业均免费。社区扎实，从 2007 年起持续开发。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.virtualbox.org"
+  },
+  {
+   "slug": "ap-xen-project",
+   "name": "Xen Project",
+   "cat": "Virtual Machines",
+   "cat_zh": "系统工具",
+   "gid": "system",
+   "gname": "系统工具",
+   "desc": "开源的虚拟机监视器，作为第一类 hypervisor 让多个操作系统共用同一套硬件。对服务器很有用，可以跑完全独立的虚拟 Linux 机器。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://xenproject.org"
+  },
+  {
+   "slug": "ap-utm",
+   "name": "UTM",
+   "cat": "Virtual Machines",
+   "cat_zh": "系统工具",
+   "gid": "system",
+   "gname": "系统工具",
+   "desc": "Mac 上开源、功能丰富的第二类 hypervisor，能在苹果芯片的 Mac 上模拟 x86-64 系统。另有 iOS 版本，可以在 iPhone 上跑 Windows。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://mac.getutm.app"
+  },
+  {
+   "slug": "ap-seahorse",
+   "name": "SeaHorse",
+   "cat": "PGP Managers",
+   "cat_zh": "文件加密",
+   "gid": "file-encryption",
+   "gname": "文件加密",
+   "desc": "管理加密密钥和密码的应用，与 GNOME 钥匙环集成。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://wiki.gnome.org/Apps/Seahorse"
+  },
+  {
+   "slug": "ap-pgp-everywhere",
+   "name": "PGP Everywhere",
+   "cat": "PGP Managers",
+   "cat_zh": "文件加密",
+   "gid": "file-encryption",
+   "gname": "文件加密",
+   "desc": "iOS 上加密解密文本的应用。有原生键盘集成、钥匙串支持和应用间集成，在任何应用里都能快速用。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.pgpeverywhere.com"
+  },
+  {
+   "slug": "ap-flowcrypt",
+   "name": "FlowCrypt",
+   "cat": "PGP Managers",
+   "cat_zh": "文件加密",
+   "gid": "file-encryption",
+   "gname": "文件加密",
+   "desc": "在 Gmail 里使用 PGP 的浏览器扩展，支持 Chrome 和 Firefox，安卓与 iOS 有手机版。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://flowcrypt.com"
+  },
+  {
+   "slug": "ap-parrot",
+   "name": "Parrot",
+   "cat": "Desktop Operating Systems",
+   "cat_zh": "操作系统",
+   "gid": "os",
+   "gname": "操作系统",
+   "desc": "Parrot Linux 是基于 Debian 的完整操作系统，面向安全、隐私与开发。功能全但轻量，非常开放。有三个版本：通用、安全与取证。安全版用自己的沙箱体系，由 Firejail 与 AppArmor 加定制安全策略组成；取证版打包了一整套安全与渗透测试工具，类似 Kali 和 Black Arch。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.parrotsec.org/"
+  },
+  {
+   "slug": "ap-alpine-linux",
+   "name": "Alpine Linux",
+   "cat": "Desktop Operating Systems",
+   "cat_zh": "操作系统",
+   "gid": "os",
+   "gname": "操作系统",
+   "desc": "Alpine 是面向安全的轻量发行版，基于 musl libc 与 busybox。所有用户空间程序都编译为位置无关可执行文件并带栈溢出保护。对部分新用户来说，安装和配置可能相当复杂。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.alpinelinux.org/"
+  },
+  {
+   "slug": "ap-alacritty",
+   "name": "Alacritty",
+   "cat": "Terminal Emulators",
+   "cat_zh": "开发工具",
+   "gid": "dev-tools",
+   "gname": "开发工具",
+   "desc": "快速、GPU 加速的终端模拟器，专注简单、性能和大量键盘驱动的工作流。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://alacritty.org/"
+  },
+  {
+   "slug": "ap-devtoys",
+   "name": "DevToys",
+   "cat": "Developer Tools",
+   "cat_zh": "开发工具",
+   "gid": "dev-tools",
+   "gname": "开发工具",
+   "desc": "面向开发者的开源离线工具箱，包含 JSON、YAML、哈希、JWT、Base64、文本比对等工具。是替代把敏感数据粘进随机在线工具的好办法。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://devtoys.app/"
+  },
+  {
+   "slug": "ap-gitgost",
+   "name": "gitGost",
+   "cat": "Developer Tools",
+   "cat_zh": "开发工具",
+   "gid": "dev-tools",
+   "gname": "开发工具",
+   "desc": "匿名向 GitHub 推送：把 gitGost 加为 git 远程，它会以剥掉姓名、邮箱和提交元数据的方式提交一个拉取请求，可选走 Tor。匿名并不完美，托管服务也曾因滥用而停摆。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://gitgost.fly.dev"
+  },
+  {
+   "slug": "ap-gladys-assistant",
+   "name": "Gladys Assistant",
+   "cat": "Smart Home",
+   "cat_zh": "智能家居",
+   "gid": "smarthome",
+   "gname": "智能家居",
+   "desc": "开源、尊重隐私的家庭自动化，兼容树莓派、台式机、NAS 等大量设备。开发活跃，法语社区不错，集成也多（Zigbee、飞利浦、摄像头、涂鸦、MQTT、Telegram 等）。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://gladysassistant.com/"
+  },
+  {
+   "slug": "ap-secluso",
+   "name": "Secluso",
+   "cat": "Security Cameras",
+   "cat_zh": "智能家居",
+   "gid": "smarthome",
+   "gname": "智能家居",
+   "desc": "开源、端到端加密的家用安防摄像头方案，基于 Pi Zero 2W。用图形化的部署工具就能轻松搭好。通过手机应用和不可信的自建中继，实现完整的端到端加密远程访问，包括实时画面与智能移动告警。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://secluso.com"
+  },
+  {
+   "slug": "ap-actual",
+   "name": "Actual",
+   "cat": "Secure Budgeting",
+   "cat_zh": "财务与记账",
+   "gid": "finance",
+   "gname": "财务与记账",
+   "desc": "本地优先的个人财务应用。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://actualbudget.org/"
+  },
+  {
+   "slug": "ap-beecount",
+   "name": "BeeCount",
+   "cat": "Secure Budgeting",
+   "cat_zh": "财务与记账",
+   "gid": "finance",
+   "gname": "财务与记账",
+   "desc": "隐私优先的跨平台个人开支记录工具，覆盖安卓、iOS 和网页，离线优先设计。支持多种云同步方式：自建的 BeeCount Cloud、iCloud、Supabase、WebDAV 或 S3，数据控制权在用户手里。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://beecount-website.pages.dev"
+  },
+  {
+   "slug": "ap-rotki",
+   "name": "rotki",
+   "cat": "Secure Budgeting",
+   "cat_zh": "财务与记账",
+   "gid": "finance",
+   "gname": "财务与记账",
+   "desc": "可自建、开源、隐私优先的投资组合追踪与记账工具，针对加密货币等资产。支持三大操作系统和 Docker，重点是数据自主。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://rotki.com"
+  },
+  {
+   "slug": "ap-discourse",
+   "name": "Discourse",
+   "cat": "Social Networks",
+   "cat_zh": "社交网络",
+   "gid": "social",
+   "gname": "社交网络",
+   "desc": "完全开源、可自建的讨论平台，可以用来做邮件列表、讨论论坛或长篇聊天室。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://www.discourse.org"
+  },
+  {
+   "slug": "ap-tiny-rss",
+   "name": "Tiny RSS",
+   "cat": "News Readers",
+   "cat_zh": "RSS 阅读器",
+   "gid": "rss",
+   "gname": "RSS 阅读器",
+   "desc": "基于网页的新闻订阅阅读与聚合器，支持 RSS 和 Atom。免费开源，平台可定制、可自建，用来管理你的订阅源。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://tt-rss.org"
+  },
+  {
+   "slug": "ap-heroic-games-launcher",
+   "name": "Heroic Games Launcher",
+   "cat": "Gaming",
+   "cat_zh": "其他",
+   "gid": "other",
+   "gname": "其他",
+   "desc": "在 Linux、Windows、Mac 上访问 Epic 游戏商店、GOG 和 Amazon Prime Gaming 的开源启动器。用来替代官方闭源客户端，不过它仍需连接你的第三方商店账号。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://heroicgameslauncher.com"
+  },
+  {
+   "slug": "ap-ffmpeg",
+   "name": "FFmpeg",
+   "cat": "File Converters",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "完整的跨平台音视频录制、转换与串流方案，行业标准级的多媒体框架，支持格式极多。作为命令行工具，它保证所有处理都在你本机完成。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://ffmpeg.org/"
+  },
+  {
+   "slug": "ap-vert",
+   "name": "VERT",
+   "cat": "File Converters",
+   "cat_zh": "在线工具",
+   "gid": "online-tools",
+   "gname": "在线工具",
+   "desc": "基于网页的文件转换工具，用 WebAssembly 在你的设备本地运行。支持图像、音频、文档、视频等 250 多种格式。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://vert.sh"
+  },
+  {
+   "slug": "ap-obs-studio",
+   "name": "OBS Studio",
+   "cat": "Casting & Streaming",
+   "cat_zh": "流媒体",
+   "gid": "streaming",
+   "gname": "流媒体",
+   "desc": "强大的桌面直播与录屏软件，免费开源。具备实时音视频采集、场景合成、编码、录制与推流，支持格式广，可用社区插件扩展。",
+   "src": "ap",
+   "pt": "https://awesome-privacy.xyz/",
+   "site": "https://obsproject.com"
   }
  ]
 }
