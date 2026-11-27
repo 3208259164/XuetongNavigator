@@ -494,24 +494,8 @@
     state.shown = 0;
   }
 
-  /* ---------- 数据版本与简介懒加载 ---------- */
+  /* ---------- 数据版本（用于绕过缓存，改数据时同步递增） ---------- */
   var DATA_VER = '20261127a';
-  var _descLoaded = false, _descLoading = false;
-  function ensureDesc() {
-    if (_descLoaded || _descLoading) return;
-    _descLoading = true;
-    fetch('data/links-desc.json?v=' + DATA_VER, { cache: 'default' })
-      .then(function (r) { return r.json(); })
-      .then(function (m) {
-        for (var i = 0; i < DATA.length; i++) {
-          var it = DATA[i];
-          if (!it.desc && m[it.id]) { it.desc = m[it.id]; }
-        }
-        _descLoaded = true; _descLoading = false;
-        buildIndex();
-        if (state.q) render(true);
-      }).catch(function () { _descLoading = false; });
-  }
 
   /* ---------- 搜索 ---------- */
   var timer = null;
@@ -523,7 +507,7 @@
       $('#clearBtn').hidden = !state.q;
       state.view = state.view === 'fav' ? 'all' : state.view;
       render(true);
-      if (state.q) { setMnav('search'); ensureDesc(); }
+      if (state.q) setMnav('search');
     }, 120);
   }
 
@@ -635,7 +619,7 @@
     grid.innerHTML = sk;
 
     Promise.all([
-      fetch('data/links-lite.json?v=' + DATA_VER, { cache: 'default' }).then(function (r) { return r.json(); }),
+      fetch('data/links.json?v=' + DATA_VER, { cache: 'default' }).then(function (r) { return r.json(); }),
       fetch('data/cats.json?v=' + DATA_VER, { cache: 'default' }).then(function (r) { return r.json(); })
     ]).then(function (res) {
       DATA = res[0].links || [];
