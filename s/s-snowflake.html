@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Snowflake - 安全与开源 | 学通资源导航</title>
+<meta name="description" content="Snowflake 解决一个具体而重要的问题：在封锁 Tor 的地方让 Tor 能用。用 WebRTC 伪装比 obfs4 这类旧传输更难被识别和封锁。短板是它不是独立应用而是传输层，所以只有你已经在用 Tor Browser 或 Orbot 时才有帮助。志愿运行代理扩展，是以极低成本支持被封用户的有意义方式。对不受审查地区、只想保护隐私的用户没有关系。">
+<link rel="canonical" href="https://3208259164.github.io/XuetongNavigator/s/s-snowflake.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.wrap{max-width:680px;margin:0 auto;padding:18px 18px 60px}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--sub);
+ padding:7px 14px;border-radius:999px;background:var(--panel);border:1px solid var(--line);
+ text-decoration:none;margin-bottom:20px}
+.back:hover{color:var(--brand);border-color:var(--brand)}
+.head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.head .ic{width:72px;height:72px;border-radius:18px;flex:none;background:var(--panel-2);
+ display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:600;
+ color:var(--brand);overflow:hidden;border:1px solid var(--line)}
+.head .ic img{width:100%;height:100%;object-fit:cover}
+h1{font-size:21px;font-weight:650;line-height:1.3}
+.tagline{font-size:12.5px;color:var(--faint);margin-top:5px}
+.cta{display:block;text-align:center;padding:14px;border-radius:12px;background:var(--brand);
+ color:#fff;font-size:15px;font-weight:550;text-decoration:none;margin:18px 0 12px}
+.cta:active{transform:scale(.99)}
+.desc{font-size:14.5px;line-height:1.85;color:var(--text);margin:0 0 16px;
+ padding:15px 16px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.note{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.7;
+ padding:12px 14px;border-radius:11px;background:#fff8e6;color:#8a6100;margin-bottom:16px}
+html[data-theme="dark"] .note{background:#33291000;background-color:#2f2712;color:#e0b556}
+.note .ni{flex:none}
+.info{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:16px}
+.info-row{display:flex;align-items:center;gap:12px;padding:11px 14px;font-size:13px}
+.info-row+.info-row{border-top:1px solid var(--line)}
+.info-row .k{width:64px;flex:none;color:var(--faint);font-size:12.5px}
+.info-row .v{flex:1;color:var(--text);word-break:break-all}
+.ops{display:flex;gap:9px;margin-bottom:24px}
+.ops button,.ops a{
+  flex:1;text-align:center;padding:10px;border-radius:11px;font-size:12.5px;
+  background:var(--panel);border:1px solid var(--line);color:var(--sub);
+  text-decoration:none;cursor:pointer;font-family:inherit;
+}
+.ops button:hover,.ops a:hover{color:var(--brand);border-color:var(--brand)}
+.ops .on{color:#f5a623;border-color:#f5c46b;background:#fffaf0}
+h2{font-size:14px;font-weight:600;color:var(--sub);margin:0 0 12px}
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.rel a{display:flex;align-items:center;gap:9px;padding:10px;background:var(--panel);
+ border:1px solid var(--line);border-radius:10px;text-decoration:none;color:inherit;min-width:0}
+.rel a:hover{border-color:var(--brand)}
+.rel .ic2{width:32px;height:32px;border-radius:9px;flex:none;overflow:hidden;background:var(--panel-2);
+ display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--brand)}
+.rel .ic2 img{width:100%;height:100%;object-fit:cover}
+.rel .t{font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.foot{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);
+ font-size:11.5px;color:var(--faint);text-align:center;line-height:1.8}
+@media(min-width:700px){ .rel{grid-template-columns:1fr 1fr 1fr} }
+</style>
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/s/s-snowflake.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:type" content="article">
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../index.html#/cat/安全与开源">&#8592; 返回 安全与开源</a>
+
+  <div class="head">
+    <span class="ic"><img src="../icons/s-snowflake.png" alt="Snowflake" loading="lazy"></span>
+    <div>
+      <h1>Snowflake</h1>
+      <div class="tagline">安全与开源 · 匿名网络</div>
+    </div>
+  </div>
+
+  <a class="cta" href="https://snowflake.torproject.org" target="_blank" rel="noopener nofollow">访问 Snowflake &#8599;</a>
+
+  <div class="desc">Snowflake 解决一个具体而重要的问题：在封锁 Tor 的地方让 Tor 能用。用 WebRTC 伪装比 obfs4 这类旧传输更难被识别和封锁。短板是它不是独立应用而是传输层，所以只有你已经在用 Tor Browser 或 Orbot 时才有帮助。志愿运行代理扩展，是以极低成本支持被封用户的有意义方式。对不受审查地区、只想保护隐私的用户没有关系。</div>
+
+  
+
+  <div class="info">
+    <div class="info-row"><span class="k">域名</span><span class="v">snowflake.torproject.org</span></div>
+    <div class="info-row"><span class="k">分类</span><span class="v">安全与开源 · 匿名网络</span></div>
+    <div class="info-row"><span class="k">属性</span><span class="v">—</span></div>
+    <div class="info-row"><span class="k">收录</span><span class="v">2026-11-25</span></div>
+  </div>
+
+  <div class="ops">
+    <button type="button" id="favBtn" data-id="s-snowflake">☆ 收藏</button>
+    <button type="button" id="copyBtn" data-url="https://snowflake.torproject.org">&#128203; 复制链接</button>
+    <a href="https://github.com/3208259164/XuetongNavigator/issues/new?title=站点问题：Snowflake&body=站点：Snowflake
+地址：https://snowflake.torproject.org
+问题描述：" target="_blank" rel="noopener">&#9873; 报告问题</a>
+  </div>
+
+  <h2>同类站点</h2>
+  <div class="rel"><a href="l0049.html"><span class="ic2"><img src="../icons/l0049.png" alt="Wormhole" loading="lazy"></span><span class="t">Wormhole</span></a><a href="l0990.html"><span class="ic2"><img src="../icons/l0990.png" alt="GoFile" loading="lazy"></span><span class="t">GoFile</span></a><a href="l0991.html"><span class="ic2"><img src="../icons/l0991.png" alt="XMPP 即时通讯" loading="lazy"></span><span class="t">XMPP 即时通讯</span></a><a href="l0902.html"><span class="ic2"><img src="../icons/l0902.png" alt="吾爱破解" loading="lazy"></span><span class="t">吾爱破解</span></a><a href="l0956.html"><span class="ic2"><img src="../icons/l0956.png" alt="521Github镜像" loading="lazy"></span><span class="t">521Github镜像</span></a><a href="s-ente-authenticator.html"><span class="ic2"><img src="../icons/s-ente-authenticator.png" alt="Ente Authenticator" loading="lazy"></span><span class="t">Ente Authenticator</span></a><a href="s-keepassxc.html"><span class="ic2"><img src="../icons/s-keepassxc.png" alt="KeePassXC" loading="lazy"></span><span class="t">KeePassXC</span></a><a href="s-umami.html"><span class="ic2"><img src="../icons/s-umami.png" alt="Umami" loading="lazy"></span><span class="t">Umami</span></a><a href="s-pi-hole.html"><span class="ic2"><img src="../icons/s-pi-hole.png" alt="Pi-hole" loading="lazy"></span><span class="t">Pi-hole</span></a><a href="s-mvt.html"><span class="ic2"><img src="../icons/s-mvt.png" alt="Mobile Verification Toolkit" loading="lazy"></span><span class="t">Mobile Verification Toolkit</span></a><a href="s-exiftool.html"><span class="ic2"><img src="../icons/s-exiftool.png" alt="ExifTool" loading="lazy"></span><span class="t">ExifTool</span></a><a href="s-bitwarden.html"><span class="ic2"><img src="../icons/s-bitwarden.png" alt="Bitwarden" loading="lazy"></span><span class="t">Bitwarden</span></a></div>
+
+  <div class="foot">
+    <p>本站仅收录网站名称、简介与链接，不存储、不代理任何内容。</p>
+    <p>内容版权归 Snowflake 及各站点所有。</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var t=null;
+  try{t=localStorage.getItem('nav_theme_v1')}catch(e){}
+  if(!t) t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);
+
+  var KEY='nav_fav_v1';
+  function favs(){try{return new Set(JSON.parse(localStorage.getItem(KEY)||'[]'))}catch(e){return new Set()}}
+  var b=document.getElementById('favBtn');
+  if(b){
+    var id=b.getAttribute('data-id');
+    var s=favs();
+    if(s.has(id)){b.classList.add('on');b.textContent='\u2605 已收藏'}
+    b.addEventListener('click',function(){
+      var cur=favs();
+      if(cur.has(id)){cur.delete(id);b.classList.remove('on');b.textContent='\u2606 收藏'}
+      else{cur.add(id);b.classList.add('on');b.textContent='\u2605 已收藏'}
+      try{localStorage.setItem(KEY,JSON.stringify(Array.from(cur)))}catch(e){}
+    });
+  }
+  var c=document.getElementById('copyBtn');
+  if(c){
+    c.addEventListener('click',function(){
+      var u=c.getAttribute('data-url');
+      var done=function(){var o=c.textContent;c.textContent='已复制';setTimeout(function(){c.textContent=o},1200)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,done)}
+      else{var ta=document.createElement('textarea');ta.value=u;document.body.appendChild(ta);ta.select();
+        try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);done()}
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebPage",
+ "name":"Snowflake",
+ "description":"Snowflake 解决一个具体而重要的问题：在封锁 Tor 的地方让 Tor 能用。用 WebRTC 伪装比 obfs4 这类旧传输更难被识别和封锁。短板是它不是独立应用而是传输层，所以只有你已经在用 Tor Browser 或 Orbot 时才有帮助。志愿运行代理扩展，是以极低成本支持被封用户的有意义方式。对不受审查地区、只想保护隐私的用户没有关系。",
+ "url":"https://3208259164.github.io/XuetongNavigator/s/s-snowflake.html",
+ "isPartOf":{"@type":"WebSite","name":"学通资源导航","url":"https://3208259164.github.io/XuetongNavigator/"},
+ "breadcrumb":{
+   "@type":"BreadcrumbList",
+   "itemListElement":[
+     {"@type":"ListItem","position":1,"name":"学通资源导航","item":"https://3208259164.github.io/XuetongNavigator/"},
+     {"@type":"ListItem","position":2,"name":"安全与开源","item":"https://3208259164.github.io/XuetongNavigator/#/cat/安全与开源"},
+     {"@type":"ListItem","position":3,"name":"Snowflake","item":"https://3208259164.github.io/XuetongNavigator/s/s-snowflake.html"}
+   ]
+ }
+}
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5afb2a8eaba941f8bab9cd5dd49666f2"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
