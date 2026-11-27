@@ -1,5 +1,5 @@
 {
- "count": 246,
+ "count": 296,
  "total_available": 352,
  "source": "https://privacytools.io",
  "source_name": "PrivacyTools.io",
@@ -147,6 +147,21 @@
    "count": 9
   },
   {
+   "gid": "hosting",
+   "name": "网络与托管",
+   "count": 20
+  },
+  {
+   "gid": "privacy-practice",
+   "name": "隐私实务",
+   "count": 22
+  },
+  {
+   "gid": "crypto",
+   "name": "加密货币与支付",
+   "count": 8
+  },
+  {
    "gid": "browsers",
    "name": "浏览器与扩展",
    "count": 18
@@ -269,6 +284,17 @@
    "site": "https://neovim.io/"
   },
   {
+   "slug": "jellyfin",
+   "name": "Jellyfin",
+   "cat": "Private Media Servers",
+   "cat_zh": "Private Media Servers",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "Jellyfin 是尊重隐私的替代 Plex 里最干净的那个：不要厂商账号、不依赖云、什么都不回连。取舍是配置功夫：服务器你自己跑，媒体库自己管，转码出问题自己排查，这些 Plex 过去替你抹平了。实时转码的硬件要求视你的库而定，也可能不低。愿意在初次设置上投几个小时，Jellyfin 把媒体服务器完全交给你，对第三方没有持续义务。",
+   "pt": "https://privacytools.io/app/jellyfin",
+   "site": "https://jellyfin.org"
+  },
+  {
    "slug": "keepassxc",
    "name": "KeePassXC",
    "cat": "Private Password Managers",
@@ -291,6 +317,28 @@
    "site": "https://joinmastodon.org/"
   },
   {
+   "slug": "openwrt",
+   "name": "OpenWrt",
+   "cat": "Private Router Firmware",
+   "cat_zh": "Private Router Firmware",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "用 OpenWrt 换掉路由器的原厂固件，你能拿回多数消费级路由器刻意扣下的控制权：真正的可配置性、厂商放弃硬件很久之后仍有安全更新、没有厂商回连。短板明摆着：刷错镜像或配置搞砸会把设备变砖，学习曲线也陡。想拥有自己的网络、路由器又在支持列表上，选它。想到要救变砖的路由器就发怵，这就不是随手能升级的东西。",
+   "pt": "https://privacytools.io/app/openwrt",
+   "site": "https://openwrt.org/"
+  },
+  {
+   "slug": "umami",
+   "name": "Umami",
+   "cat": "Private Web Analytics",
+   "cat_zh": "Private Web Analytics",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "想要自己拥有数据又不想为此付费的开发者或小团队，Umami 正好命中。MIT 许可宽松，面板干净、读得快，无 cookie 的脚本通常让同意横幅可以直接去掉。诚实的短板是自建路线：要起一个数据库并持续更新，而不是贴一行代码然后忘掉。想要完全拥有、也享受自建或能待在免费云额度里，选 Umami。数据库超出你想照看的范围，就选纯托管工具。",
+   "pt": "https://privacytools.io/app/umami",
+   "site": "https://umami.is/"
+  },
+  {
    "slug": "obtainium",
    "name": "Obtainium",
    "cat": "Private App Stores",
@@ -300,6 +348,28 @@
    "desc": "它的吸引力在来源：你装的就是开发者亲自发布的那份，不是被重新打包或延迟的副本。这让 Obtainium 成为 F-Droid 的有力补充，适用于自己发布签名 APK、但还没进 F-Droid 的应用。诚实的短板是配置摩擦：每个应用都要手动配，有些来源靠网页抓取，上游页面一变就断。愿意自己维护应用清单，Obtainium 给你比任何传统商店更细的更新链控制；想要一键目录式体验，它就不合适。",
    "pt": "https://privacytools.io/app/obtainium",
    "site": "https://obtainium.page/"
+  },
+  {
+   "slug": "pi-hole",
+   "name": "Pi-hole",
+   "cat": "Private Ad Blocking",
+   "cat_zh": "Private Ad Blocking",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "自己动手的答案，在一个维度上胜过所有托管 DNS 拦截器：查询从不离开你的网络，因为服务器你自己跑。代价是维护归你，树莓派、容器或闲置机器上都行，配错一个 Pi-hole 能把事情弄坏，直到你修好。想要完全控制、没有第三方看见你的 DNS，也不介意自己当管理员，选它。不想跑基础设施的人，用 NextDNS 这类托管服务。",
+   "pt": "https://privacytools.io/app/pi-hole",
+   "site": "https://pi-hole.net/"
+  },
+  {
+   "slug": "navidrome",
+   "name": "Navidrome",
+   "cat": "Private Media Servers",
+   "cat_zh": "Private Media Servers",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "Navidrome 只擅长一件事：把你自己的音乐文件提供给任何兼容 Subsonic 的客户端，任何设备上都行，不要订阅、不依赖云。窄的定位既是长处也是局限：只处理音频，不支持视频和播客，手机原生应用依赖 Subsonic 生态而不是自己出。已经有本地音乐库、想要 Spotify 式访问又不想交月费、不想被采集的自建者，它是当下最实际的选项。",
+   "pt": "https://privacytools.io/app/navidrome",
+   "site": "https://www.navidrome.org"
   },
   {
    "slug": "bleachbit",
@@ -379,6 +449,17 @@
    "site": "https://vscodium.com/"
   },
   {
+   "slug": "mvt",
+   "name": "Mobile Verification Toolkit",
+   "cat": "Private Device Integrity",
+   "cat_zh": "Private Device Integrity",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "MVT 是检测高级手机间谍软件最接近经验证实地标准的工具。由国际特赦组织随 Pegasus 项目调查一同发布，它把设备痕迹与公开的入侵指标比对，已被全球的记者、公民社会组织与安全研究者使用。诚实的局限是它要求技术能力：需要 Mac 或 Linux 机器、能提取完整设备备份、还要有足够的取证背景去解读输出。它不是终端用户自助工具，但对保护高风险个体的合适人选，没有别的能接近。",
+   "pt": "https://privacytools.io/app/mvt",
+   "site": "https://mvt.re/"
+  },
+  {
    "slug": "joplin",
    "name": "Joplin",
    "cat": "Private Notebooks",
@@ -399,6 +480,28 @@
    "desc": "追求原始速度就选 Zed，它的 Rust 内核让它在多数开发者正在离开的那款编辑器面前明显更快，多人协作对结对也真的有用。诚实的短板是遥测：默认开着，所以隐私是要你主动选的，而不是起点，得先去设置里关掉。生态也比 VS Code 年轻，插件长尾更薄。看重性能和协作、也愿意第一天就关掉遥测，选 Zed。想要开箱零收集、或依赖成熟扩展目录，就别。",
    "pt": "https://privacytools.io/app/zed",
    "site": "https://zed.dev/"
+  },
+  {
+   "slug": "exiftool",
+   "name": "ExifTool",
+   "cat": "Private Metadata Removal",
+   "cat_zh": "Private Metadata Removal",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "格式覆盖面在这里无人能比：EXIF、IPTC、XMP、GPS、厂商注记、ICC 配置，以及数百种文件类型里几十个相机厂商标签。批量审计元数据、或者清理一堆混杂归档，没有别的能接近。短板是界面：它是带大量参数的 Perl 命令行工具，学习曲线真实存在。不用 Perl 的人有 Windows 独立 exe。分享前需要核实文件里到底有什么元数据的人，工具箱里该有 ExifTool。",
+   "pt": "https://privacytools.io/app/exiftool",
+   "site": "https://exiftool.org/"
+  },
+  {
+   "slug": "ghost",
+   "name": "Ghost",
+   "cat": "Private Blogging",
+   "cat_zh": "Private Blogging",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "现代、快，围绕它擅长的事而建：独立发布，原生支持邮件通讯和付费会员，所以想把读者攥在自己手里的创作者会被它吸引。短板是自建 Ghost 比纯文件博客麻烦，很多人最后用了付费托管服务。目标是通讯加订阅的生意，它是为此专门做的。只想搭个小静态个人博客，它就是多余的机器。",
+   "pt": "https://privacytools.io/app/ghost",
+   "site": "https://ghost.org/"
   },
   {
    "slug": "nixos",
@@ -522,6 +625,17 @@
    "site": "https://jitsi.org/"
   },
   {
+   "slug": "kavita",
+   "name": "Kavita",
+   "cat": "Private Media Servers",
+   "cat_zh": "Private Media Servers",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "Kavita 填的是 Jellyfin 这类通用媒体服务器不做的空缺：给数字漫画和日漫收藏提供一流的阅读体验，章节追踪得当，阅读器是专门做的。网页阅读器扎实，但想要原生手机阅读应用的高阶用户会发现选择比音乐那边的 Subsonic 生态少。Kavita+ 是可选的付费订阅，提供高级元数据，核心服务器完全免费且自足。有大量 CBZ 或 EPUB 收藏、想在任何设备上读又不用第三方服务，它值得。",
+   "pt": "https://privacytools.io/app/kavita",
+   "site": "https://www.kavitareader.com"
+  },
+  {
    "slug": "firefox-focus",
    "name": "Firefox Focus",
    "cat": "Private Browsers",
@@ -621,6 +735,17 @@
    "site": "https://docs.mozilla.ai/llamafile"
   },
   {
+   "slug": "simplewall",
+   "name": "simplewall",
+   "cat": "Private Windows Privacy",
+   "cat_zh": "Private Windows Privacy",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "真正轻量的 Windows 防火墙，能让你看见并拦住应用的回连，没有商业套件的臃肿。这份简单的另一面是它要你自己做放行与拦截的判断，新手容易被压住，而且只做 Windows。想要对网络流量有可见控制、也有一定技术底子，它很好；想要有引导、跨平台覆盖，就看 Portmaster。",
+   "pt": "https://privacytools.io/app/simplewall",
+   "site": "https://github.com/henrypp/simplewall/releases"
+  },
+  {
    "slug": "unbound",
    "name": "Unbound",
    "cat": "Private DNS",
@@ -630,6 +755,28 @@
    "desc": "自己跑一个带验证的递归解析器，是停止信任任何别人 DNS 的办法，Unbound 就是为此而生的精简、审计充分的工具，支持 DoT。代价是你成了运营者：安装、缓存行为、上游选择都归你，这超出多数人的意愿。追求真正独立的自建者和小型网络该这么做；一个信誉良好的公共解析器已经让你满意的，没必要。",
    "pt": "https://privacytools.io/app/unbound",
    "site": "https://nlnetlabs.nl/projects/unbound/about/"
+  },
+  {
+   "slug": "safing-portmaster",
+   "name": "Safing Portmaster",
+   "cat": "Private Windows Privacy",
+   "cat_zh": "Private Windows Privacy",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "比普通防火墙更有野心：它监控并控制每个应用的活动，界面更友好，内置隐私功能，把门槛给非专家降下来。取舍是它比 simplewall 更重、更有主张，在低配机器上这份开销是真实的。想要应用级网络控制又带引导，它是强选；只要一个羽毛级拦截器的极简派会更喜欢 simplewall。",
+   "pt": "https://privacytools.io/app/safing-portmaster",
+   "site": "https://safing.io/portmaster/"
+  },
+  {
+   "slug": "plausible",
+   "name": "Plausible Analytics",
+   "cat": "Private Web Analytics",
+   "cat_zh": "Private Web Analytics",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "想要诚实的流量数字、又不想多一个项目要管，就选 Plausible。面板只有一页，脚本轻如羽毛，因为它不存个人数据也不存 IP 地址，同意横幅通常可以退休。诚实的短板是收费模式：托管方案是付费订阅，唯一的免费路线是自建社区版，那就要跑服务器。这个取舍是刻意的，一家付费公司没有理由去变现你的访客。看重简单和欧盟托管、也愿意付费或自建，选 Plausible。需要漏斗，就找更深的工具。",
+   "pt": "https://privacytools.io/app/plausible",
+   "site": "https://plausible.io/"
   },
   {
    "slug": "ublock-origin-lite",
@@ -775,6 +922,17 @@
    "site": "https://www.keepassdx.com/"
   },
   {
+   "slug": "electrum",
+   "name": "Electrum",
+   "cat": "Private Bitcoin Wallets",
+   "cat_zh": "Private Bitcoin Wallets",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "老牌的轻量比特币钱包，因为不下载整条链所以快，支持硬件钱包，也有自己的去中心化服务器。这种轻量模型的另一面是默认连接公共服务器，它们看得到你查询了哪些地址，所以注重隐私的用户该把它指向自己的节点。想要成熟、不加修饰、哪都能跑的钱包、也愿意配置服务器，选 Electrum。想要有人手把手带的新手，可能更喜欢更引导式的。",
+   "pt": "https://privacytools.io/app/electrum",
+   "site": "https://electrum.org/"
+  },
+  {
    "slug": "onlyoffice",
    "name": "ONLYOFFICE",
    "cat": "Private Productivity",
@@ -806,6 +964,17 @@
    "desc": "OpenShot 是开源剪辑器里最温和的入口，而这正是它的意义：如果你的参照是 CapCut 或 iMovie，几分钟就会觉得熟悉。这份简单的代价是稳定性。它长期有名声说在较重项目上容易绊倒，所以要勤保存，别指望它扛长而复杂的剪辑。短片和第一次剪辑的好起点，时间线一有野心就会让人烦，那时就该升到 Shotcut 或 Kdenlive。",
    "pt": "https://privacytools.io/app/openshot",
    "site": "https://www.openshot.org/"
+  },
+  {
+   "slug": "opnsense",
+   "name": "OPNsense",
+   "cat": "Private Router Firmware",
+   "cat_zh": "Private Router Firmware",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "OPNsense 从 pfSense 分叉后走了干净重来的路线：每周的安全更新而不是打包更新、正规的 MVC 架构、全栈的 REST API，让它在今天对多数用户是维护更积极的选项。功能覆盖从家用边缘路由到多 WAN 企业级带硬件故障切换的部署。诚实的短板是硬件要求：OPNsense 跑在专用 x86 硬件或虚拟机上，不是消费级路由器，所以入门成本比刷固件高。愿意专门拿一台机器给它，OPNsense 是免费能拿到的最能打的网络安全平台之一。",
+   "pt": "https://privacytools.io/app/opnsense",
+   "site": "https://opnsense.org/"
   },
   {
    "slug": "osmand",
@@ -1083,6 +1252,17 @@
    "site": "https://www.yubico.com/products/yubico-authenticator/"
   },
   {
+   "slug": "auditor",
+   "name": "Auditor",
+   "cat": "Private Device Integrity",
+   "cat_zh": "Private Device Integrity",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "Auditor 做的是多数安全工具做不到的事：给出密码学证明，而不只是软件的声明，证明一台设备跑的是它声称的系统。利用安卓硬件支持的密钥库和验证启动链，它可以让一台安卓设备用二维码审计另一台，或做定时远程检查并邮件告警。短板是硬件支持窄：最好用跑 GrapheneOS 或原生安卓的 Pixel，而且只有你明白证明失败意味着什么，价值才落地。GrapheneOS 用户，它是补全信任模型的自然搭档。",
+   "pt": "https://privacytools.io/app/auditor",
+   "site": "https://attestation.app/"
+  },
+  {
    "slug": "netnewswire",
    "name": "NetNewsWire",
    "cat": "Private RSS Readers",
@@ -1116,6 +1296,17 @@
    "site": "https://ardour.org/"
   },
   {
+   "slug": "sparrow-wallet",
+   "name": "Sparrow Wallet",
+   "cat": "Private Bitcoin Wallets",
+   "cat_zh": "Private Bitcoin Wallets",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "为认真对待比特币自持和钱包隐私的人而建，内置 CoinJoin 和强 Tor 支持，让交易历史在链上更难被关联。取舍是只做桌面端，并默认你懂币的选择和 UTXO，对只想要一个余额数字的人属于杀鸡用牛刀。自己跑节点、或想细粒度控制钱包隐私足迹，选 Sparrow。不想学 UTXO 管理的普通持有者会觉得它吓人。",
+   "pt": "https://privacytools.io/app/sparrow-wallet",
+   "site": "https://sparrowwallet.com/"
+  },
+  {
    "slug": "tor",
    "name": "Tor",
    "cat": "Private Anonymizing Networks",
@@ -1147,6 +1338,17 @@
    "desc": "Signal 的安卓加固分支，增加了加密本地数据库、锁屏时自动擦除内存，并通过 Orbot 支持 Tor 与 SOCKS 代理。提供两个版本：带 FCM 推送的，和完全不含谷歌组件的纯自由软件版。",
    "pt": "https://privacytools.io/app/molly",
    "site": "https://molly.im/"
+  },
+  {
+   "slug": "altcha",
+   "name": "ALTCHA",
+   "cat": "Private CAPTCHA & Bots",
+   "cat_zh": "Private CAPTCHA & Bots",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "ALTCHA 是这里的默认选择，因为它做垃圾防护时不把你的访客交给任何人：计算在访客浏览器里完成，校验在你的服务器上，关于他们的一切都不被记录。对站长来说，这意味着可以没有任何同意提示就放上去的验证码，因为没有追踪要同意。诚实的短板在于工作量证明是什么、不是什么。它让批量垃圾请求变贵，因为每个请求都要消耗算力，但挡不住专门针对你、也愿意付这个代价的攻击者。联系表单或注册，想止住洪水又不想盯住读者，选它。面对集中且资源充足的对手，要上分层防御。",
+   "pt": "https://privacytools.io/app/altcha",
+   "site": "https://altcha.org/"
   },
   {
    "slug": "mullvad-browser",
@@ -1215,6 +1417,17 @@
    "site": "https://vikunja.io/"
   },
   {
+   "slug": "monero-gui-wallet",
+   "name": "Monero GUI Wallet",
+   "cat": "Private Monero",
+   "cat_zh": "Private Monero",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "官方钱包，想要最直接、维护最好的门罗持有与管理方式、且完全掌控自己的密钥，它就是稳妥默认。取舍是分量：跑好它要处理全节点或者信任远程节点，比轻量钱包麻烦。想要参考客户端、密钥在设备上由自己控制，它合适；想要更轻的，下面还有别的选项。",
+   "pt": "https://privacytools.io/app/monero-gui-wallet",
+   "site": "https://www.getmonero.org/downloads/#gui"
+  },
+  {
    "slug": "webtorrent",
    "name": "WebTorrent",
    "cat": "Private Torrent Clients",
@@ -1259,6 +1472,17 @@
    "site": "https://exifcleaner.com/"
   },
   {
+   "slug": "bludit",
+   "name": "Bludit",
+   "cat": "Private Blogging",
+   "cat_zh": "Private Blogging",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "不用数据库的文件型内容管理系统，妙处很安静：部件少意味着攻击面小、备份极简单，拷个文件夹就行。这份简单也封了上限，它不是为大型或高流量站点建的，生态也小。想要一个自建、自己能从里到外讲清楚的个人博客或小站，它最理想。长大了，就需要有真数据库的东西。",
+   "pt": "https://privacytools.io/app/bludit",
+   "site": "https://www.bludit.com/"
+  },
+  {
    "slug": "keepassium",
    "name": "KeePassium",
    "cat": "Private Password Managers",
@@ -1290,6 +1514,17 @@
    "desc": "2FAS 靠浏览器扩展这一手赢得位置：在电脑上点一下，而不用抓手机眯眼看六位数字。它开源、跨平台，不过依赖浏览器扩展和设备同步，比精简的离线应用多了些运转部件。桌面一键的便利真的合你的日常，就选它；宁愿把一切离线留在一台设备上，更简单的应用更适合你。",
    "pt": "https://privacytools.io/app/2fas",
    "site": "https://2fas.com/"
+  },
+  {
+   "slug": "mat2",
+   "name": "MAT2",
+   "cat": "Private Metadata Removal",
+   "cat_zh": "Private Metadata Removal",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "普通文件里的元数据，照片里的 GPS 坐标、PDF 里的作者名、音频里的录音设备，是常规的隐私泄漏，多数人从不检查。MAT2 在很宽的格式范围上处理得干净，还直接集成进文件管理器 Nautilus 和 Dolphin，右键就能剥，不用开终端。开发已经安静，仓库现在已归档，所以把它当成稳定、已完成，而不是还在维护。Linux 用户它做得很好；Windows 和 Mac 用户需要 ExifTool 或其他替代。",
+   "pt": "https://privacytools.io/app/mat2",
+   "site": "https://github.com/jvoisin/mat2"
   },
   {
    "slug": "jami",
@@ -1369,6 +1604,28 @@
    "site": "https://piped.video"
   },
   {
+   "slug": "haven",
+   "name": "Haven",
+   "cat": "Private Whistleblower Tools",
+   "cat_zh": "Private Whistleblower Tools",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "想法很巧，把一台闲置安卓手机变成运动、声音和光线传感器，看守一个房间或一台笔记本，对很具体的实体安全顾虑来说是对的工具。要知道它多年少有开发，所以把它当成稳定但静止的项目，而不是还在持续改进的东西。有旧手机、也有具体理由要盯住某个空间，它有用；别指望持续更新和打磨。",
+   "pt": "https://privacytools.io/app/haven",
+   "site": "https://guardianproject.github.io/haven/"
+  },
+  {
+   "slug": "goatcounter",
+   "name": "GoatCounter",
+   "cat": "Private Web Analytics",
+   "cat_zh": "Private Web Analytics",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "GoatCounter 是给博客作者或开源维护者的，只想知道人们读了什么，别的不要。它统计访问不用 cookie 也不用个人数据，自建几乎是最省事的分析方案，因为整个东西是一个 Go 二进制，没有一堆组件要拼。短板是这份专注的反面：功能刻意少，没有漏斗或深度分群，免费托管档只限非商业，商业站点需要付费方案或自建。个人站点或文档项目、一个干净的访问数就够的地方，选 GoatCounter。需要营销级报表，另找别处。",
+   "pt": "https://privacytools.io/app/goatcounter",
+   "site": "https://www.goatcounter.com/"
+  },
+  {
    "slug": "dnscloak",
    "name": "DNSCloak",
    "cat": "Private DNS",
@@ -1380,6 +1637,28 @@
    "site": "https://github.com/s-s/dnscloak#readme"
   },
   {
+   "slug": "write-as",
+   "name": "Write.as",
+   "cat": "Private Blogging",
+   "cat_zh": "Private Blogging",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "极简得很清爽，隐私优先的立场，不想依赖托管服务还能自建那套开源引擎。这份极简是刻意的，也把人分开：没有评论、没有分析表演、没有庞大的主题系统，只有写和发。想把文字放上网又不被监视、不被杂物埋掉的人，它很好。需要丰富的设计控制或内置的受众工具，会觉得它太空。",
+   "pt": "https://privacytools.io/app/write-as",
+   "site": "https://write.as/"
+  },
+  {
+   "slug": "matomo",
+   "name": "Matomo",
+   "cat": "Private Web Analytics",
+   "cat_zh": "Private Web Analytics",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "从 Google Analytics 迁出来、又不肯丢掉能力时，就选 Matomo。它覆盖营销团队期待的深度报表，同时把数据留在你控制的基础设施上，配置之后无 cookie 的追踪模式还能去掉同意横幅。这份能力也是短板：比极简的追踪器更重，即使在自己的服务器上，部分高级功能也在付费插件后面。真用得上那些深度、也托管得起，选 Matomo，新西兰的充分性认定还能缓解欧盟数据的问题。只读访问数，就选更轻的。",
+   "pt": "https://privacytools.io/app/matomo",
+   "site": "https://matomo.org/"
+  },
+  {
    "slug": "gopass",
    "name": "gopass",
    "cat": "Private Password Managers",
@@ -1389,6 +1668,17 @@
    "desc": "用 Go 编写的开源命令行密码管理器，兼容 Unix pass 的存储格式。凭据用 GPG 或 age 加密并纳入 git 版本管理，提供 Linux、macOS、Windows 安装包。",
    "pt": "https://privacytools.io/app/gopass",
    "site": "https://www.gopass.pw/"
+  },
+  {
+   "slug": "pfsense",
+   "name": "pfSense",
+   "cat": "Private Router Firmware",
+   "cat_zh": "Private Router Firmware",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "基于 FreeBSD 的严肃防火墙与路由平台，给真正在搭网络边界的人，而不是快速给路由器换个固件。能力带着分量：通常跑在专用硬件或虚拟机上，配置的深度也默认你懂网络。想在家或小办公室要企业级防火墙控制、也愿意花时间学，选 pfSense。只想给现有消费级路由器换个更好的固件，OpenWrt 更对路。",
+   "pt": "https://privacytools.io/app/pfsense",
+   "site": "https://www.pfsense.org/"
   },
   {
    "slug": "collabora",
@@ -1422,6 +1712,17 @@
    "desc": "Piwigo 是老资格的照片图库平台，吸引点在灵活：自建求完全控制，或不想折腾就用它的托管，内置像样的用户管理。在现代顺滑应用旁边它显老，手机体验偏实用而谈不上愉悦。想要成熟、可自建、共享控制细致的图库，也不介意更老派的界面，它值得。",
    "pt": "https://privacytools.io/app/piwigo",
    "site": "https://piwigo.org/"
+  },
+  {
+   "slug": "securedrop",
+   "name": "SecureDrop",
+   "cat": "Private Whistleblower Tools",
+   "cat_zh": "Private Whistleblower Tools",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "新闻机构接收线人材料的那套严肃、经过审计的标准，它对 Tor 的依赖是威胁模型里刻意的一部分，而不是要移除的障碍。诚实的现实是部署和正确运行都很重，面向有真实安全需求的组织而不是个人。你是要保护线人的发布者，这是参考工具；只是想安全传文件，它远超所需。",
+   "pt": "https://privacytools.io/app/securedrop",
+   "site": "https://securedrop.org/"
   },
   {
    "slug": "openkeychain",
@@ -1466,6 +1767,17 @@
    "desc": "addy.io 在基于别名的收件箱防护里位置很好：免费版是真有用，标准别名不限量、不要信用卡，浏览器扩展让随手建别名毫无阻力，GPG 加密让转发中的邮件也保持私密。短板是免费方案每月 10MB 流量上限，如果你转订阅邮件，这个额度紧到会碍事。用得狠的人会发现付费档价格还算合理。刚离开 Gmail 或 Outlook 的人，作为第一个别名服务挺扎实。",
    "pt": "https://privacytools.io/app/addy-io",
    "site": "https://addy.io/"
+  },
+  {
+   "slug": "cake-wallet",
+   "name": "Cake Wallet",
+   "cat": "Private Monero",
+   "cat_zh": "Private Monero",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "自持是这里的地基：Cake Wallet 不代你持有任何东西，门罗的本地扫描做法相比把活外包给远程服务器的钱包是具体的隐私改进。代码库在 cake-tech/cake_wallet 下开源，所以非托管的说法可验证，而不只是宣称。取舍是自己管密钥就意味着丢了助记词就失去访问，没有恢复选项。把自持密钥看得比托管服务的便利更重要的人，这个取舍值得。",
+   "pt": "https://privacytools.io/app/cake-wallet",
+   "site": "https://cakewallet.com"
   },
   {
    "slug": "cryptpad",
@@ -1565,6 +1877,17 @@
    "desc": "自建这条逃生通道才是真正的吸引点：自己跑服务器就完全跳过订阅，同时保留端到端加密、对标准友好的日历与联系人同步。另一面是开发已经安静下来，把数据押上去之前先权衡。适合想要自己拥有服务器、看重 CalDAV 式兼容的技术用户。想要有人替你托管、且项目活跃，就不太理想。",
    "pt": "https://privacytools.io/app/etesync",
    "site": "https://www.etesync.com/"
+  },
+  {
+   "slug": "globaleaks",
+   "name": "GlobaLeaks",
+   "cat": "Private Whistleblower Tools",
+   "cat_zh": "Private Whistleblower Tools",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "SecureDrop 更易接近的替代品，经过审计，设计上让较小的组织没有专门安全团队也能架起匿名举报通道。它仍跑在 Tor 上，仍要求你认真对待运维安全，所以是更容易，不是不费力。非政府组织、行动者或较小的媒体需要保护线人，它是强选；个人只想要简单的私密通信，另找别处。",
+   "pt": "https://privacytools.io/app/globaleaks",
+   "site": "https://www.globaleaks.org/"
   },
   {
    "slug": "freenet",
@@ -1699,6 +2022,17 @@
    "site": "https://getaether.net/"
   },
   {
+   "slug": "feather-wallet",
+   "name": "Feather Wallet",
+   "cat": "Private Monero",
+   "cat_zh": "Private Monero",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "更轻、更快的门罗桌面钱包，很多人日常用起来比官方客户端更顺，还额外支持 Tails，对注重隐私的配置是受欢迎的加分。作为更小的项目，它要求你对一支更精简的团队多一点信任，不过 BSD 许可和活跃开发让人安心。觉得官方钱包重、想要一个灵活但仍把密钥留在你手里的客户端，选它。",
+   "pt": "https://privacytools.io/app/feather-wallet",
+   "site": "https://featherwallet.org/"
+  },
+  {
    "slug": "gnupg",
    "name": "GnuPG",
    "cat": "Private File Encryption",
@@ -1708,6 +2042,28 @@
    "desc": "GnuPG（GNU 隐私卫士）是 OpenPGP 标准的自由实现，GPL 授权。命令行工具，支持 Linux、macOS、Windows，可加密与签名文件及邮件，并管理公钥目录。",
    "pt": "https://privacytools.io/app/gnupg",
    "site": "https://gnupg.org/"
+  },
+  {
+   "slug": "adguard-dns",
+   "name": "AdGuard DNS",
+   "cat": "Private Ad Blocking",
+   "cat_zh": "Private Ad Blocking",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "进入 DNS 层广告与追踪拦截的轻松入口：把两个 IP 地址指过去，所有设备就都在过滤了，不需要装应用。与 NextDNS 相比，它的按设备定制不够细，想要详细配置的高阶用户可能更偏好另一个。想在几分钟内少折腾地把拦截跑起来、也接受托管服务处理你的查询，选 AdGuard DNS。深度可配置是优先项，就看 NextDNS 或自建方案。",
+   "pt": "https://privacytools.io/app/adguard-dns",
+   "site": "https://adguard-dns.io/"
+  },
+  {
+   "slug": "monerujo",
+   "name": "Monerujo",
+   "cat": "Private Monero",
+   "cat_zh": "Private Monero",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "在安卓手机上管理门罗的实际答案，支持多钱包、二维码扫描，还有支付比特币地址这类便利功能。诚实的提醒是所有手机钱包共有的：手机比加固过的桌面更不适合放密钥，所以余额保持适度、设备保持锁住。日常在外访问，它是个扎实选择；价值更大时，用桌面钱包。",
+   "pt": "https://privacytools.io/app/monerujo",
+   "site": "https://www.monerujo.io/"
   },
   {
    "slug": "tenacity",
@@ -1908,6 +2264,17 @@
    "site": "https://www.openhab.org"
   },
   {
+   "slug": "mcaptcha",
+   "name": "mCaptcha",
+   "cat": "Private CAPTCHA & Bots",
+   "cat_zh": "Private CAPTCHA & Bots",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "mCaptcha 走的也是尊重隐私的路子，但明确瞄准洪水防护：不用访客的 IP 地址做限流，不建任何画像，所有校验都在你控制的基础设施上。已经自建、也熟悉命令行的站长，它轻量的 Rust 后端很合适。短板有两处。生态比大名字小，你要靠项目自己的文档；没有托管档，部署和维护都归你。自己管整套栈、想要零访客追踪的垃圾控制，选它。需要别人托管、贴进去就能用的组件，就跳过。",
+   "pt": "https://privacytools.io/app/mcaptcha",
+   "site": "https://mcaptcha.org/"
+  },
+  {
    "slug": "1password",
    "name": "1Password",
    "cat": "Private Password Managers",
@@ -1928,6 +2295,17 @@
    "desc": "想要日常主力机的安卓体验、又不把数据交给谷歌，/e/OS 开箱就比多数替代品做得多：追踪器评分、microG 兼容层、简单安装器，相比手动折腾 LineageOS 门槛低了很多。取舍是 microG 不是谷歌服务的完美替代，少数需要证明或专有 API 的应用无法正常工作。能容忍偶尔的应用摩擦、想要一个法国基金会支持、社区可审计的系统而不是自己从零搭，它最合适。",
    "pt": "https://privacytools.io/app/e-os",
    "site": "https://e.foundation/e-os"
+  },
+  {
+   "slug": "wasabi",
+   "name": "Wasabi",
+   "cat": "Private Bitcoin Wallets",
+   "cat_zh": "Private Bitcoin Wallets",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "全部卖点都在钱包层的隐私：非托管，用无需信任的 CoinJoin 让你这些币的历史在链上更难追踪，默认走 Tor。短板是 CoinJoin 涉及费用和学习曲线，而且它是桌面钱包，面向真在意链上分析的用户。链上交易隐私是真实目标、也愿意花时间正确使用 CoinJoin，选 Wasabi。只想持有和发送，更简单的钱包摩擦更小。",
+   "pt": "https://privacytools.io/app/wasabi",
+   "site": "https://wasabiwallet.io/"
   },
   {
    "slug": "adguard",
@@ -1963,6 +2341,17 @@
    "site": "https://apps.kde.org/akregator/"
   },
   {
+   "slug": "1984-web-hosting",
+   "name": "1984 Web Hosting",
+   "cat": "Private Hosting & Domains",
+   "cat_zh": "Private Hosting & Domains",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "名字取自奥威尔的小说，2006 年起在冰岛运营，这家主机商把公民自由的立场摆在明面上，对注重隐私的发布者来说这就是主要的吸引力。冰岛的法律环境对内容韧性是真实资产，绿色能源的说法算是加分。和任何独立主机商一样，别指望超大规模厂商那样的功能与支持体量。司法管辖与理念排在规模之前时，选它。",
+   "pt": "https://privacytools.io/app/1984-web-hosting",
+   "site": "https://www.1984hosting.com/"
+  },
+  {
    "slug": "arch-linux",
    "name": "Arch Linux",
    "cat": "Private Operating Systems",
@@ -1972,6 +2361,17 @@
    "desc": "极简的滚动更新发行版，遵循自己动手的哲学：从最基础的系统开始，逐个选择组件自建，用 pacman 持续更新。",
    "pt": "https://privacytools.io/app/arch-linux",
    "site": "https://archlinux.org/"
+  },
+  {
+   "slug": "bahnhof-cloud",
+   "name": "Bahnhof Cloud",
+   "cat": "Private Hosting & Domains",
+   "cat_zh": "Private Hosting & Domains",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "瑞典的 Bahnhof 从 1994 年做到现在，最出名的是那家公开为顾客隐私顶住压力的运营商，这让它的主机业务有真信誉。对这一群用户值得一提的局限在付款：只收信用卡或 PayPal，没有隐私友好的选项，所以在成交环节比这里同行更难匿名。想要一家老牌、隐私口碑好的瑞典运营者，选它；不可追踪的付款是硬要求，就跳过。",
+   "pt": "https://privacytools.io/app/bahnhof-cloud",
+   "site": "https://bahnhof.cloud/en/"
   },
   {
    "slug": "anytype",
@@ -2106,6 +2506,17 @@
    "site": "https://learn.microsoft.com/windows/security/operating-system-security/data-protection/bitlocker/"
   },
   {
+   "slug": "codeberg",
+   "name": "Codeberg",
+   "cat": "Private Code Hosting",
+   "cat_zh": "Private Code Hosting",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "Codeberg 是离开 GitHub 又不必自己当系统管理员最省事的方式，因为它把一整套 Forgejo 平台作为托管服务交给你，不用你操心维护。没有广告也没有追踪，这直接来自它的非营利结构：由使用者资助，所以没有理由开采你的代码。诚实的短板是范围。Codeberg 明确面向开源和公开项目，不是大型专有或商业部署的家，你依靠的是共享的社区资源而不是付费的服务保证。你发布开源作品、想要一个有原则又尊重它的托管方，选 Codeberg；代码闭源或需求重，就自己跑一套 Forgejo。",
+   "pt": "https://privacytools.io/app/codeberg",
+   "site": "https://codeberg.org/"
+  },
+  {
    "slug": "deepl-translate",
    "name": "DeepL Translate",
    "cat": "Private Translation",
@@ -2137,6 +2548,17 @@
    "desc": "Canary Mail 是这一组里打磨得不错的付费手机客户端，内置 PGP，界面不像 2009 年的老古董。代价是加密引擎那部分是开源的，而应用大部分不是，你是在为一个闭源客户端、而不是一个开放标准付钱。适合 iOS 和安卓上希望加密用起来轻松、也愿意信任一家商业公司把它做好的人。",
    "pt": "https://privacytools.io/app/canary-mail",
    "site": "https://canarymail.io/"
+  },
+  {
+   "slug": "edge",
+   "name": "Edge",
+   "cat": "Private Bitcoin Wallets",
+   "cat_zh": "Private Bitcoin Wallets",
+   "gid": "crypto",
+   "gname": "加密货币与支付",
+   "desc": "这里的便利选项，手机钱包，指纹解锁，支持多种资产，适合想要自持又不想搭桌面的人。相对桌面钱包的诚实取舍是，手机客户端在高级链上隐私控制上给得更少，高阶用户会想要更多。想要一个自己掌控、加密的手机钱包而不是把密钥放在交易所，选 Edge。专注深层交易隐私的，去看支持 CoinJoin 的桌面钱包。",
+   "pt": "https://privacytools.io/app/edge",
+   "site": "https://edge.app/"
   },
   {
    "slug": "drip",
@@ -2205,6 +2627,17 @@
    "site": "https://controld.com/"
   },
   {
+   "slug": "eff",
+   "name": "EFF",
+   "cat": "Private Whistleblower Tools",
+   "cat_zh": "Private Whistleblower Tools",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "它不是一款软件，而是电子前沿基金会的指南、工具与教程库，价值在于它是一个可信的起点而不是产品。局限也正在此：它只教和指路，不替你加密文件或拦追踪器。把它存成书签，作为学该做什么、该信哪些工具的地方；为教育而来，然后去装真正的工具。",
+   "pt": "https://privacytools.io/app/eff",
+   "site": "https://ssd.eff.org"
+  },
+  {
    "slug": "disroot",
    "name": "Disroot",
    "cat": "Private Email",
@@ -2249,6 +2682,17 @@
    "site": "https://getfedora.org/workstation/"
   },
   {
+   "slug": "friendly-captcha",
+   "name": "Friendly Captcha",
+   "cat": "Private CAPTCHA & Bots",
+   "cat_zh": "Private CAPTCHA & Bots",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "想要隐私优先、无拼图的体验又不想自己起服务器，就选 Friendly Captcha。因为挑战是隐形的、在后台跑，访客从不停下来读扭曲的文字，你也不用请求追踪同意。它在欧盟，数据问题也就留在大西洋这一边，如果美国传输是你在意的点，这很要紧。诚实的短板是它专有且收费，代码不能查验也不能自建。想要省心、合规友好的组件、也接受账单，选它。开源或自己跑更重要，就选 ALTCHA 或 mCaptcha。",
+   "pt": "https://privacytools.io/app/friendly-captcha",
+   "site": "https://friendlycaptcha.com/"
+  },
+  {
    "slug": "filevault",
    "name": "FileVault",
    "cat": "Private File Encryption",
@@ -2258,6 +2702,17 @@
    "desc": "对 Mac 用户来说 FileVault 是最无缝的加密选项：内置、免费，在苹果自研芯片硬件上，底层加密在存储控制器层面由硬件强制。恢复可以绑在 iCloud 账号或本地恢复密钥上，这个选择很要紧：iCloud 恢复意味着苹果在技术上可以协助执法。和 BitLocker 一样它闭源，实现无法独立验证。对多数 Mac 用户是正确的默认，但威胁模型强的人要仔细权衡 iCloud 恢复的代价，改选本地密钥。",
    "pt": "https://privacytools.io/app/filevault",
    "site": "https://support.apple.com/en-gb/guide/mac-help/mh11785/mac"
+  },
+  {
+   "slug": "forgejo",
+   "name": "Forgejo",
+   "cat": "Private Code Hosting",
+   "cat_zh": "Private Code Hosting",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "想彻底拥有自己的代码，就用 Forgejo，因为它轻到能在不大的服务器上跑，又完整到能替掉 GitHub 干真活。copyleft 的 GPLv3+ 许可是低调的英雄：它让当年把人们逼离 Gitea 的那种营利性收编在结构上变得困难，项目因此始终对贡献者负责。诚实的短板是你现在成了运营者，现成的 CI 动作生态比微软围绕 GitHub 建的市场小。想要完全掌控基础设施、也要一个社区治理的平台，选 Forgejo；不想把时间花在跑服务器上，就走托管。同一套软件不想维护，Codeberg 替你托管 Forgejo。",
+   "pt": "https://privacytools.io/app/forgejo",
+   "site": "https://forgejo.org/"
   },
   {
    "slug": "gnome-evolution",
@@ -2381,6 +2836,17 @@
    "site": "https://apps.apple.com/us/app/id1062745479"
   },
   {
+   "slug": "gitlab",
+   "name": "GitLab CE",
+   "cat": "Private Code Hosting",
+   "cat_zh": "Private Code Hosting",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "想让一个应用在你掌控的基础设施上覆盖整个开发生命周期，GitLab CE 值得选，因为开源的社区版把代码仓库、合并请求和问题跟踪、CI 打包在一起，不收按人头的费用。自建让代码离开微软的服务器，也进不了 Copilot 的伸手范围。诚实的短板有两层。GitLab 是开放核心，最打磨的安全与规划功能在专有的企业版后面；整个栈很重，要真 CPU 和内存，不是轻量平台那种小机器能扛的。想要一体化的 DevOps 平台、也给得起资源，选 GitLab CE；只需要一个简单的仓库住处，选 Forgejo 这类更轻的。",
+   "pt": "https://privacytools.io/app/gitlab",
+   "site": "https://about.gitlab.com/"
+  },
+  {
    "slug": "infomaniak-kdrive",
    "name": "Infomaniak kDrive",
    "cat": "Private Cloud Storage",
@@ -2403,6 +2869,17 @@
    "site": "https://internxt.com/photos"
   },
   {
+   "slug": "imazing",
+   "name": "iMazing",
+   "cat": "Private Device Integrity",
+   "cat_zh": "Private Device Integrity",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "iMazing 填的是 MVT 的取证能力与运行它所需命令行技能之间的鸿沟。间谍软件分析功能免费，不需要技术背景，会引导你先建一台本地设备备份，再对已知指标做检测。取舍是 iMazing 是闭源商业软件：你信任一家私营公司的实现而不是审计代码，底层检测仍依赖与 MVT 相同的公开指标库。不懂技术的 iOS 用户想要一键做个体检，它是当下最容易上手的起点。",
+   "pt": "https://privacytools.io/app/imazing",
+   "site": "https://imazing.com/"
+  },
+  {
    "slug": "ironfox",
    "name": "IronFox",
    "cat": "Private Android Browsers",
@@ -2412,6 +2889,17 @@
    "desc": "用过 Mull、想继续留在加固的安卓 Firefox 上，IronFox 是自然的延续。加固补丁和隐私向的默认设置，让它在普通安卓 Firefox 面前有真实优势，开放许可意味着社区可以独立审计和维护。主要短板是开发者基数小：这种规模的项目靠持续的志愿投入，完全托付之前先看发布节奏。高阶用户和 GrapheneOS、CalyxOS 的使用者是显而易见的受众；随意的用户可能觉得配置面超出所需。",
    "pt": "https://privacytools.io/app/ironfox",
    "site": "https://ironfoxoss.org"
+  },
+  {
+   "slug": "librecmc",
+   "name": "LibreCMC",
+   "cat": "Private Router Firmware",
+   "cat_zh": "Private Router Firmware",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "纯粹派的选择，一款被认可不使用任何专有固件的完全自由软件路由固件，深在自由软件世界里的人正因如此才选它。这份意识形态上的严格也是实际局限：支持的设备少且资源低，硬件与功能的广度不如 OpenWrt。在路由器上跑百分之百自由软件是硬要求，选 LibreCMC。主要想要一个能干、灵活的路由系统，OpenWrt 支持多得多的设备，也不会让你那么挫败。",
+   "pt": "https://privacytools.io/app/librecmc",
+   "site": "https://librecmc.org/"
   },
   {
    "slug": "kagi",
@@ -2546,6 +3034,17 @@
    "site": "https://www.apple.com/macos/"
   },
   {
+   "slug": "nextdns",
+   "name": "NextDNS",
+   "cat": "Private Ad Blocking",
+   "cat_zh": "Private Ad Blocking",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "真正强的网络层拦截器，比普通 DNS 过滤强的地方在控制：按设备配置文件、家长控制、分类拦截、可调的日志，全都不必在每台设备上装东西。诚实的提醒是它是云服务，你把查询托付给 NextDNS，免费档有每月查询上限，超过要付费。想给整个家庭设好就不管的人，这个取舍合理。要零第三方参与，就自建 Pi-hole。",
+   "pt": "https://privacytools.io/app/nextdns",
+   "site": "https://nextdns.io/"
+  },
+  {
    "slug": "newsflash",
    "name": "NewsFlash",
    "cat": "Private RSS Readers",
@@ -2568,6 +3067,17 @@
    "site": "https://www.mojeek.com/"
   },
   {
+   "slug": "njalla",
+   "name": "Njalla",
+   "cat": "Private Hosting & Domains",
+   "cat_zh": "Private Hosting & Domains",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "吸引点在出身和模式：由海盗湾的联合创始人创办，它充当你与注册商之间的隐私缓冲，代你持有域名和主机。这种中间人做法对减少你在 WHOIS 和供应商记录里的个人暴露确实有用。另一面是你要信任 Njalla 这个中间人，所以这段关系才是需要考察的。想要在所有权上加一层隐私、而不是图便宜主机，它很合适。",
+   "pt": "https://privacytools.io/app/njalla",
+   "site": "https://njal.la/"
+  },
+  {
    "slug": "homekit",
    "name": "HomeKit",
    "cat": "Private Smart Home",
@@ -2588,6 +3098,17 @@
    "desc": "Org-mode 是这一类里的高手上限：笔记是你完全拥有的纯文本文件，可以用 GPG 加密单条或整份文件，用 git 给所有内容做版本管理，从不碰不属于你的服务器。诚实的短板是它需要 Emacs，学习曲线陡，而且除了手机端第三方工具和其他编辑器插件，完整功能只在 Emacs 内可用。想要最大程度主宰笔记的技术型用户，没有别的能接近它。",
    "pt": "https://privacytools.io/app/org-mode",
    "site": "https://orgmode.org/"
+  },
+  {
+   "slug": "orangewebsite",
+   "name": "OrangeWebsite",
+   "cat": "Private Hosting & Domains",
+   "cat_zh": "Private Hosting & Domains",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "冰岛强数据保护和言论自由的姿态是来这里看的真正理由，这家主机商从 2009 年起就在那个司法管辖下用绿色能源运营。对那些在别处可能面临下架压力的内容，管辖是真实的杠杆，这也是选它的理由。只要把它和更小的运营方在规模与功能深度上相比大云的不足一并权衡。服务器放在哪里与它跑得多好同样重要时，这是个明智选择。",
+   "pt": "https://privacytools.io/app/orangewebsite",
+   "site": "https://www.orangewebsite.com/"
   },
   {
    "slug": "nordpass",
@@ -2654,6 +3175,39 @@
    "desc": "真正成立的是集成：已经在用 Proton Mail 或 VPN，Pass 就能顺滑嵌进去，内置 SimpleLogin 别名，注册时不必离开应用就能生成一个一次性地址。代码开源且经独立审计，隐私说法不只是营销。短板是最有价值的部分假定你在广泛投入 Proton，免费档在别名和保险库上比付费版紧。想用一家可信公司管邮件、VPN 和密码，它值；不愿意把一切放在一个屋檐下，则不然。",
    "pt": "https://privacytools.io/app/proton-pass",
    "site": "https://proton.me/pass"
+  },
+  {
+   "slug": "privex",
+   "name": "Privex",
+   "cat": "Private Hosting & Domains",
+   "cat_zh": "Private Hosting & Domains",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "位于伯利兹的主机商，从 2017 年起专做注重隐私的 VPS 这块，服务器分布在多个国家，支持多种加密货币付款。和更小的隐私向主机商交易的诚实代价是，你要放弃巨头的一部分规模、可用率记录和支持深度。把主机放在主流云玩家之外是优先项，它是个可信选择。负载要求高的，仍可能想要更大的供应商。",
+   "pt": "https://privacytools.io/app/privex",
+   "site": "https://www.privex.io/"
+  },
+  {
+   "slug": "o-o-shutup10",
+   "name": "O&O ShutUp10++",
+   "cat": "Private Windows Privacy",
+   "cat_zh": "Private Windows Privacy",
+   "gid": "privacy-practice",
+   "gname": "隐私实务",
+   "desc": "一个专注的小工具，把微软埋在菜单深处的几十个 Windows 10 和 11 遥测与追踪开关拨掉，做得干净而且免费。诚实的减分项是闭源、只做 Windows，你是信任一个二进制，而且微软可以在更新后悄悄把设置放回来。卡在 Windows 上想把数据泄漏调小，它值得跑一趟；大更新之后再跑一遍。",
+   "pt": "https://privacytools.io/app/o-o-shutup10",
+   "site": "https://www.oo-software.com/en/shutup10"
+  },
+  {
+   "slug": "sourcehut",
+   "name": "SourceHut",
+   "cat": "Private Code Hosting",
+   "cat_zh": "Private Code Hosting",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "SourceHut 是给那些想把工具链剥到金属、完全握在自己手里的开发者的平台，因为每个组件都开源，整个网页界面不跑一行 JavaScript。这份极简本身就是隐私特性：后台什么都不加载来给你画像，整栈还能自建。诚实的短板是入门。协作靠邮件列表加 git send-email，刻意朴素的界面默认你在命令行里自如，如果你只点过合并按钮，这两样都是真实的学习曲线。看重轻量、可脚本化、无 JavaScript 的平台，也吃邮件补丁这套，选 SourceHut；更在意熟悉的拉取请求流程，就找一套 Forgejo。",
+   "pt": "https://privacytools.io/app/sourcehut",
+   "site": "https://sourcehut.org/"
   },
   {
    "slug": "quad9",
@@ -2797,6 +3351,17 @@
    "desc": "真正既非安卓也非 iOS 的手机系统很稀少，这份理想主义就是它的全部吸引力。短板是主力机的现实：应用生态单薄，硬件支持窄，你会不断绕开缺口。运行一台真正的 Linux 手机本身就是目标、也把这台设备当项目来做，就选它。需要手机拿来就能用的人，另找别处。",
    "pt": "https://privacytools.io/app/ubuntu-touch",
    "site": "https://ubuntu-touch.io/"
+  },
+  {
+   "slug": "wordpress-com",
+   "name": "WordPress.com",
+   "cat": "Private Blogging",
+   "cat_zh": "Private Blogging",
+   "gid": "hosting",
+   "gname": "网络与托管",
+   "desc": "让站点上线的务实、低摩擦方式，这份轻松确实是考虑它的理由。但相对这一类其他选择，要看清取舍：它是托管的商业平台，免费档带着公司的品牌和限制，你在它的围墙里运营而不是自建。便利与触达对你比控制更重要，它可以。拥有自己的栈和数据是目标，自建方案更合适。",
+   "pt": "https://privacytools.io/app/wordpress-com",
+   "site": "https://wordpress.com/"
   },
   {
    "slug": "ubuntu",
