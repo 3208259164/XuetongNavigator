@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>文件完整性监控：及早发现系统被改动 | 学通资源导航</title>
+<meta name="description" content="用工具盯住关键文件，被读取或被改写时立刻收到提醒。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件完整性监控：及早发现系统被改动 | 学通资源导航">
+<meta property="og:description" content="用工具盯住关键文件，被读取或被改写时立刻收到提醒。">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/a/file-integrity.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none;font-size:15px}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bhead .cnt{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+.wrap{max-width:720px;margin:0 auto;padding:18px 18px 70px}
+h1.t{font-size:23px;font-weight:700;line-height:1.35;margin:6px 0 10px}
+.meta{font-size:12.5px;color:var(--faint);line-height:1.8;margin-bottom:20px}
+.meta a{color:var(--brand);text-decoration:none}
+.art{font-size:15.5px;line-height:1.95;color:var(--text)}
+.art h2{font-size:17px;font-weight:650;margin:26px 0 10px}
+.art p{margin:0 0 15px}
+.art ul{margin:0 0 15px;padding-left:20px}
+.art li{margin-bottom:6px;line-height:1.85}
+.rel{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.rel a{color:var(--brand);text-decoration:none;margin-right:12px}
+.foot{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.8}
+.hero{font-size:12.5px;color:var(--sub);line-height:1.75;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--brand)}
+.card h2{font-size:15.5px;font-weight:650;margin-bottom:6px}
+.card p{font-size:12.5px;color:var(--sub);line-height:1.65;margin:0}
+.card .m{font-size:11px;color:var(--faint);margin-top:8px}
+</style>
+
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-guides.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body>
+<header class="bhead">
+  <a href="../guides.html">&#8592;</a>
+  <h1>文件完整性监控：及早发现系统被改动</h1>
+  <span class="cnt">约 3 分钟</span>
+</header>
+<div class="wrap">
+  <h1 class="t">文件完整性监控：及早发现系统被改动</h1>
+  <div class="meta">译自 PrivacyTools.io · 原文以 CC0 1.0 发布，译文可自由转载 ·
+  <a href="https://privacytools.io/guides/file-change-detection-or-integrity-monitoring-systems" target="_blank" rel="noopener nofollow">查看原文</a></div>
+  <article class="art">
+<p>做完前面那些防护，剩下要做的一件事是：确认数据没有在自己不知情、未同意的情况下被改动。这可以在自己的系统上通过文件变更检测，或者叫完整性监控来实现。</p><p>这类工具在服务器上很常见，对个人电脑同样有用。原理是监视指定的文件或系统区域，任何读取或写入的改动都会被记录下来。如果在自己的服务器上配置了这种监控，有人未经许可闯入并访问或修改了文件，监控就会发邮件告警，提醒你某台机器可能已经失守。</p><h2>两个常见的工具</h2><ul><li>OSSEC：老牌的开源主机入侵检测系统，主要面向服务器。</li><li>Tripwire：商业化的文件完整性与变更监控方案，也有长期积累的文档。</li></ul><p>原文作者提到，有朋友写过能绕过默认配置下 OSSEC 的 rootkit，说明再好的检测系统也不是绝对安全。有经验的攻击者仍然可能让系统失守。但多加一层检测并不会有害，它只会提高你得手前发现问题的概率。</p><h2>编者注</h2><p>OSSEC 项目目前主要由 Atomicorp 维护，社区活跃的分支是 Wazuh，功能和生态更完整，也是免费开源的，适合作为 OSSEC 的现代替代。原文提到的具体版本与绕过方法已经过时，不必照搬，理解思路即可。</p>
+  </article>
+  <div class="rel">相关收录：<a href="../security-practice.html">隐私实务</a><a href="../security-sys.html">系统与镜像</a></div>
+  <div class="foot">原文标题：File-Change Detection or Integrity Monitoring Systems。译文忠于原意，个别过时内容以编者注形式说明。</div>
+</div>
+</body>
+</html>

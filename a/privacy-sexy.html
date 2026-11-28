@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>privacy.sexy：一键落实 Windows 与 macOS 的隐私加固 | 学通资源导航</title>
+<meta name="description" content="开源脚本集合，把系统里该关的开关一次关掉，还能一键还原。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="privacy.sexy：一键落实 Windows 与 macOS 的隐私加固 | 学通资源导航">
+<meta property="og:description" content="开源脚本集合，把系统里该关的开关一次关掉，还能一键还原。">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/a/privacy-sexy.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none;font-size:15px}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bhead .cnt{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+.wrap{max-width:720px;margin:0 auto;padding:18px 18px 70px}
+h1.t{font-size:23px;font-weight:700;line-height:1.35;margin:6px 0 10px}
+.meta{font-size:12.5px;color:var(--faint);line-height:1.8;margin-bottom:20px}
+.meta a{color:var(--brand);text-decoration:none}
+.art{font-size:15.5px;line-height:1.95;color:var(--text)}
+.art h2{font-size:17px;font-weight:650;margin:26px 0 10px}
+.art p{margin:0 0 15px}
+.art ul{margin:0 0 15px;padding-left:20px}
+.art li{margin-bottom:6px;line-height:1.85}
+.rel{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.rel a{color:var(--brand);text-decoration:none;margin-right:12px}
+.foot{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.8}
+.hero{font-size:12.5px;color:var(--sub);line-height:1.75;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--brand)}
+.card h2{font-size:15.5px;font-weight:650;margin-bottom:6px}
+.card p{font-size:12.5px;color:var(--sub);line-height:1.65;margin:0}
+.card .m{font-size:11px;color:var(--faint);margin-top:8px}
+</style>
+
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-guides.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body>
+<header class="bhead">
+  <a href="../guides.html">&#8592;</a>
+  <h1>privacy.sexy：一键落实 Windows 与 macOS 的隐私加固</h1>
+  <span class="cnt">约 4 分钟</span>
+</header>
+<div class="wrap">
+  <h1 class="t">privacy.sexy：一键落实 Windows 与 macOS 的隐私加固</h1>
+  <div class="meta">译自 PrivacyTools.io · 原文以 CC0 1.0 发布，译文可自由转载 ·
+  <a href="https://privacytools.io/guides/enforce-privacy-security-on-windows-and-macos" target="_blank" rel="noopener nofollow">查看原文</a></div>
+  <article class="art">
+<p>这次介绍一个开源工具：privacy.sexy，用来在 Windows 与 macOS 上落实安全与隐私的最佳实践。</p><p>界面现代、很好上手。它有两个版本：网页版不需要在你电脑上安装任何软件；离线版功能更多，可以直接执行脚本。</p><h2>它的特点</h2><ul><li>丰富：数百个脚本，覆盖你对自己数据的控制权。</li><li>免费：既免费使用，也开源自由。</li><li>透明：启用某一项时，能完整看到这条脚本到底改了什么。</li><li>可逆：觉得不对劲，可以一键还原。</li><li>免安装：网页版不用在电脑上运行任何编译过的程序。</li><li>开放：仓库里看到的代码就是实际运行的代码，构建与部署流程也开源、自动化。</li><li>经过测试：大量自动化与人工测试，社区参与验证，稳定性改进优先于新功能。</li><li>可扩展：用专门设计的模板语言就能自行扩展脚本。</li><li>便携简单：每个脚本都能独立执行，互不依赖。</li></ul><h2>编者注</h2><p>官网是 privacy.sexy，源码在 GitHub 的 undergroundwires/privacy.sexy。这些脚本改的是系统设置，执行前建议先看清楚每一条的作用，并利用它自带的还原功能，在改动效果不理想时恢复原状。</p>
+  </article>
+  <div class="rel">相关收录：<a href="../security-practice.html">隐私实务</a><a href="../security-sys.html">系统与镜像</a></div>
+  <div class="foot">原文标题：Enforce Privacy &amp; Security Best-Practices on Windows and macOS: privacy.sexy。译文忠于原意，个别过时内容以编者注形式说明。</div>
+</div>
+</body>
+</html>

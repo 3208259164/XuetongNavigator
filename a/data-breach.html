@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>数据泄露是怎么回事，怎样把风险降下来 | 学通资源导航</title>
+<meta name="description" content="泄露天天发生，起因多是弱密码。弄清原理，再做几件具体的事。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据泄露是怎么回事，怎样把风险降下来 | 学通资源导航">
+<meta property="og:description" content="泄露天天发生，起因多是弱密码。弄清原理，再做几件具体的事。">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/a/data-breach.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none;font-size:15px}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bhead .cnt{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+.wrap{max-width:720px;margin:0 auto;padding:18px 18px 70px}
+h1.t{font-size:23px;font-weight:700;line-height:1.35;margin:6px 0 10px}
+.meta{font-size:12.5px;color:var(--faint);line-height:1.8;margin-bottom:20px}
+.meta a{color:var(--brand);text-decoration:none}
+.art{font-size:15.5px;line-height:1.95;color:var(--text)}
+.art h2{font-size:17px;font-weight:650;margin:26px 0 10px}
+.art p{margin:0 0 15px}
+.art ul{margin:0 0 15px;padding-left:20px}
+.art li{margin-bottom:6px;line-height:1.85}
+.rel{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.rel a{color:var(--brand);text-decoration:none;margin-right:12px}
+.foot{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.8}
+.hero{font-size:12.5px;color:var(--sub);line-height:1.75;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--brand)}
+.card h2{font-size:15.5px;font-weight:650;margin-bottom:6px}
+.card p{font-size:12.5px;color:var(--sub);line-height:1.65;margin:0}
+.card .m{font-size:11px;color:var(--faint);margin-top:8px}
+</style>
+
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-guides.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body>
+<header class="bhead">
+  <a href="../guides.html">&#8592;</a>
+  <h1>数据泄露是怎么回事，怎样把风险降下来</h1>
+  <span class="cnt">约 4 分钟</span>
+</header>
+<div class="wrap">
+  <h1 class="t">数据泄露是怎么回事，怎样把风险降下来</h1>
+  <div class="meta">译自 PrivacyTools.io · 原文以 CC0 1.0 发布，译文可自由转载 ·
+  <a href="https://privacytools.io/guides/data-breach-prevention-to-protect-your-privacy" target="_blank" rel="noopener nofollow">查看原文</a></div>
+  <article class="art">
+<p>数据泄露每天都在发生。弄清它是什么、怎么发生、作为普通用户能做什么，比以往任何时候都重要。</p><p>所谓数据泄露，是指个人或公司的敏感信息被窃取，或者在无意中被交出去。这些数据可能包括姓名、邮箱、登录名、密码、信用卡信息，以及其他各类凭据。</p><p>起因可能是外部攻击者，也可能是组织内部的人，具体形式包括蓄意攻击、意外事故、人为失误，或者基础设施本身的缺陷。其中弱密码始终是最常见的原因。</p><h2>几个典型案例（原文写于 2022 年）</h2><ul><li>2022 年 1 月：攻击者进入 Crypto.com 上近 500 名用户的钱包，盗走约 1800 万美元比特币与 1500 万美元以太坊。</li><li>2022 年 3 月：Lapsus$ 组织攻入身份认证服务商 Okta，据报道约 2.5% 的客户受到影响。</li><li>2022 年 7 月：约 540 万 Twitter 用户的数据被窃，包含手机号与邮箱，并被挂牌出售。</li></ul><h2>怎么预防</h2><p>道理很直白：个人和组织准备得越充分，泄露发生的概率越低。既然弱密码是主要风险，解决它并不难。给每个网站或服务都用长、强、互不相同的密码。</p><p>强密码至少 12 位，大小写字母、数字混用，并至少包含一个特殊字符。越长越复杂，被猜中或被暴力破解的难度就越高。人为失误是最常见的隐患，而这类失误恰好可以用工具压下去：密码管理器能把每个账户的独立密码集中保管，也能帮你生成足够强的密码。</p><p>另外建议定期自查：把自己的邮箱拿到 Have I Been Pwned（haveibeenpwned.com）查一次，看看是否出现在已知的泄露库里。查到之后要做的只有一件事：改掉那个账户的密码，并顺手开启两步验证。</p><h2>编者注</h2><p>原文后半部分是密码管理器 NordPass 的赞助内容，产品推荐部分已略去。本站专题的安全与开源分类里收录了多款开源密码管理器，密码那一篇指南也讲了具体怎么用。</p>
+  </article>
+  <div class="rel">相关收录：<a href="../security-sec.html#password-managers">密码管理器</a><a href="../security-sec.html">两步验证</a></div>
+  <div class="foot">原文标题：Data Breach Prevention to Protect Your Privacy。译文忠于原意，个别过时内容以编者注形式说明。</div>
+</div>
+</body>
+</html>
