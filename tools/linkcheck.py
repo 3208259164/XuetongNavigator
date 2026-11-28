@@ -66,7 +66,7 @@ def check(rec):
 def main():
     d = json.load(open(LINKS, encoding='utf-8'))
     links = d['links']
-    limit = int(os.environ.get('LIMIT', '0'))
+    limit = int((os.environ.get('LIMIT') or '0').strip() or '0')
     todo = links[:limit] if limit else links
     print(f'巡检 {len(todo)} 条', flush=True)
 
