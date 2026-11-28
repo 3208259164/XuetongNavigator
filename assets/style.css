@@ -259,6 +259,12 @@ html[data-theme="dark"] .chip.on{color:#0e1116}
 .grp .grp-n{font-size:11px;color:var(--faint);background:var(--panel-2);padding:1px 6px;border-radius:999px}
 .grp:first-child{margin-top:0;padding-top:0}
 
+/* ---------- 详情页：补充介绍 ---------- */
+.long{font-size:14px;line-height:1.88;color:var(--text);margin:0 0 16px;padding:15px 16px;
+ background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.long p{margin:0 0 10px}
+.long p:last-child{margin-bottom:0}
+
 /* ---------- 首页分组区块 ---------- */
 .grid.secs{display:block;padding:6px 20px 50px}
 .sec{margin:0 0 26px}
