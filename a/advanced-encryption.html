@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>高级加密：不要把信任全押在一家公司 | 学通资源导航</title>
+<meta name="description" content="在别人的加密之上再加一层自己的加密，并假定任何单一服务都会被攻破。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高级加密：不要把信任全押在一家公司 | 学通资源导航">
+<meta property="og:description" content="在别人的加密之上再加一层自己的加密，并假定任何单一服务都会被攻破。">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/a/advanced-encryption.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none;font-size:15px}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bhead .cnt{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+.wrap{max-width:720px;margin:0 auto;padding:18px 18px 70px}
+h1.t{font-size:23px;font-weight:700;line-height:1.35;margin:6px 0 10px}
+.meta{font-size:12.5px;color:var(--faint);line-height:1.8;margin-bottom:20px}
+.meta a{color:var(--brand);text-decoration:none}
+.art{font-size:15.5px;line-height:1.95;color:var(--text)}
+.art h2{font-size:17px;font-weight:650;margin:26px 0 10px}
+.art p{margin:0 0 15px}
+.art ul{margin:0 0 15px;padding-left:20px}
+.art li{margin-bottom:6px;line-height:1.85}
+.rel{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.rel a{color:var(--brand);text-decoration:none;margin-right:12px}
+.foot{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.8}
+.hero{font-size:12.5px;color:var(--sub);line-height:1.75;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--brand)}
+.card h2{font-size:15.5px;font-weight:650;margin-bottom:6px}
+.card p{font-size:12.5px;color:var(--sub);line-height:1.65;margin:0}
+.card .m{font-size:11px;color:var(--faint);margin-top:8px}
+</style>
+
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-guides.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body>
+<header class="bhead">
+  <a href="../guides.html">&#8592;</a>
+  <h1>高级加密：不要把信任全押在一家公司</h1>
+  <span class="cnt">约 6 分钟</span>
+</header>
+<div class="wrap">
+  <h1 class="t">高级加密：不要把信任全押在一家公司</h1>
+  <div class="meta">译自 PrivacyTools.io · 原文以 CC0 1.0 发布，译文可自由转载 ·
+  <a href="https://privacytools.io/guides/advanced-encryption-chapter" target="_blank" rel="noopener nofollow">查看原文</a></div>
+  <article class="art">
+<p>前文已经用不同深度讲过加密的几个方面，但有一点值得再强调一次：当你在网上真的在为自己的安全而战时，永远不要把全部信任押在一家公司或一个服务上。这条原则在加密的每一层都适用。</p><p>假设你有一个文件夹，里面放着六七份高度机密的文件，你需要确保它不被任何方式攻破。你会希望这个文件夹存放在一个整盘加密、不被旁人窥探的系统上。以我自己的做法为例：用一个 VeraCrypt 加密的 U 盘做全盘加密，密码 45 到 50 位，加密算法用级联模式，比如 AES 套 Serpent。然后把加密 U 盘挂载起来，在根目录放上三四百个随机文件，照片、随手写的 txt 之类。接着在同一个 U 盘上，用另一个 50 位密码加上从这三百多张图片里挑出的三个密钥文件，再建一个 VeraCrypt 容器。真正敏感的文件夹就放在这个容器里。</p><p>要攻破这套配置，攻击者得先攻进 U 盘本身，要么暴力猜密码，50 位基本不现实，要么攻破加密算法本身，级联模式让这条路同样走不通。直白地说，除非密码被偷走，这块盘撬不开。就算撬开了，他还得再攻破里面那个容器，那又是另一道几乎不可能越过的墙。这套配置属于杀鸡用牛刀，但它说明的思路很重要：把机密放在多层加密里，任何单层失效都不至于全线失守。</p><p>把这个思路用到与他人的安全通信上：应当找一种允许你在服务自带加密之上再叠一层自己加密的方法。理想情况下，可以用 XMPP 配合 OTR，并用自己的服务器，再借 Tor 保持匿名。在此之上，还可以把消息先在本地写成文本，用对方的 PGP 公钥加密后再发送。这样攻击者得先破掉 OTR 或攻破你用的客户端，同时还要解开 PGP 加密的内容，两道关卡都得过。OTR 协议应当具备完美前向保密，即使私钥泄露，之前的消息也不会被解出。</p><p>无论用哪种通信方式，都要确认它具备强前向保密，并且能方便地在上面再加一层你自己的加密，比如 PGP。斯诺登说过 Signal 是相当安全的通信方式，我同意，但前提是你得有一台与身份无关的一次性手机，否则就得把自己的手机号交给对方。另外还需要能验证所安装版本的源码，这一点在 iOS 上目前还做不到。</p><p>还有一个常被忽略的问题：怎么选择和部署这套通信方式。如果对方（无论是哪个机构）知道你在用某个固定账号通过 XMPP 发起秘密通信，他们就知道该从哪里下手。反过来，如果你们先在一个随机的语音服务器上碰头，私信告诉他某个启用了良好加密、不记录连接日志的 IRC 服务器地址，在那个服务器上开 OTR 会话，交换 XMPP 账号、OTR 指纹和 PGP 公钥，被针对性攻击的概率就会大幅下降。在无法主动判断你们怎么通信的情况下，双方就多了一层模糊性作为缓冲。</p><h2>编者注</h2><p>原文提到的 Tor Messenger 已于 2017 年停止开发，不要再去下载。OTR 也基本被更现代的协议取代，Signal 用的双棘轮协议是当下的主流。VeraCrypt 级联加密与多密钥文件的做法仍然有效，思路可以照搬，具体工具换成目前在维护的版本。原文作者 AnonyPla，标题为 Advanced Encryption Chapter。</p>
+  </article>
+  <div class="rel">相关收录：<a href="../security-store.html">文件加密</a><a href="../security-sec.html">安全与加密</a></div>
+  <div class="foot">原文标题：Advanced Encryption Chapter。译文忠于原意，个别过时内容以编者注形式说明。</div>
+</div>
+</body>
+</html>
