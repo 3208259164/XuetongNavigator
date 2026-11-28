@@ -1627,6 +1627,10 @@
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1111.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1112.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1113.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1114.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1115.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1116.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/l1117.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-1984-web-hosting.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-1password.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-2fas.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1842,6 +1846,7 @@
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-write-freely.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-xen-project.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-xeres.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-xmpp.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-xodus.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-zcash.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ap-zeek.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1849,6 +1854,7 @@
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-apple-health.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-apple-intelligence.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-apple-mail.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-arch-linux.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ardour.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-auditor.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-aurora-store.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1901,6 +1907,7 @@
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-eff.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-electrum.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-element.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-email-encryption.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ensu.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ente-authenticator.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ente.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2142,7 +2149,9 @@
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-turtl.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-tuta.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ublock-origin-lite.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ublock-origin.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ubuntu-touch.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-ubuntu.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-umami.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-unbound.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://3208259164.github.io/XuetongNavigator/s/s-veracrypt.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
