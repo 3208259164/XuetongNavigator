@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>删除与清理数据，减少隐私暴露 | 学通资源导航</title>
+<meta name="description" content="缓存、日志、聊天记录都在替你记账，定期清理并彻底销毁旧硬盘。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="删除与清理数据，减少隐私暴露 | 学通资源导航">
+<meta property="og:description" content="缓存、日志、聊天记录都在替你记账，定期清理并彻底销毁旧硬盘。">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/a/declutter-data.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none;font-size:15px}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bhead .cnt{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+.wrap{max-width:720px;margin:0 auto;padding:18px 18px 70px}
+h1.t{font-size:23px;font-weight:700;line-height:1.35;margin:6px 0 10px}
+.meta{font-size:12.5px;color:var(--faint);line-height:1.8;margin-bottom:20px}
+.meta a{color:var(--brand);text-decoration:none}
+.art{font-size:15.5px;line-height:1.95;color:var(--text)}
+.art h2{font-size:17px;font-weight:650;margin:26px 0 10px}
+.art p{margin:0 0 15px}
+.art ul{margin:0 0 15px;padding-left:20px}
+.art li{margin-bottom:6px;line-height:1.85}
+.rel{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.rel a{color:var(--brand);text-decoration:none;margin-right:12px}
+.foot{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.8}
+.hero{font-size:12.5px;color:var(--sub);line-height:1.75;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--brand)}
+.card h2{font-size:15.5px;font-weight:650;margin-bottom:6px}
+.card p{font-size:12.5px;color:var(--sub);line-height:1.65;margin:0}
+.card .m{font-size:11px;color:var(--faint);margin-top:8px}
+</style>
+
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-guides.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body>
+<header class="bhead">
+  <a href="../guides.html">&#8592;</a>
+  <h1>删除与清理数据，减少隐私暴露</h1>
+  <span class="cnt">约 6 分钟</span>
+</header>
+<div class="wrap">
+  <h1 class="t">删除与清理数据，减少隐私暴露</h1>
+  <div class="meta">译自 PrivacyTools.io · 原文以 CC0 1.0 发布，译文可自由转载 ·
+  <a href="https://privacytools.io/guides/deleting-and-decluttering-data-to-improve-privacy" target="_blank" rel="noopener nofollow">查看原文</a></div>
+  <article class="art">
+<p>按前面几篇做过之后，你会剩下大量没用的数据：缓存文件、临时文件、浏览器历史、聊天记录，甚至交易记录。这些东西留着不会自己消失，一旦被人拿到就可能危及安全；除了替你记录历史，它们也没什么用处，清掉是有好处的。</p><p>动手之前先弄清哪些信息被存在哪里。可以自上而下翻一遍硬盘里的常见目录，但不知道去哪找、不确定哪些能删，这个过程会很头疼。好在有工具代劳。CCleaner 在 Windows 和 macOS 上都很常见，能清临时的网络文件、浏览记录、应用缓存和最近使用过的文件，还能擦写硬盘空闲空间，防止数据被取证恢复。我在 Windows 上常用它搭配 PrivaZer，后者思路相同但功能更多。如果只能装一个，我会选 PrivaZer。</p><p>偏好开源软件的话，可以用 BleachBit，扫描范围和清理项与上面两款不同，擦除强度相当。实际用下来，PrivaZer 加 BleachBit，或者 CCleaner 加 BleachBit，覆盖面最广。macOS 上 CCleaner 也可以用，只是苹果系统藏起来的信息比想象的多，常见需要检查的目录有：</p><ul><li>~/Library/Application Support</li><li>~/Library/Logs</li><li>~/Library/Preferences</li><li>/Library/Logs</li><li>/private/var/log</li><li>~/Library/Caches</li></ul><p>日志文件在控制台应用里都能看到，可以定期清掉。用户目录下的偏好设置文件里藏的信息比你以为的多：我装过的程序里大约一半会把最近文件的记录写进这些文件。有次在文本编辑器里存文件，明明已经把菜单里的最近文档选项关掉，偏好设置文件里仍然记着最近打开的那个文件。</p><p>装着旧数据的硬盘不再使用时，要安全销毁。哪怕只是换一台电脑，也建议从零开始，只把必需的文件搬过去。Windows 上很多文件存在平时想不到的地方，一个 thumbs.db 落到错误的人手里也可能带来风险。</p><p>销毁不外乎两条路，都要花时间，所以平时就把全盘加密开着更重要。一条是物理销毁：拆出磁盘，打孔、击碎，固态硬盘没有盘片，不能照搬这个做法。另一条是用 DBAN 这类开源工具把整块盘反复覆写。对安全要求高的场景，常见的做法是把 DBAN 写进一个 U 盘备用；打算继续用这块盘的，先用 DBAN 擦一遍；不打算用的，擦完再物理销毁。</p><h2>编者注</h2><p>原文推荐了 CCleaner。这款软件在 2017 年曾被植入恶意代码，官方随后修复并加强了发布流程，介意这段历史的话优先用 BleachBit 或 PrivaZer。另外 macOS 的用户资源库目录默认隐藏，在访达里按住 Option 点前往菜单就能看到。</p>
+  </article>
+  <div class="rel">相关收录：<a href="../security-practice.html">隐私实务</a><a href="../security-sys.html">系统与镜像</a></div>
+  <div class="foot">原文标题：Deleting and Decluttering Data to Improve Privacy。译文忠于原意，个别过时内容以编者注形式说明。</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9">
+<title>定义你的威胁模型 | 学通资源导航</title>
+<meta name="description" content="在谈安全、隐私和匿名之前，先弄清自己需要防谁、防什么。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="定义你的威胁模型 | 学通资源导航">
+<meta property="og:description" content="在谈安全、隐私和匿名之前，先弄清自己需要防谁、防什么。">
+<meta property="og:url" content="https://3208259164.github.io/XuetongNavigator/a/threat-model.html">
+<meta property="og:site_name" content="学通资源导航">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.bhead{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;
+ background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.bhead a{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--sub);text-decoration:none;font-size:15px}
+.bhead a:hover{background:var(--panel-2)}
+.bhead h1{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bhead .cnt{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+.wrap{max-width:720px;margin:0 auto;padding:18px 18px 70px}
+h1.t{font-size:23px;font-weight:700;line-height:1.35;margin:6px 0 10px}
+.meta{font-size:12.5px;color:var(--faint);line-height:1.8;margin-bottom:20px}
+.meta a{color:var(--brand);text-decoration:none}
+.art{font-size:15.5px;line-height:1.95;color:var(--text)}
+.art h2{font-size:17px;font-weight:650;margin:26px 0 10px}
+.art p{margin:0 0 15px}
+.art ul{margin:0 0 15px;padding-left:20px}
+.art li{margin-bottom:6px;line-height:1.85}
+.rel{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
+.rel a{color:var(--brand);text-decoration:none;margin-right:12px}
+.foot{margin-top:22px;font-size:12px;color:var(--faint);line-height:1.8}
+.hero{font-size:12.5px;color:var(--sub);line-height:1.75;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-bottom:16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+.card:hover{border-color:var(--brand)}
+.card h2{font-size:15.5px;font-weight:650;margin-bottom:6px}
+.card p{font-size:12.5px;color:var(--sub);line-height:1.65;margin:0}
+.card .m{font-size:11px;color:var(--faint);margin-top:8px}
+</style>
+
+<meta property="og:image" content="https://3208259164.github.io/XuetongNavigator/og/og-guides.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+</head>
+<body>
+<header class="bhead">
+  <a href="../guides.html">&#8592;</a>
+  <h1>定义你的威胁模型</h1>
+  <span class="cnt">约 3 分钟</span>
+</header>
+<div class="wrap">
+  <h1 class="t">定义你的威胁模型</h1>
+  <div class="meta">译自 PrivacyTools.io · 原文以 CC0 1.0 发布，译文可自由转载 ·
+  <a href="https://privacytools.io/guides/defining-your-threat-model" target="_blank" rel="noopener nofollow">查看原文</a></div>
+  <article class="art">
+<p>威胁模型可以理解为：一个人需要依据哪些东西来获得保护，比如自己拥有的贵重物品、掌握的信息，以及从事的工作。</p><p>美国总统的威胁模型远比超市员工大。但在互联网上，这条规律并不总成立，因为我们很少把威胁建模当成一个整体来看，而是把安全、隐私、匿名简化成好人和坏人的对立。</p><p>想想斯诺登。他揭露了大量 NSA 监控公民隐私的内幕，生命受到直接威胁，他的威胁模型和你我完全不同。所以在讨论网络安全之前，得先问自己两个问题：我需要防谁、防什么，这些人会试图从我这里拿到什么信息。把自己当成一家店主，假定总有人想拿走你的东西为自己谋利。</p><p>原文据此把内容分成四个层次：普通网民、技术熟练的用户、政府官员与倡导者、以及斯诺登本人。确定了自己要防谁、要保护什么之后，就可以有针对性补充知识，安全上网。</p>
+  </article>
+  <div class="rel">相关收录：<a href="../security.html">安全与开源</a></div>
+  <div class="foot">原文标题：Defining Your Threat-Model。译文忠于原意，个别过时内容以编者注形式说明。</div>
+</div>
+</body>
+</html>
